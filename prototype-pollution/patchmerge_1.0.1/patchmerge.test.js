@@ -3,6 +3,6 @@ test("prototype pollution in patchMerge", () => {
   var patchMerge = require("patchmerge");
   var obj = {};
   expect({}.polluted).toBe(undefined);
-  patchMerge(obj, JSON.parse('{"__proto__": { "polluted": "yes" }}'));
+  patchMerge(obj, JSON.parse(process.env.SECBENCH_PAYLOAD || '{"__proto__": { "polluted": "yes" }}'));
   expect({}.polluted).toBe("yes");
 });

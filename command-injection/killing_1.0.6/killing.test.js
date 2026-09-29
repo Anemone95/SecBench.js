@@ -12,7 +12,7 @@ test("Command Injection in killing", (done) => {
   }
   let file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  killing("$(touch killing & exit 1)");
+  killing(process.env.SECBENCH_PAYLOAD || ("$(touch killing & exit 1)"));
   setTimeout(() => {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);

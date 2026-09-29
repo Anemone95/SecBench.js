@@ -2,7 +2,7 @@ test("Arbitrary code execution in serialize-javascript", () => {
   expect.assertions(2);
   const fs = require("fs");
   const serialize = require("serialize-javascript");
-  const path = "./serialize-javascript";
+  const path = process.env.SECBENCH_PAYLOAD || ("./serialize-javascript");
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
   eval(

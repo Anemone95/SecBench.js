@@ -4,7 +4,7 @@ test("prototype pollution in field ", () => {
 
   const field = require("field");
   const obj = {};
-  field.set(obj, "__proto__.polluted", "yes");
+  field.set(obj, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
 
   expect(obj.polluted).toBe("yes");
 });

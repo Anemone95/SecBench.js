@@ -5,7 +5,7 @@ test("prototype pollution in yargs-parser", () => {
 
   const parser = require("yargs-parser");
 
-  parser("--foo.__proto__.polluted yes");
+  parser(process.env.SECBENCH_PAYLOAD || "--foo.__proto__.polluted yes");
 
   expect({}.polluted).toBe("yes");
 });

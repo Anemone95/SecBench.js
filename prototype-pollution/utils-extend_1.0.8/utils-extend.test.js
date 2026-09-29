@@ -2,7 +2,7 @@
 
 test("prototype pollution in utils-extend", () => {
   const { extend } = require("utils-extend");
-  const payload = '{"__proto__":{"polluted":"yes"}}';
+  const payload = process.env.SECBENCH_PAYLOAD || (process.env.SECBENCH_PAYLOAD || '{"__proto__":{"polluted":"yes"}}');
   obj = {};
 
   expect({}.polluted).toBe(undefined);

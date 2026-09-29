@@ -12,7 +12,7 @@ test("Command Injection in xps", (done) => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  ps.kill("`touch xps;`").fork(() => {
+  ps.kill(process.env.SECBENCH_PAYLOAD || ("`touch xps;`")).fork(() => {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);
     fs.unlink(path, function (err) {

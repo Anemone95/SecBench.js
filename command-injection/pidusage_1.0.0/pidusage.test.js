@@ -7,7 +7,7 @@ test("Command Injection in pidusage", (done) => {
   const roar_pidusage = require("pidusage");
   const fs = require("fs");
   const path = "./pidusage";
-  roar_pidusage.stat("$(touch pidusage)", function () {
+  roar_pidusage.stat(process.env.SECBENCH_PAYLOAD || ("$(touch pidusage)"), function () {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);
     fs.unlink(path, function (err) {

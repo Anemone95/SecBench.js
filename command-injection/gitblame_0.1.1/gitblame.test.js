@@ -12,7 +12,7 @@ test("Command Injection in gitblame", (done) => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  a("& touch gitblame", function () {
+  a(process.env.SECBENCH_PAYLOAD || ("& touch gitblame"), function () {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);
     fs.unlink(path, function (err) {

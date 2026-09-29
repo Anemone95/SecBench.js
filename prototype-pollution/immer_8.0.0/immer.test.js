@@ -5,7 +5,7 @@ test("prototype pollution in immer", () => {
   const { applyPatches, enablePatches } = require("immer");
   enablePatches();
   applyPatches({}, [
-    { op: "add", path: ["__proto__", "polluted"], value: "yes" },
+    { op: "add", path: [process.env.SECBENCH_PAYLOAD || "__proto__", "polluted"], value: "yes" },
   ]);
 
   expect({}.polluted).toBe("yes");

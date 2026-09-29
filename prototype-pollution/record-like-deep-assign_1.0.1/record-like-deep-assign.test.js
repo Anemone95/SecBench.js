@@ -5,7 +5,7 @@ test("prototype pollution in x-assign", () => {
   expect({}.polluted).toBe(undefined);
 
   let obj = {};
-  EVIL_JSON = JSON.parse('{"__proto__":{"polluted":"yes"}}');
+  EVIL_JSON = JSON.parse(process.env.SECBENCH_PAYLOAD || '{"__proto__":{"polluted":"yes"}}');
   deepAssign({}, EVIL_JSON);
 
   expect({}.polluted).toBe("yes");

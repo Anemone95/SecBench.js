@@ -3,7 +3,7 @@ test("prototype pollution in 101/set", () => {
 
   const _101 = require("101/set");
   // console.log(_101)
-  _101({}, "__proto__.polluted", "yes");
+  _101({}, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
 
   expect({}.polluted).toBe("yes");
 });

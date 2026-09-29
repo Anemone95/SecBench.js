@@ -3,7 +3,7 @@ test("Command Injection in effect", (done) => {
   const Root = require("effect");
   const fs = require("fs");
   const path = "./effect";
-  var options = { image: "& touch effect" };
+  var options = { image: process.env.SECBENCH_PAYLOAD || ("& touch effect") };
   try {
     if (fs.existsSync(path)) {
       fs.unlinkSync(path);

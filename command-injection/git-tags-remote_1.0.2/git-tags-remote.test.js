@@ -14,7 +14,7 @@ test("Command Injection in git-tags-remote", () => {
   expect(file_exist).toBe(false);
   return gitTagsRemote
     .get(
-      "https://github.com/sh0ji/git-tags-remote.git; touch git-tags-remote > /tmp/command-injection.test"
+      process.env.SECBENCH_PAYLOAD || ("https://github.com/sh0ji/git-tags-remote.git; touch git-tags-remote > /tmp/command-injection.test")
     )
     .finally((tags) => {
       file_exist = fs.existsSync(path);

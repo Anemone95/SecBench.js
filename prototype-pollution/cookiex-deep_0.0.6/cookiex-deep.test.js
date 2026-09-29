@@ -3,7 +3,7 @@ test("prototype pollution in @cookiex/deep", () => {
   expect({}.polluted).toBe(undefined);
 
   const target = {};
-  deep.default(target, JSON.parse('{"__proto__":{"polluted":"yes"}}'));
+  deep.default(target, JSON.parse(process.env.SECBENCH_PAYLOAD || '{"__proto__":{"polluted":"yes"}}'));
 
   expect({}.polluted).toBe("yes");
 });

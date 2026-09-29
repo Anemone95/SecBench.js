@@ -5,7 +5,7 @@ test("prototype pollution in mathjs ", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  const newConfig = JSON.parse('{"__proto__":{"polluted":"yes"}}');
+  const newConfig = JSON.parse(process.env.SECBENCH_PAYLOAD || '{"__proto__":{"polluted":"yes"}}');
   mathjs.config(newConfig);
 
   expect({}.polluted).toBe("yes");

@@ -13,7 +13,7 @@ test("Command Injection in psnode", (done) => {
   }
   let file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  psnode.kill("$(touch psnode)", function () {
+  psnode.kill(process.env.SECBENCH_PAYLOAD || ("$(touch psnode)"), function () {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);
     fs.unlink(path, () => {

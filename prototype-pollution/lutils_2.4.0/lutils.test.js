@@ -4,7 +4,7 @@ test("prototype pollution in lutils", () => {
   let obj = {};
   expect({}.polluted).toBe(undefined);
 
-  let EVIL_JSON = JSON.parse('{"__proto__":{"polluted":"yes"}}');
+  let EVIL_JSON = JSON.parse(process.env.SECBENCH_PAYLOAD || '{"__proto__":{"polluted":"yes"}}');
   lt.merge({}, EVIL_JSON);
 
   expect({}.polluted).toBe("yes");

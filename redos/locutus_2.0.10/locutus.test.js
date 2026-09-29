@@ -2,7 +2,7 @@ test("ReDos in locutus", () => {
   const genstr = require("../utils").genstr;
   const measureTime = require("../utils").measureTime;
   const inet_pton = require("locutus/php/network/inet_pton");
-  const attack_str = new Array(30).fill("a").join("") + ".";
+  const attack_str = process.env.SECBENCH_PAYLOAD || (new Array(30).fill("a").join("") + ".");
   let t = measureTime(function () {
     inet_pton(attack_str);
   });

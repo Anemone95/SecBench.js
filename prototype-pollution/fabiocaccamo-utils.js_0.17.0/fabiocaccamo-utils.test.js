@@ -5,6 +5,6 @@ test("prototype pollution in @fabiocaccamo/utils.js", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  utils.object.keypath.set(obj, "__proto__.polluted", "yes");
+  utils.object.keypath.set(obj, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
   expect({}.polluted).toBe("yes");
 });

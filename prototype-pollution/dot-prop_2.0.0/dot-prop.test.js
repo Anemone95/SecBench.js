@@ -3,7 +3,7 @@ test("prototype pollution in dot-prop", () => {
   expect({}.polluted).toBe(undefined);
 
   const dotProp = require("dot-prop");
-  dotProp.set({}, "__proto__.polluted", "yes");
+  dotProp.set({}, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
 
   expect({}.polluted).toBe("yes");
 });

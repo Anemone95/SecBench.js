@@ -7,7 +7,7 @@ test("prototype pollution in ini", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  ini.parse(fs.readFileSync(path.resolve(__dirname, "./payload.ini"), "utf-8"));
+  ini.parse(fs.readFileSync(path.resolve(__dirname, process.env.SECBENCH_PAYLOAD || ("./payload.ini")), "utf-8"));
 
   expect({}.polluted).toBe("yes");
 });

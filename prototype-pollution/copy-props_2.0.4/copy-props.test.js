@@ -3,7 +3,7 @@ test("prototype pollution in copy-props", () => {
   expect({}.polluted).toBe(undefined);
 
   const copyProps = require("copy-props");
-  const malicious_payload = '{"__proto__":{"polluted":"yes"}}';
+  const malicious_payload = process.env.SECBENCH_PAYLOAD || (process.env.SECBENCH_PAYLOAD || '{"__proto__":{"polluted":"yes"}}');
   copyProps(JSON.parse(malicious_payload), {});
 
   expect({}.polluted).toBe("yes");

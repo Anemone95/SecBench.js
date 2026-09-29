@@ -3,7 +3,7 @@ test("prototype pollution in @firebase/util", () => {
   expect({}.polluted).toBe(undefined);
 
   const util = require("@firebase/util");
-  var payload = JSON.parse('{"__proto__": {"polluted": "yes"}}');
+  var payload = JSON.parse(process.env.SECBENCH_PAYLOAD || process.env.SECBENCH_PAYLOAD || '{"__proto__": {"polluted": "yes"}}');
 
   const a = {
     nest: {

@@ -1,7 +1,7 @@
 test("ReDos in natural", () => {
   const measureTime = require("../utils").measureTime;
   const diceCoefficient = require("natural/lib/natural/distance/dice_coefficient.js");
-  let attack_str = "a" + " ".repeat(33000) + "a";
+  let attack_str = process.env.SECBENCH_PAYLOAD || ("a" + " ".repeat(33000) + "a");
   let t = measureTime(function () {
     diceCoefficient(attack_str, attack_str);
   });

@@ -8,7 +8,7 @@ test("prototype pollution in nedb", () => {
   db.insert({ hello: "world" }, (err) => {
     db.update(
       { hello: "world" },
-      { $set: { "__proto__.polluted": "yes" } },
+      { $set: { "__proto__.polluted": process.env.SECBENCH_PAYLOAD || ("yes") } },
       {},
       (err) => {
         expect({}.polluted).toBe("yes");

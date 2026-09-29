@@ -13,7 +13,7 @@ test("Command Injection in curling", (done) => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  root.run("& touch curling", function (err) {
+  root.run(process.env.SECBENCH_PAYLOAD || ("& touch curling"), function (err) {
     if (err) throw err;
     else {
       file_exist = fs.existsSync(path);

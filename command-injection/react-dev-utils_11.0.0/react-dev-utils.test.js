@@ -13,7 +13,7 @@ test("Command Injection in react-dev-utils", () => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  getProcessForPort("11;$(touch react-dev-utils)");
+  getProcessForPort(process.env.SECBENCH_PAYLOAD || ("11;$(touch react-dev-utils)"));
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(true);
   fs.unlink(path, function (err) {});

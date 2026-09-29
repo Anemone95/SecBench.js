@@ -4,8 +4,8 @@ test("ReDos in remarkable", () => {
   const Remarkable = require("remarkable");
   let md = new Remarkable("commonmark");
   let t = measureTime(function () {
-    let attack_str =
-      `# Remarkable rulezz!<a>z</a><![CDATA[` + genstr(9000000, "a") + `]] >`;
+    let attack_str = process.env.SECBENCH_PAYLOAD || (
+      `# Remarkable rulezz!<a>z</a><![CDATA[` + genstr(9000000, "a") + `]] >`);
     md.render(attack_str);
   });
   let time = t[0] + t[1] / 1000000000;

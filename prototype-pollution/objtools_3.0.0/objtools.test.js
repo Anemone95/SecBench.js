@@ -2,7 +2,7 @@
 
 test("prototype pollution in objtools", () => {
   const objtools = require("objtools");
-  const payload = JSON.parse('{"__proto__":{"polluted":"yes"}}'); //payload
+  const payload = JSON.parse(process.env.SECBENCH_PAYLOAD || process.env.SECBENCH_PAYLOAD || '{"__proto__":{"polluted":"yes"}}'); //payload
   obj = {};
 
   expect({}.polluted).toBe(undefined);

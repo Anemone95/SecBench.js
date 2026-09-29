@@ -5,7 +5,7 @@ test("ReDos in method-override", () => {
     let middleware = methodOverride();
     middleware(
       {
-        headers: { "x-http-method-override": " ".repeat(40000) },
+        headers: { "x-http-method-override": process.env.SECBENCH_PAYLOAD || (" ").repeat(40000) },
         method: "POST",
       },
       {

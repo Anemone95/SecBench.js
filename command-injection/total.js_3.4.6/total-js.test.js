@@ -14,7 +14,7 @@ test("Command Injection in total.js", (done) => {
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
   let image = Image.load("");
-  let payload = ";touch total_js;";
+  let payload = process.env.SECBENCH_PAYLOAD || (";touch total_js;");
   var timetaken = "Time taken by addCount function";
   console.time(timetaken);
   image.stream(payload);

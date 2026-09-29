@@ -4,7 +4,7 @@ test("prototype pollution in objutil", () => {
   const { merge, remove } = require("objutil");
 
   let a = { x: 1, y: { w: 1, z: 2 } };
-  const malicious_payload = '{"__proto__":{"polluted":"yes"}}';
+  const malicious_payload = process.env.SECBENCH_PAYLOAD || (process.env.SECBENCH_PAYLOAD || '{"__proto__":{"polluted":"yes"}}');
 
   expect({}.polluted).toBe(undefined);
 

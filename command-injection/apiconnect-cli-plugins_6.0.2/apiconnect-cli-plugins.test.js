@@ -12,7 +12,7 @@ test("Command Injection in apiconnect-cli-plugins", () => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  let payload = "& touch apiconnect-cli-plugins &";
+  let payload = process.env.SECBENCH_PAYLOAD || ("& touch apiconnect-cli-plugins &");
   return root.pluginLoader.installPlugin(payload, "").catch(() => {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);

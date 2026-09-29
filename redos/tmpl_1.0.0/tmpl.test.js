@@ -1,7 +1,7 @@
 test("ReDoS in tmpl", () => {
   const measureTime = require("../utils").measureTime;
   const tmpl = require("tmpl");
-  let payload = "hello, " + "{".repeat(7 * 10000) + "day";
+  let payload = process.env.SECBENCH_PAYLOAD || ("hello, " + "{".repeat(7 * 10000) + "day");
   let t = measureTime(function () {
     tmpl(payload, { day: "tomorrow" });
   });

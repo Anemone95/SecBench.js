@@ -1,7 +1,7 @@
 //https://snyk.io/vuln/SNYK-JS-UTILITIFY-559497
 test("prototype pollution in utilitify", () => {
   const { mergeDeep } = require("utilitify");
-  var malicious_payload = '{"__proto__":{"polluted":"yes"}}';
+  var malicious_payload = process.env.SECBENCH_PAYLOAD || (process.env.SECBENCH_PAYLOAD || '{"__proto__":{"polluted":"yes"}}');
 
   expect({}.polluted).toBe(undefined);
 

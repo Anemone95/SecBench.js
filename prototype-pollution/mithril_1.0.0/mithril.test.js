@@ -6,6 +6,6 @@ test("prototype pollution in mithril", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  m.parseQueryString("__proto__%5Bpolluted%5D=yes");
+  m.parseQueryString(process.env.SECBENCH_PAYLOAD || "__proto__%5Bpolluted%5D=yes");
   expect({}.polluted).toBe("yes");
 });

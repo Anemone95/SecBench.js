@@ -8,7 +8,7 @@ test("ReDos in react-native", () => {
   const measureTime = require("../utils").measureTime;
   let t = measureTime(function () {
     validateBaseUrl(
-      "http://foobar.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00."
+      process.env.SECBENCH_PAYLOAD || ("http://foobar.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.")
     );
   });
   let time = t[0] + t[1] / 1000000000;

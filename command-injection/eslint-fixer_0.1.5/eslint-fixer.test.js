@@ -13,7 +13,7 @@ test("Command Injection in eslint-fixer", () => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  return fix("$(touch eslint-fixer)").finally(() => {
+  return fix(process.env.SECBENCH_PAYLOAD || ("$(touch eslint-fixer)")).finally(() => {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);
     fs.unlink(path, () => {});

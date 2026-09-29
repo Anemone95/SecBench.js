@@ -13,7 +13,7 @@ test("Command Injection in portkiller", (done) => {
   }
   let file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  portkiller("$(touch portkiller)");
+  portkiller(process.env.SECBENCH_PAYLOAD || ("$(touch portkiller)"));
   setTimeout(() => {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);

@@ -5,6 +5,6 @@ test("prototype pollution in safe-object2", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  setDeepProp({}, ["__proto__", "polluted"], "yes");
+  setDeepProp({}, [process.env.SECBENCH_PAYLOAD || "__proto__", "polluted"], "yes");
   expect({}.polluted).toBe("yes");
 });

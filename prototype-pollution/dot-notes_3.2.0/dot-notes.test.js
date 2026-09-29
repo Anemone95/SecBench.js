@@ -3,7 +3,7 @@ test("prototype pollution in dot-notes", () => {
   expect({}.polluted).toBe(undefined);
 
   const dots = require("dot-notes");
-  dots.create({}, "__proto__.polluted", "yes");
+  dots.create({}, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
 
   expect({}.polluted).toBe("yes");
 });

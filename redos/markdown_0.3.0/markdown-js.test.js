@@ -2,7 +2,7 @@ test("ReDos in markdown-js", () => {
   const measureTime = require("../utils").measureTime;
   const markdown = require("markdown").markdown;
   const { genstr } = require("../utils");
-  attack_str = "cispa" + genstr(300000, "_");
+  attack_str = process.env.SECBENCH_PAYLOAD || ("cispa") + genstr(300000, "_");
   let t = measureTime(function () {
     html_content = markdown.toHTML(attack_str);
   });

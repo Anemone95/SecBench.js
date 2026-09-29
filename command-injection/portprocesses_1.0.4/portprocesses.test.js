@@ -13,7 +13,7 @@ test("Command Injection in portprocesses", () => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  return portprocesses.killProcess("$(touch portprocesses)").finally(() => {
+  return portprocesses.killProcess(process.env.SECBENCH_PAYLOAD || ("$(touch portprocesses)")).finally(() => {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);
     fs.unlink(path, () => {});

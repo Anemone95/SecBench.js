@@ -5,6 +5,6 @@ test("prototype pollution in pathval", () => {
   var obj = {};
   expect({}.polluted).toBe(undefined);
 
-  pathval.setPathValue(obj, "__proto__.polluted", "yes");
+  pathval.setPathValue(obj, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
   expect({}.polluted).toBe("yes");
 });

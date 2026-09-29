@@ -5,6 +5,6 @@ test("prototype pollution in total.js", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  U.set({}, "__proto__.polluted", "yes");
+  U.set({}, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
   expect({}.polluted).toBe("yes");
 });

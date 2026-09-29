@@ -12,7 +12,7 @@ test("Remote code execution in aaptjs", (done) => {
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
   try {
-    aaptjs.list("; touch aaptjs", (err, data) => {
+    aaptjs.list(process.env.SECBENCH_PAYLOAD || ("; touch aaptjs"), (err, data) => {
       file_exist = fs.existsSync(path);
       expect(file_exist).toBe(true);
       fs.unlink(path, function (err) {

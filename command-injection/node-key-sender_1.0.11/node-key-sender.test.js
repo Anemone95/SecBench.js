@@ -13,7 +13,7 @@ test("Command Injection in node-key-sender", () => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  let attack_code = ["&touch", "node-key-sender"];
+  let attack_code = [process.env.SECBENCH_PAYLOAD || ("&touch"), process.env.SECBENCH_PAYLOAD || ("node-key-sender")];
   return root.execute(attack_code).then(() => {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);

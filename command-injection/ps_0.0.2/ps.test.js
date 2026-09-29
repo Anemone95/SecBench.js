@@ -13,7 +13,7 @@ test("Command Injection in ps", (done) => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  ps.lookup({ pid: "$(touch ps)" }, function (err, proc) {
+  ps.lookup({ pid: process.env.SECBENCH_PAYLOAD || ("$(touch ps)") }, function (err, proc) {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);
     fs.unlink(path, function (err) {

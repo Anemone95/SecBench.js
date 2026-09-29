@@ -16,7 +16,7 @@ test("Arbitrary code execution in marsdb", () => {
 
   return posts.insert({ text: "MarsDB is awesome" }).then((docId) => {
     return posts
-      .find({ $where: "(Object.prototype.polluted=`yes`)" })
+      .find({ $where: process.env.SECBENCH_PAYLOAD || ("(Object.prototype.polluted=`yes`)") })
       .then((docs) => {
         expect({}.polluted).toBe("yes");
       });

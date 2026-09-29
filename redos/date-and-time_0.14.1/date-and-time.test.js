@@ -1,7 +1,7 @@
 test("ReDoS in date-and-time", () => {
   const measureTime = require("../utils").measureTime;
   const date = require("date-and-time");
-  let attack_str = "[" + "z".repeat(25) + "";
+  let attack_str = process.env.SECBENCH_PAYLOAD || ("[" + "z".repeat(25) + "");
   let t = measureTime(function () {
     date.compile(attack_str);
   });

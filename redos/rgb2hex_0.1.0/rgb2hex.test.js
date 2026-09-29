@@ -4,7 +4,7 @@ test("ReDos in rgb2hex", () => {
   const measureTime = require("../utils").measureTime;
   const rgb2hex = require("rgb2hex");
 
-  const color = "rgb(" + genstr(14, "0000,") + "000";
+  const color = process.env.SECBENCH_PAYLOAD || ("rgb(") + genstr(14, "0000,") + "000";
 
   let t = measureTime(function () {
     try {

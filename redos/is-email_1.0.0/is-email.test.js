@@ -2,7 +2,7 @@ test("ReDos in is-email", () => {
   const genstr = require("../utils").genstr;
   const measureTime = require("../utils").measureTime;
   const isEmail = require("is-email");
-  let attack_str = "" + genstr(3000, "@") + "!";
+  let attack_str = process.env.SECBENCH_PAYLOAD || ("" + genstr(3000, "@") + "!");
   let t = measureTime(function () {
     isEmail(attack_str);
   });

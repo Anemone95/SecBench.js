@@ -13,7 +13,7 @@ test("Command Injection in connection-tester", () => {
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
   try {
-    a.test("& touch connection-tester", 123, 1000);
+    a.test(process.env.SECBENCH_PAYLOAD || ("& touch connection-tester"), 123, 1000);
   } catch (error) {}
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(true);

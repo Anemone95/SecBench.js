@@ -12,6 +12,6 @@ test("prototype pollution in merge-recursive", () => {
 
   const set = require("prototyped.js/dist/object/set").default;
   console.log("Prototype before set", {}.polluted);
-  set({}, "__proto__.isAdmin", true);
+  set({}, process.env.SECBENCH_PAYLOAD || "__proto__.isAdmin", true);
   console.log("Prototype after set", {}.polluted);
 });

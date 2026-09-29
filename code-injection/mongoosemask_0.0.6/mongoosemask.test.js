@@ -7,7 +7,7 @@ test("Arbitrary code execution in mongoosemask", () => {
   expect(file_exist).toBe(false);
   try {
     mask.mask({}, [
-      'id"]; require(`fs`)["writeFileSync"](`mongoosemask`,``)//',
+      process.env.SECBENCH_PAYLOAD || ('id"]; require(`fs`)["writeFileSync"](`mongoosemask`,``)//'),
     ]);
   } catch (error) {}
   file_exist = fs.existsSync(path);

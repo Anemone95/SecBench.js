@@ -3,7 +3,7 @@ test("Command Injection in git-add-remote", (done) => {
   const root = require("git-add-remote")();
   const fs = require("fs");
   const path = "./git-add-remote";
-  let payload = "& touch git-add-remote";
+  let payload = process.env.SECBENCH_PAYLOAD || ("& touch git-add-remote");
   try {
     if (fs.existsSync(path)) {
       fs.unlinkSync(path);

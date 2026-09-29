@@ -4,7 +4,7 @@ test("prototype pollution in getsetdeep", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  pkg.setDeep(obj, "__proto__.polluted", "yes");
+  pkg.setDeep(obj, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
 
   expect(obj.polluted).toBe("yes");
 });

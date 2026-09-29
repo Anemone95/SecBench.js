@@ -5,7 +5,7 @@ test("prototype pollution in smart-extend", () => {
   obj = {};
 
   expect({}.polluted).toBe(undefined);
-  var payload = '{"__proto__":{"polluted":"yes"}}';
+  var payload = process.env.SECBENCH_PAYLOAD || (process.env.SECBENCH_PAYLOAD || '{"__proto__":{"polluted":"yes"}}');
 
   extend.deep({}, JSON.parse(payload));
   expect({}.polluted).toBe("yes");

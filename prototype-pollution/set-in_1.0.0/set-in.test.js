@@ -5,6 +5,6 @@ test("prototype pollution in set-in", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  si(obj, ["__proto__", "polluted"], "yes");
+  si(obj, [process.env.SECBENCH_PAYLOAD || "__proto__", "polluted"], "yes");
   expect(obj.polluted).toBe("yes");
 });

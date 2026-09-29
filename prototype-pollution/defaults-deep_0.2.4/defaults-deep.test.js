@@ -6,9 +6,9 @@ test("prototype pollution in defaults-deep ", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  let payload = JSON.parse(
+  let payload = JSON.parse(process.env.SECBENCH_PAYLOAD || (
     '{"constructor": {"prototype": {"polluted": "yes"}}}'
-  );
+  ));
   defaultsDeep({}, payload);
   expect({}.polluted).toBe("yes");
 });

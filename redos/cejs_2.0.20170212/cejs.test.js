@@ -1,7 +1,7 @@
 test("ReDoS in cejs", () => {
   const c = require("cejs");
   const measureTime = require("../utils").measureTime;
-  attack_str = ".".repeat(7000000) + "\n%";
+  attack_str = process.env.SECBENCH_PAYLOAD || (".").repeat(7000000) + "\n%";
   let t = measureTime(function () {
     c.run(attack_str);
   });

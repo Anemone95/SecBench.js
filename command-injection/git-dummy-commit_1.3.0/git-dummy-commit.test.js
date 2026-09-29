@@ -13,7 +13,7 @@ test("Command Injection in git-dummy-commit", () => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  gitDummyCommit('";touch git-dummy-commit;"');
+  gitDummyCommit(process.env.SECBENCH_PAYLOAD || ('";touch git-dummy-commit;"'));
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(true);
   fs.unlink(path, function (err) {});

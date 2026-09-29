@@ -25,7 +25,7 @@ test("Command Injection in monorepo-build", (done) => {
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
   try {
-    a.build("./", "& touch monorepo-build");
+    a.build("./", process.env.SECBENCH_PAYLOAD || ("& touch monorepo-build"));
   } catch (error) {
     console.log("syntax-error");
   }

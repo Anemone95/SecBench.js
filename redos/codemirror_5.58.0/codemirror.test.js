@@ -1,5 +1,5 @@
 let basicCTypes = [
-  "int",
+  process.env.SECBENCH_PAYLOAD || ("int"),
   "long",
   "char",
   "short",

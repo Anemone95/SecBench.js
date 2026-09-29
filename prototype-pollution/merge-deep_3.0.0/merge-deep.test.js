@@ -3,7 +3,7 @@ test("prototype pollution in merge-deep", () => {
   expect({}.polluted).toBe(undefined);
 
   const merge = require("merge-deep");
-  const malicious_payload = '{"__proto__":{"polluted":"yes"}}';
+  const malicious_payload = process.env.SECBENCH_PAYLOAD || (process.env.SECBENCH_PAYLOAD || '{"__proto__":{"polluted":"yes"}}');
   merge({}, JSON.parse(malicious_payload));
 
   expect({}.polluted).toBe("yes");

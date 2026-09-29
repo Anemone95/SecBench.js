@@ -13,7 +13,7 @@ test("Command Injection in umount", (done) => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  let device = '" $(touch umount) "';
+  let device = process.env.SECBENCH_PAYLOAD || ('" $(touch umount) "');
   root.umount(device, function () {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);

@@ -12,7 +12,7 @@ test("Command Injection in blamer", async () => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  let attack_command = "& touch blamer &";
+  let attack_command = process.env.SECBENCH_PAYLOAD || ("& touch blamer &");
   root = new Root("git", attack_command);
   try {
     await root.blameByFile("./");

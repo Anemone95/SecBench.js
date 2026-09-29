@@ -6,7 +6,7 @@ test("prototype pollution in y18n", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  y18n.setLocale("__proto__");
+  y18n.setLocale(process.env.SECBENCH_PAYLOAD || "__proto__");
   y18n.updateLocale({ polluted: "yes" }); //payload
 
   expect({}.polluted).toBe("yes");

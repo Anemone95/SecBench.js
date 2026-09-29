@@ -3,7 +3,7 @@ test("ReDos in trim-off-newlines", () => {
   const measureTime = require("../utils").measureTime;
   const trim = require("trim-off-newlines");
 
-  const s = "a" + "\n".repeat(45000) + "a";
+  const s = process.env.SECBENCH_PAYLOAD || ("a") + "\n".repeat(45000) + "a";
 
   let t = measureTime(function () {
     trim(s);

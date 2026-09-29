@@ -3,6 +3,6 @@ test("prototype pollution in deepref", () => {
   expect({}.polluted).toBe(undefined);
 
   const deepref = require("deepref");
-  deepref.set({}, "__proto__.polluted", "yes");
+  deepref.set({}, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
   expect({}.polluted).toBe("yes");
 });

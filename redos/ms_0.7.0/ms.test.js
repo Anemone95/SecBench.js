@@ -2,7 +2,7 @@ test("ReDos in ms", () => {
   const genstr = require("../utils").genstr;
   const measureTime = require("../utils").measureTime;
   const ms = require("ms");
-  let attack_str = genstr(20000, "1") + "x";
+  let attack_str = process.env.SECBENCH_PAYLOAD || (genstr(20000, "1") + "x");
   let t = measureTime(function () {
     ms(attack_str);
   });

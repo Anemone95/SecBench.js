@@ -5,7 +5,7 @@ test("Arbitrary code execution in  djv", () => {
   try {
     const env = new djv();
     const evilSchema = JSON.parse(
-      '{"common":{"type":"array", "minItems":"1 + (Object.prototype.polluted = `yes`)"}}'
+      process.env.SECBENCH_PAYLOAD || ('{"common":{"type":"array", "minItems":"1 + (Object.prototype.polluted = `yes`)"}}')
     );
     env.addSchema("test", evilSchema);
     env.validate("test#/common", { type: "custom" });

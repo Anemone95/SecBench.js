@@ -2,7 +2,7 @@ test("ReDos in mime", () => {
   const genstr = require("../utils").genstr;
   const measureTime = require("../utils").measureTime;
   const mime = require("mime");
-  let str = genstr(81750, "5") + "";
+  let str = genstr(81750, process.env.SECBENCH_PAYLOAD || ("5")) + "";
   let t = measureTime(function () {
     mime.lookup(str);
   });

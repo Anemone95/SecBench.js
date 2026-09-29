@@ -4,7 +4,7 @@ test("prototype pollution in node-forge", () => {
 
   const nodeforge = require("node-forge");
   const obj = {};
-  nodeforge.util.setPath(obj, ["__proto__", "polluted"], "yes");
+  nodeforge.util.setPath(obj, [process.env.SECBENCH_PAYLOAD || "__proto__", "polluted"], "yes");
 
   expect({}.polluted).toBe("yes");
 });

@@ -3,7 +3,7 @@ test("prototype pollution in madlib-object-utils", () => {
   expect({}.polluted).toBe(undefined);
 
   const objectUtils = require("madlib-object-utils");
-  objectUtils.setValue("__proto__.polluted", {}, "yes");
+  objectUtils.setValue(process.env.SECBENCH_PAYLOAD || "__proto__.polluted", {}, "yes");
 
   expect({}.polluted).toBe("yes");
 });

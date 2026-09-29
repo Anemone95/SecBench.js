@@ -14,7 +14,7 @@ test("Remote code execution in arpping", () => {
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
   return arpping
-    .ping([";touch arpping;"])
+    .ping([process.env.SECBENCH_PAYLOAD || (";touch arpping;")])
     .then(() => {})
     .catch((err) => console.log(err))
     .finally(() => {

@@ -5,6 +5,6 @@ test("prototype pollution in objnest", () => {
   let obj = {};
   expect({}.polluted).toBe(undefined);
 
-  objnest.expand({ "__proto__.polluted": "yes" });
+  objnest.expand({ "__proto__.polluted": process.env.SECBENCH_PAYLOAD || ("yes") });
   expect({}.polluted).toBe("yes");
 });

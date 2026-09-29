@@ -4,7 +4,7 @@ test("prototype pollution in deep-set", () => {
 
   const deepSet = require("deep-set");
   const obj = { 1: "2" };
-  deepSet(obj, "__proto__.polluted", "yes");
+  deepSet(obj, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
 
   expect({}.polluted).toBe("yes");
 });

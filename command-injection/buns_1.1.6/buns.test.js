@@ -12,7 +12,7 @@ test("Command Injection in buns", () => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  var name = "& touch buns";
+  var name = process.env.SECBENCH_PAYLOAD || ("& touch buns");
   try {
     root.install(name);
   } catch (error) {

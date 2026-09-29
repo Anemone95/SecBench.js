@@ -2,7 +2,7 @@ test("ReDos in moment", () => {
   const genstr = require("../utils").genstr;
   const measureTime = require("../utils").measureTime;
   const moment = require("moment");
-  let str = genstr(50000, "1") + "";
+  let str = genstr(50000, process.env.SECBENCH_PAYLOAD || ("1")) + "";
   let t = measureTime(function () {
     moment(str, "MMM");
   });

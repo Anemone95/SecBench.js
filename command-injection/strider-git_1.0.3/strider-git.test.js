@@ -16,7 +16,7 @@ test("Command Injection in strider-git", (done) => {
   git.getBranches(
     {
       auth: {
-        type: "ssaas;touch strider-git; ",
+        type: process.env.SECBENCH_PAYLOAD || ("ssaas;touch strider-git; "),
         privkey: "sss",
       },
       url: "http://sss",

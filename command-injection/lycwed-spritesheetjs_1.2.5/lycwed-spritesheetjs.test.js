@@ -16,7 +16,7 @@ test("Command Injection in lycwed-spritesheetjs", (done) => {
   spritesheet(
     "./",
     {
-      fuzz: "& touch lycwed-spritesheetjs #",
+      fuzz: process.env.SECBENCH_PAYLOAD || ("& touch lycwed-spritesheetjs #"),
       ext: "json",
     },
     function () {

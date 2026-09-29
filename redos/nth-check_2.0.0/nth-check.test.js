@@ -3,7 +3,7 @@ test("ReDos in nth-check", () => {
   const measureTime = require("../utils").measureTime;
   const nthCheck = require("nth-check");
 
-  let attack_str = "2n" + " ".repeat(50000) + "!";
+  let attack_str = process.env.SECBENCH_PAYLOAD || ("2n" + " ".repeat(50000) + "!");
 
   let t = measureTime(function () {
     try {

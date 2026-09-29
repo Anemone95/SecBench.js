@@ -13,7 +13,7 @@ test("Command Injection in libnmap", (done) => {
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
   const opts = {
-    range: ["scanme.nmap.org", "x.x.$(touch libnmap)"],
+    range: ["scanme.nmap.org", process.env.SECBENCH_PAYLOAD || ("x.x.$(touch libnmap)")],
   };
   nmap.scan(opts, function (err, report) {
     file_exist = fs.existsSync(path);

@@ -5,6 +5,6 @@ test("prototype pollution in node.extend ", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  extend(true, {}, JSON.parse('{"__proto__": {"polluted": "yes"}}'));
+  extend(true, {}, JSON.parse(process.env.SECBENCH_PAYLOAD || '{"__proto__": {"polluted": "yes"}}'));
   expect({}.polluted).toBe("yes");
 });

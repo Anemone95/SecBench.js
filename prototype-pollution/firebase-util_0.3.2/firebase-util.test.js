@@ -3,7 +3,7 @@ test("prototype pollution in @firebase/util", () => {
   expect({}.polluted).toBe(undefined);
 
   const utils = require("@firebase/util");
-  const source = JSON.parse('{"__proto__":{"polluted":"yes"}}');
+  const source = JSON.parse(process.env.SECBENCH_PAYLOAD || '{"__proto__":{"polluted":"yes"}}');
   utils.deepExtend({}, source);
 
   expect({}.polluted).toBe("yes");

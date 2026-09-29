@@ -13,7 +13,7 @@ test("Command Injection in node-latex-pdf", (done) => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  a("./", "& touch node-latex-pdf", function () {
+  a("./", process.env.SECBENCH_PAYLOAD || ("& touch node-latex-pdf"), function () {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);
     fs.unlinkSync(path);

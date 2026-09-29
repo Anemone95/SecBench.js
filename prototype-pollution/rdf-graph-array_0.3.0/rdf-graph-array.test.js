@@ -7,7 +7,7 @@ test("prototype pollution in rdf-graph-array", () => {
 
   g.add({
     graph: "foo",
-    subject: "__proto__",
+    subject: process.env.SECBENCH_PAYLOAD || "__proto__",
     predicate: "polluted",
     object: "JHU",
   });

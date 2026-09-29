@@ -5,7 +5,7 @@ test("prototype pollution in getobject", () => {
   const getObject = require("getobject");
   var obj = {};
   console.log("Before  : " + obj.polluted);
-  getObject.set(obj, "__proto__.polluted", "yes");
+  getObject.set(obj, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
 
   expect({}.polluted).toBe("yes");
 });

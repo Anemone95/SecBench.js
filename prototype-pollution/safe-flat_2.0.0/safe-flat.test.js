@@ -5,6 +5,6 @@ test("prototype pollution in safeFlat", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  safeFlat.unflatten({ "__proto__.polluted": "yes" }, "."); //payload
+  safeFlat.unflatten({ "__proto__.polluted": process.env.SECBENCH_PAYLOAD || ("yes") }, "."); //payload
   expect({}.polluted).toBe("yes");
 });

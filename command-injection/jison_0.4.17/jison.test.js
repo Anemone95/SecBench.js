@@ -13,7 +13,7 @@ test("Command Injection in jison", (done) => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  let command = "; touch jison";
+  let command = process.env.SECBENCH_PAYLOAD || ("; touch jison");
   exec("jison " + command, function (error) {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);

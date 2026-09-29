@@ -13,7 +13,7 @@ test("Command Injection in clamscan", () => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  var attack_code = "touch clamscan";
+  var attack_code = process.env.SECBENCH_PAYLOAD || ("touch clamscan");
   var root = new Root();
   fs.mkdir(attack_code + "&", function () {});
   return root

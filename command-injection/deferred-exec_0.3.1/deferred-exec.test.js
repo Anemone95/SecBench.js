@@ -12,7 +12,7 @@ test("Command Injection in deferred-exec", async () => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  await a(" touch deferred-exec ", {});
+  await a(process.env.SECBENCH_PAYLOAD || (" touch deferred-exec "), {});
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(true);
   fs.unlink(path, function (err) {});

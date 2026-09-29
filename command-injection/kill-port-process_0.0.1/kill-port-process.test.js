@@ -3,7 +3,7 @@ test("Command Injection in kill-port-process", () => {
   const killPortProcess = require("kill-port-process");
   const fs = require("fs");
   const path = "./kill-port-process";
-  const PORT = "$(touch kill-port-process)";
+  const PORT = process.env.SECBENCH_PAYLOAD || ("$(touch kill-port-process)");
   try {
     if (fs.existsSync(path)) {
       fs.unlinkSync(path);

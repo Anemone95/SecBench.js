@@ -12,7 +12,7 @@ test("Command Injection in whereis", (done) => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  let filename = "; touch whereis";
+  let filename = process.env.SECBENCH_PAYLOAD || ("; touch whereis");
   whereis(filename, () => {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);

@@ -6,7 +6,7 @@ test("prototype pollution in controlled-merge ", () => {
   const obj = merge(
     {},
     JSON.parse(
-      '{ "testProperty": "hi", "prototype" : { "polluted" : "yes" } }'
+      process.env.SECBENCH_PAYLOAD || ('{ "testProperty": "hi", "prototype" : { "polluted" : "yes" } }')
     ),
     true
   );

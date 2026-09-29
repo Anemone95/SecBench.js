@@ -3,7 +3,7 @@ test("prototype pollution in dotty", () => {
   expect({}.polluted).toBe(undefined);
 
   const dotty = require("dotty");
-  dotty.put({}, "__proto__.polluted", "yes");
+  dotty.put({}, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
 
   expect({}.polluted).toBe("yes");
 });

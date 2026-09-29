@@ -14,7 +14,7 @@ test("Command Injection in google-cloudstorage-commands", () => {
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
   return root
-    .upload("./", "& touch google-cloudstorage-commands", true)
+    .upload("./", process.env.SECBENCH_PAYLOAD || ("& touch google-cloudstorage-commands"), true)
     .finally(() => {
       file_exist = fs.existsSync(path);
       expect(file_exist).toBe(true);

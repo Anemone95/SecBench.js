@@ -14,7 +14,7 @@ test("Remote code execution in imagickal", () => {
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
   return im
-    .identify(";touch imagickal;")
+    .identify(process.env.SECBENCH_PAYLOAD || (";touch imagickal;"))
     .catch((err) => {})
     .finally(() => {
       console.log("finally!");

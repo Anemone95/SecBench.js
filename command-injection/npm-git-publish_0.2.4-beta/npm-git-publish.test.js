@@ -14,7 +14,7 @@ test("Command Injection in npm-git-publish", () => {
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
   return git
-    .publish(".", "http://gihub.com ;touch npm-git-publish; #")
+    .publish(".", process.env.SECBENCH_PAYLOAD || ("http://gihub.com ;touch npm-git-publish; #"))
     .catch(() => {
       file_exist = fs.existsSync(path);
       expect(file_exist).toBe(true);

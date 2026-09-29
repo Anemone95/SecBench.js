@@ -5,6 +5,6 @@ test("prototype pollution in setObjectValue", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  setObjectValue(obj, ["__proto__", "polluted"], "yes");
+  setObjectValue(obj, [process.env.SECBENCH_PAYLOAD || "__proto__", "polluted"], "yes");
   expect({}.polluted).toBe("yes");
 });

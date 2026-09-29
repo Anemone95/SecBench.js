@@ -13,7 +13,7 @@ test("Command Injection in node-mpv", () => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  var options = { binary: '" $(touch node-mpv) "' };
+  var options = { binary: process.env.SECBENCH_PAYLOAD || ('" $(touch node-mpv) "') };
   try {
     var root = new Root(options);
   } catch (error) {}

@@ -3,7 +3,7 @@ test("ReDoS in browserslist", () => {
   const browserslist = require("browserslist");
   let t = measureTime(function () {
     try {
-      browserslist("> " + "1".repeat(25000) + "!");
+      browserslist(process.env.SECBENCH_PAYLOAD || ("> ") + "1".repeat(25000) + "!");
     } catch (e) {}
   });
   let time = t[0] + t[1] / 1000000000;

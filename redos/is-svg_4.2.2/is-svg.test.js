@@ -2,7 +2,7 @@ test("ReDos in is-svg", () => {
   const genstr = require("../utils").genstr;
   const measureTime = require("../utils").measureTime;
   const isSvg = require("is-svg");
-  let attack_str = "<!Entity" + genstr(25000, " ");
+  let attack_str = process.env.SECBENCH_PAYLOAD || ("<!Entity" + genstr(25000, " "));
   let t = measureTime(function () {
     isSvg(attack_str);
   });

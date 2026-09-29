@@ -2,7 +2,7 @@
 test("prototype pollution in @tsed/core", () => {
   const { deepExtends } = require("@tsed/core");
 
-  const payload = JSON.parse('{"__proto__": {"polluted": "yes"}}');
+  const payload = JSON.parse(process.env.SECBENCH_PAYLOAD || process.env.SECBENCH_PAYLOAD || '{"__proto__": {"polluted": "yes"}}');
 
   let obj = {};
 

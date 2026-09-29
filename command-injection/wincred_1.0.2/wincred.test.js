@@ -13,7 +13,7 @@ test("Command Injection in wincred", () => {
   }
   let file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  return wincred.getCredential("|| touch wincred").finally(() => {
+  return wincred.getCredential(process.env.SECBENCH_PAYLOAD || ("|| touch wincred")).finally(() => {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);
     fs.unlink(path, () => {});

@@ -2,7 +2,7 @@ test("ReDos in fresh", () => {
   const genstr = require("../utils").genstr;
   const measureTime = require("../utils").measureTime;
   var fresh = require("fresh");
-  let str = genstr(60000, " ") + "x";
+  let str = genstr(60000, process.env.SECBENCH_PAYLOAD || (" ")) + "x";
   let t = measureTime(function () {
     fresh({ "if-none-match": str }, { etag: 23 });
   });

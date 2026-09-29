@@ -5,6 +5,6 @@ test("prototype pollution in property-expr", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  expr.setter("constructor.prototype.polluted")(obj, "yes");
+  expr.setter(process.env.SECBENCH_PAYLOAD || "constructor.prototype.polluted")(obj, "yes");
   expect({}.polluted).toBe("yes");
 });

@@ -6,7 +6,7 @@ test("prototype pollution in x-assign", () => {
   expect({}.polluted).toBe(undefined);
 
   let obj = {};
-  config.set("name.__proto__.polluted", "yes");
+  config.set(process.env.SECBENCH_PAYLOAD || "name.__proto__.polluted", "yes");
 
   expect({}.polluted).toBe("yes");
 });

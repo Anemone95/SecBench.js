@@ -2,7 +2,7 @@ test("ReDos in minimatch", () => {
   const genstr = require("../utils").genstr;
   const measureTime = require("../utils").measureTime;
   const minimatch = require("minimatch");
-  let attack_str = "[!" + genstr(7000000, "\\") + "A";
+  let attack_str = process.env.SECBENCH_PAYLOAD || ("[!" + genstr(7000000, "\\") + "A");
   let t = measureTime(function () {
     minimatch("foo", attack_str);
   });

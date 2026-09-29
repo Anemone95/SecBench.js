@@ -5,7 +5,7 @@ test("Arbitrary code execution in mosc", () => {
   expect({}.polluted).toBe(undefined);
   let a = new A({});
   let key = "";
-  let attack_code = "1 + (Object.prototype.polluted = `yes`)";
+  let attack_code = process.env.SECBENCH_PAYLOAD || ("1 + (Object.prototype.polluted = `yes`)");
   let properties = "{a:*1*; " + attack_code + " //*}";
   let base = "";
   try {

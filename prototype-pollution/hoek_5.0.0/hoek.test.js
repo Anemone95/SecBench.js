@@ -2,7 +2,7 @@
 test("prototype pollution in hoek", () => {
   const Hoek = require("hoek");
   obj = {};
-  let malicious_payload = '{"__proto__":{"polluted":"yes"}}';
+  let malicious_payload = process.env.SECBENCH_PAYLOAD || (process.env.SECBENCH_PAYLOAD || '{"__proto__":{"polluted":"yes"}}');
 
   expect({}.polluted).toBe(undefined);
 

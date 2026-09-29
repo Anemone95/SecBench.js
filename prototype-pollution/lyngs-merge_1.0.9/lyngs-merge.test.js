@@ -3,5 +3,5 @@ test("prototype pollution in @lyngs/merge", () => {
   const { merge } = require("@lyngs/merge");
   expect({}.polluted).toBe(undefined);
   merge({ dummy: 1 }, JSON.parse(`{"__proto__":{"polluted":"yes"}}`));
-  expect({}.polluted).toBe("yes");
+  expect({}.polluted).toBe(process.env.SECBENCH_PAYLOAD || ("yes"));
 });

@@ -3,7 +3,7 @@ test("prototype pollution in keyd", () => {
   expect({}.polluted).toBe(undefined);
 
   const keyd = require("keyd");
-  keyd({}).set("__proto__.polluted", "yes"); //payload
+  keyd({}).set(process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes"); //payload
 
   expect({}.polluted).toBe("yes");
 });

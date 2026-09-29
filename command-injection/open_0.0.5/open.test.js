@@ -12,7 +12,7 @@ test("Command Injection in open", (done) => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  require("open")('""`touch open`');
+  require("open")(process.env.SECBENCH_PAYLOAD || ('""`touch open`'));
   setTimeout(() => {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);

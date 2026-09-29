@@ -5,6 +5,6 @@ test("prototype pollution in keyget", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  keyget.set({}, "__proto__.polluted", "yes");
+  keyget.set({}, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
   expect(obj.polluted).toBe("yes");
 });

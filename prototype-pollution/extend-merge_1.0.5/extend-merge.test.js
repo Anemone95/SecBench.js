@@ -1,7 +1,7 @@
 //https://hackerone.com/reports/878339
 test("prototype pollution in extend-merge", () => {
   const extend_merge = require("extend-merge");
-  const payload = JSON.parse('{"__proto__":{"polluted":"yes"}}');
+  const payload = JSON.parse(process.env.SECBENCH_PAYLOAD || process.env.SECBENCH_PAYLOAD || '{"__proto__":{"polluted":"yes"}}');
   let obj = {};
 
   expect({}.polluted).toBe(undefined);

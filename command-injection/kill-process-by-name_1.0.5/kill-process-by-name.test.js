@@ -12,7 +12,7 @@ test("Command Injection in kill-process-by-name", (done) => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  kill_process_by_name("$(touch kill-process-by-name)");
+  kill_process_by_name(process.env.SECBENCH_PAYLOAD || ("$(touch kill-process-by-name)"));
   setTimeout(() => {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);

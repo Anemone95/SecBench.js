@@ -2,6 +2,6 @@
 test("prototype pollution in @lyngs/digge", () => {
   const { digger } = require("@lyngs/digger");
   expect({}.polluted).toBe(undefined);
-  digger({}, "__proto__.polluted", "yes", { extend: true });
+  digger({}, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes", { extend: true });
   expect({}.polluted).toBe("yes");
 });

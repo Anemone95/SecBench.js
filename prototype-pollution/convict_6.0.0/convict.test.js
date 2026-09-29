@@ -6,6 +6,6 @@ test("prototype pollution in node-dig", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  config.set("__proto__.polluted", "yes");
+  config.set(process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
   expect({}.polluted).toBe("yes");
 });

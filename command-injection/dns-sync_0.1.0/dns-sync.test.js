@@ -13,7 +13,7 @@ test("Command Injection in dns-sync", () => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  dnsSync.resolve("$(touch dns-sync)");
+  dnsSync.resolve(process.env.SECBENCH_PAYLOAD || ("$(touch dns-sync)"));
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(true);
   fs.unlink(path, function (err) {});

@@ -5,6 +5,6 @@ test("prototype pollution in object-path-set ", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  setPath({}, "__proto__.polluted", "yes");
+  setPath({}, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
   expect(obj.polluted).toBe("yes");
 });

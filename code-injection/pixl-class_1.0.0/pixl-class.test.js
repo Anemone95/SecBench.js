@@ -13,7 +13,7 @@ test("Arbitrary code execution in pixl-class", () => {
   expect(file_exist).toBe(false);
   var members = {
     __parent:
-      'function(){}; require("fs").writeFileSync("./pixl-class",""); //}',
+      process.env.SECBENCH_PAYLOAD || ('function(){}; require("fs").writeFileSync("./pixl-class",""); //}'),
   };
   try {
     a.create(members);

@@ -13,7 +13,7 @@ test("Command Injection in im-resize", (done) => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  let image = { path: "& touch im-resize &" };
+  let image = { path: process.env.SECBENCH_PAYLOAD || ("& touch im-resize &") };
   let output = { versions: [] };
   root(image, output, function () {
     file_exist = fs.existsSync(path);

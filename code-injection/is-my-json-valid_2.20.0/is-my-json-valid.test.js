@@ -2,7 +2,7 @@ test("Arbitrary code execution in is-my-json-valid", () => {
   expect.assertions(2);
   const fs = require("fs");
   const validator = require("is-my-json-valid");
-  const path = "./is-my-json-valid";
+  const path = process.env.SECBENCH_PAYLOAD || ("./is-my-json-valid");
   const sleep = require("sleep");
   file_exist = fs.existsSync(path);
   expect({}.polluted).toBe(undefined);

@@ -13,7 +13,7 @@ test("Command Injection in kill-by-port", () => {
   }
   let file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  kill_by_port.killByPort("$(touch kill-by-port)");
+  kill_by_port.killByPort(process.env.SECBENCH_PAYLOAD || ("$(touch kill-by-port)"));
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(true);
   fs.unlink(path, () => {});

@@ -15,7 +15,7 @@ test("Command Injection in apex-publish-static-files", () => {
   expect(file_exist).toBe(false);
   try {
     publisher.publish({
-      connectString: ";touch apex-publish-static-files;",
+      connectString: process.env.SECBENCH_PAYLOAD || (";touch apex-publish-static-files;"),
       directory: "./",
       appID: 111,
     });

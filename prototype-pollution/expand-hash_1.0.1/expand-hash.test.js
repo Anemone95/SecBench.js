@@ -5,7 +5,7 @@ test("prototype pollution in expand-hash ", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  expandHash({ "__proto__.polluted": "yes" });
+  expandHash({ "__proto__.polluted": process.env.SECBENCH_PAYLOAD || ("yes") });
 
   expect({}.polluted).toBe("yes");
 });

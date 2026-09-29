@@ -4,7 +4,7 @@ test("prototype pollution in rfc6902", () => {
   var rfc6902 = require("rfc6902");
   var obj = {};
   rfc6902.applyPatch(obj, [
-    { op: "add", path: "/__proto__/polluted", value: "yes" },
+    { op: "add", path: process.env.SECBENCH_PAYLOAD || "/__proto__/polluted", value: "yes" },
   ]);
   expect({}.polluted).toBe("yes");
 });

@@ -1,7 +1,7 @@
 //https://hackerone.com/reports/311236
 test("prototype pollution in mixin-deep ", () => {
   const mixin = require("mixin-deep");
-  let malicious_payload = '{"__proto__":{"polluted":"yes"}}';
+  let malicious_payload = process.env.SECBENCH_PAYLOAD || (process.env.SECBENCH_PAYLOAD || '{"__proto__":{"polluted":"yes"}}');
 
   let obj = {};
 

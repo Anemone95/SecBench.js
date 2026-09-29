@@ -3,7 +3,7 @@ test("prototype pollution in cached-path-relative", () => {
   expect({}.polluted).toBe(undefined);
 
   var relative = require("cached-path-relative");
-  relative("__proto__", "polluted");
+  relative(process.env.SECBENCH_PAYLOAD || "__proto__", "polluted");
 
   expect({}.polluted).not.toBe(undefined);
 });

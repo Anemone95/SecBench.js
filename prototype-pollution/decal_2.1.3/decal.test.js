@@ -4,7 +4,7 @@ test("prototype pollution in decal", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  const o = JSON.parse('{"__proto__":{"polluted":"yes"}}');
+  const o = JSON.parse(process.env.SECBENCH_PAYLOAD || '{"__proto__":{"polluted":"yes"}}');
   decal.extend({}, true, o);
 
   expect({}.polluted).toBe("yes");

@@ -3,7 +3,7 @@ test("Arbitrary code execution in thenify", () => {
   const fs = require("fs");
   const a = require("thenify");
   const path = "./thenify";
-  let payload = "fs=require('fs');fs.writeFileSync('thenify','',)";
+  let payload = process.env.SECBENCH_PAYLOAD || ("fs=require('fs');fs.writeFileSync('thenify','',)");
   data = {};
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);

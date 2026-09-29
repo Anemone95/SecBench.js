@@ -5,7 +5,7 @@ test("prototype pollution in @aws-sdk/shared-ini-file-loader", () => {
   var sharedIniFileLoader = require("@aws-sdk/shared-ini-file-loader");
 
   var parsed = sharedIniFileLoader.loadSharedConfigFiles({
-    filepath: "./payload.toml",
+    filepath: process.env.SECBENCH_PAYLOAD || ("./payload.toml"),
   });
   parsed.then(() => {
     expect({}.polluted).toBe("yes");

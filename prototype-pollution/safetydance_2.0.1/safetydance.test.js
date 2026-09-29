@@ -6,6 +6,6 @@ test("prototype pollution in safetydance", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  safetydance.set({}, "__proto__.polluted", "yes");
+  safetydance.set({}, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
   expect({}.polluted).toBe("yes");
 });

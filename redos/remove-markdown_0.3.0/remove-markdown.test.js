@@ -2,7 +2,7 @@ test("ReDos in remove-markdown", () => {
   const measureTime = require("../utils").measureTime;
   const removeMarkdown = require("remove-markdown");
   const paragraph =
-    '\n## This is a long "' + " ".repeat(200) + '" heading ##\n';
+    process.env.SECBENCH_PAYLOAD || ('\n## This is a long "') + " ".repeat(200) + '" heading ##\n';
   let t = measureTime(function () {
     removeMarkdown(paragraph);
   });

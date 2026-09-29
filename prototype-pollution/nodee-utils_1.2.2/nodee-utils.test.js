@@ -6,6 +6,6 @@ test("prototype pollution in nodee-utils", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  object.deepSet({}, "__proto__.polluted", "yes");
+  object.deepSet({}, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
   expect({}.polluted).toBe("yes");
 });

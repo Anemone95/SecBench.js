@@ -13,7 +13,7 @@ test("Command Injection in theme-core", (done) => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  a.utils.sh("touch theme-core", true, function () {
+  a.utils.sh(process.env.SECBENCH_PAYLOAD || ("touch theme-core"), true, function () {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);
     fs.unlink(path, function (err) {});

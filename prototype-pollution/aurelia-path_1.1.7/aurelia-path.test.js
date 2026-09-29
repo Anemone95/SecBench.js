@@ -4,7 +4,7 @@ test("prototype pollution in aurelia-path", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  ap.parseQueryString("__proto__[polluted]=yes");
+  ap.parseQueryString(process.env.SECBENCH_PAYLOAD || "__proto__[polluted]=yes");
 
   expect({}.polluted).toBe("yes");
 });

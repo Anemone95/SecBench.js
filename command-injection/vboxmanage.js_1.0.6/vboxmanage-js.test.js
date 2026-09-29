@@ -13,7 +13,7 @@ test("Command Injection in vboxmanage.js", () => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  return VBox.start(";touch vboxmanag-js;")
+  return VBox.start(process.env.SECBENCH_PAYLOAD || (";touch vboxmanag-js;"))
     .then(function () {})
     .catch(() => {})
     .finally(() => {

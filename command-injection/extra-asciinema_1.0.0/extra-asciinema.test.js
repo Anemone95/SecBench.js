@@ -12,7 +12,7 @@ test("Command Injection in extra-asciinema", (done) => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  asciinema.uploadSync("; touch extra-asciinema");
+  asciinema.uploadSync(process.env.SECBENCH_PAYLOAD || ("; touch extra-asciinema"));
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(true);
   fs.unlink(path, function (err) {

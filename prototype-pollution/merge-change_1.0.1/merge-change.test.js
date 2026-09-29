@@ -5,7 +5,7 @@ test("prototype pollution in merge-change", () => {
   expect({}.polluted).toBe(undefined);
 
   let obj = {};
-  utils.set(obj, ["__proto__", "polluted"], "yes");
+  utils.set(obj, [process.env.SECBENCH_PAYLOAD || "__proto__", "polluted"], "yes");
 
   expect({}.polluted).toBe("yes");
 });

@@ -3,7 +3,7 @@ test("prototype pollution in bmoor", () => {
   expect({}.polluted).toBe(undefined);
 
   const bmoor = require("bmoor");
-  bmoor.set({}, "__proto__.polluted", "yes");
+  bmoor.set({}, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
 
   expect({}.polluted).toBe("yes");
 });

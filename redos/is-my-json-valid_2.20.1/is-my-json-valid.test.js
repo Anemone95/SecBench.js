@@ -4,7 +4,7 @@ test("ReDos in is-my-json-valid", () => {
   const imjv = require("is-my-json-valid");
   const validate = imjv({
     maxLength: 100,
-    format: "style",
+    format: process.env.SECBENCH_PAYLOAD || ("style"),
   });
   let t = measureTime(function () {
     validate(" ".repeat(4000));

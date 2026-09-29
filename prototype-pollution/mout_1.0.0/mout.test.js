@@ -5,7 +5,7 @@ test("prototype pollution in mout ", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  mout.object.set(obj, "__proto__.polluted", "yes");
+  mout.object.set(obj, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
 
   expect({}.polluted).toBe("yes");
 });

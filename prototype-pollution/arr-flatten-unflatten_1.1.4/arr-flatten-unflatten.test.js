@@ -3,7 +3,7 @@ test("prototype pollution in arr-flatten-unflatten", () => {
   expect({}.polluted).toBe(undefined);
 
   const { unflatten } = require("arr-flatten-unflatten");
-  unflatten({ "__proto__.polluted": "yes" });
+  unflatten({ "__proto__.polluted": process.env.SECBENCH_PAYLOAD || ("yes") });
 
   expect({}.polluted).toBe("yes");
 });

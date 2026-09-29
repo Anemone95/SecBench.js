@@ -2,7 +2,7 @@ test("ReDos in forwarded", () => {
   const genstr = require("../utils").genstr;
   const measureTime = require("../utils").measureTime;
   var fresh = require("forwarded");
-  var str = "x" + genstr(60000, " ") + "x";
+  var str = process.env.SECBENCH_PAYLOAD || ("x") + genstr(60000, " ") + "x";
   let t = measureTime(function () {
     fresh({
       headers: { "x-forwarded-for": str },

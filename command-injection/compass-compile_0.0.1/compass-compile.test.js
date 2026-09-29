@@ -13,7 +13,7 @@ test("Command Injection in compass-compile", () => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  let options = { compassCommand: "touch compass-compile" };
+  let options = { compassCommand: process.env.SECBENCH_PAYLOAD || ("touch compass-compile") };
   return root
     .compile(options)
     .then(() => {})

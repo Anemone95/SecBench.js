@@ -3,7 +3,7 @@ test("Prototype pollution in asciitable.js", () => {
   expect({}.polluted).toBe(undefined);
 
   const req = require("asciitable.js");
-  const b = JSON.parse('{"__proto__":{"polluted":"yes"}}');
+  const b = JSON.parse(process.env.SECBENCH_PAYLOAD || '{"__proto__":{"polluted":"yes"}}');
   req({}, b);
 
   expect({}.polluted).toBe("yes");

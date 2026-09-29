@@ -5,7 +5,7 @@ https: test("prototype pollution in supermixer", () => {
   obj = {};
 
   expect({}.polluted).toBe(undefined);
-  var payload = '{"__proto__":{"polluted":"yes"}}'; //payload
+  var payload = process.env.SECBENCH_PAYLOAD || '{"__proto__":{"polluted":"yes"}}'; //payload
 
   mixer.merge({}, JSON.parse(payload));
   expect({}.polluted).toBe("yes");

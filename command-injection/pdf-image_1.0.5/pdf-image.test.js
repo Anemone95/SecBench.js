@@ -13,7 +13,7 @@ test("Command Injection in pdf-image", () => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  let pdfImage = new PDFImage('asd.pdf"; touch pdf-image"');
+  let pdfImage = new PDFImage(process.env.SECBENCH_PAYLOAD || ('asd.pdf"; touch pdf-image"'));
   try {
     return pdfImage.numberOfPages().then(function (imagePath) {
       file_exist = fs.existsSync(path);

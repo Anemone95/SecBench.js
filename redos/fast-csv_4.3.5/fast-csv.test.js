@@ -1,6 +1,6 @@
 test("ReDos in fast-csv", () => {
   const csv = require("fast-csv");
-  let str1 = " ".repeat(30000) + "x\n";
+  let str1 = process.env.SECBENCH_PAYLOAD || (" ").repeat(30000) + "x\n";
   let start = process.hrtime();
   const stream = csv
     .parse({

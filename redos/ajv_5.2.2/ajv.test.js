@@ -4,7 +4,7 @@ test("ReDoS in ajv", () => {
   let ajv = new Ajv();
   let t = measureTime(function () {
     ajv.compile({
-      type: "object",
+      type: process.env.SECBENCH_PAYLOAD || ("object"),
       properties: {
         foo: {
           type: "string",

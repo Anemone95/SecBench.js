@@ -2,7 +2,7 @@ test("ReDos in html-dom-parser", () => {
   const parse = require("html-dom-parser");
   const measureTime = require("../utils").measureTime;
   const genstr = require("../utils").genstr;
-  let attack_str = "<head" + genstr(4000000, " S");
+  let attack_str = process.env.SECBENCH_PAYLOAD || ("<head" + genstr(4000000, " S"));
   let t = measureTime(function () {
     parse(attack_str);
   });

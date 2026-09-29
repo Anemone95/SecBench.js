@@ -3,7 +3,7 @@ test("prototype pollution in jsonpointer", () => {
   const jsonpointer = require("jsonpointer");
 
   expect({}.polluted).toBe(undefined);
-  jsonpointer.set({}, [["proto"], ["__proto__"], "polluted"], "yes");
+  jsonpointer.set({}, [["proto"], [process.env.SECBENCH_PAYLOAD || "__proto__"], "polluted"], "yes");
 
   expect({}.polluted).toBe("yes");
 });

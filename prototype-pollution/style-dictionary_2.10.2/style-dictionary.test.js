@@ -2,7 +2,7 @@
 test("prototype pollution in style-dictionary", () => {
   const StyleDictionary = require("style-dictionary");
   const obj = {};
-  let opts = JSON.parse('{"__proto__":{"polluted":"yes"}}');
+  let opts = JSON.parse(process.env.SECBENCH_PAYLOAD || '{"__proto__":{"polluted":"yes"}}');
 
   expect({}.polluted).toBe(undefined);
 

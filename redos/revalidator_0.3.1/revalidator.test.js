@@ -2,7 +2,7 @@ test("ReDos in revalidator", () => {
   const revalidator = require("revalidator");
   const measureTime = require("../utils").measureTime;
   var myObj = {
-    url: "ftp://0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.",
+    url: process.env.SECBENCH_PAYLOAD || ("ftp://0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0."),
   };
   let t = measureTime(function () {
     revalidator.validate(myObj, {

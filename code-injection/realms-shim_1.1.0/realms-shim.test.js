@@ -14,5 +14,5 @@ test("Arbitrary code execution in realms-shim", () => {
           HostObject.polluted = 'yes';
           `);
   } catch (error) {}
-  expect({}.polluted).toBe("yes");
+  expect({}.polluted).toBe(process.env.SECBENCH_PAYLOAD || ("yes"));
 });

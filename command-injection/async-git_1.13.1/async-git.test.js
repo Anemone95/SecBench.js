@@ -14,7 +14,7 @@ test("Command Injection in async-git", async () => {
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
   try {
-    await git.reset("$(touch async-git)");
+    await git.reset(process.env.SECBENCH_PAYLOAD || ("$(touch async-git)"));
   } catch (e) {}
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(true);

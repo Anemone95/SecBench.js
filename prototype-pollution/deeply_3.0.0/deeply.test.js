@@ -1,7 +1,7 @@
 //https://snyk.io/vuln/SNYK-JS-DEEPLY-451026
 test("prototype pollution in deeply ", () => {
   const mergeFn = require("deeply");
-  const payload = '{"__proto__": {"polluted": "yes"}}';
+  const payload = process.env.SECBENCH_PAYLOAD || (process.env.SECBENCH_PAYLOAD || '{"__proto__": {"polluted": "yes"}}');
   var obj = {};
 
   expect({}.polluted).toBe(undefined);

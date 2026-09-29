@@ -46,5 +46,5 @@ test("prototype pollution in typeORM", () => {
 
   // util.OrmUtils.mergeDeep(a, b);
   mergeDeep(a, b);
-  expect({}.polluted).toBe("yes");
+  expect({}.polluted).toBe(process.env.SECBENCH_PAYLOAD || ("yes"));
 });

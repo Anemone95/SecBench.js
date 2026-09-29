@@ -5,7 +5,7 @@ test("prototype pollution in json8-merge-patch", () => {
   const json8mergepatch = require("json8-merge-patch");
   json8mergepatch.apply(
     {},
-    JSON.parse('{ "__proto__": { "polluted": "yes" }}')
+    JSON.parse(process.env.SECBENCH_PAYLOAD || '{ "__proto__": { "polluted": "yes" }}')
   );
 
   expect({}.polluted).toBe("yes");

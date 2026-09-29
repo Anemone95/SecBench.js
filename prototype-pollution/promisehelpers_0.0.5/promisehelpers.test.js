@@ -5,6 +5,6 @@ test("prototype pollution in promisehelpers", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  promisehelpers.insert(["__proto__", "polluted"], "yes")(obj);
+  promisehelpers.insert([process.env.SECBENCH_PAYLOAD || "__proto__", "polluted"], "yes")(obj);
   expect({}.polluted).toBe("yes");
 });

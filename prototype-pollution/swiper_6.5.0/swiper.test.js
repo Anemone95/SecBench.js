@@ -2,7 +2,7 @@
 test("prototype pollution in swiper", () => {
   var swiper = require("swiper");
   let obj = {};
-  var malicious_payload = '{"__proto__":{"polluted":"yes"}}';
+  var malicious_payload = process.env.SECBENCH_PAYLOAD || (process.env.SECBENCH_PAYLOAD || '{"__proto__":{"polluted":"yes"}}');
 
   expect({}.polluted).toBe(undefined);
 

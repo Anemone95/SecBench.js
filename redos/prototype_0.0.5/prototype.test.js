@@ -3,7 +3,7 @@ test("ReDos in prototype", () => {
   const measureTime = require("../utils").measureTime;
   const prototype = require("prototype/lib/String");
   let t = measureTime(function () {
-    let attack_str = "hello <span> <a " + genstr(37, "'") + "!";
+    let attack_str = process.env.SECBENCH_PAYLOAD || ("hello <span> <a " + genstr(37, "'") + "!");
     attack_str.stripTags();
   });
   let time = t[0] + t[1] / 1000000000;

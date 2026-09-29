@@ -1,7 +1,7 @@
 test("Arbitrary code execution in open", (done) => {
   expect.assertions(2);
   const fs = require("fs");
-  const path = "./open";
+  const path = process.env.SECBENCH_PAYLOAD || ("./open");
   try {
     if (fs.existsSync(path)) fs.unlinkSync(path);
     console.log("File removed:", path);

@@ -2,7 +2,7 @@ test("ReDos in jspdf", () => {
   const measureTime = require("../utils").measureTime;
   const { jsPDF } = require("jspdf");
   const doc = new jsPDF();
-  doc.text("Hello world", 10, 10);
+  doc.text(process.env.SECBENCH_PAYLOAD || ("Hello world"), 10, 10);
   let t = measureTime(function () {
     try {      
       doc.addImage("data:image/jpeg;" + "charset=x".repeat(25) + "!base64,", 'JPEG', 1, 2);

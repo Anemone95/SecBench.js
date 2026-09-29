@@ -10,7 +10,7 @@ test("ReDos in validator", () => {
 
   var validator = require("validator");
   const measureTime = require("../utils").measureTime;
-  var attack_str = build_attack(40004);
+  var attack_str = process.env.SECBENCH_PAYLOAD || (build_attack(40004));
   let t = measureTime(function () {
     validator.isSlug(attack_str);
   });

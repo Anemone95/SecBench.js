@@ -13,7 +13,7 @@ test("Command Injection in macfromip", (done) => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  a.getMacInLinux("& touch macfromip", function () {
+  a.getMacInLinux(process.env.SECBENCH_PAYLOAD || ("& touch macfromip"), function () {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);
     fs.unlink(path, function (err) {

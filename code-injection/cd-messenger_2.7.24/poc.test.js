@@ -3,7 +3,7 @@ test("Arbitrary code execution in cd-messenger", () => {
   const fs = require("fs");
   const a = require("cd-messenger");
   const path = "./cd-messenger";
-  let payload = "red(); require('fs').writeFileSync('" + path + "',``); //";
+  let payload = process.env.SECBENCH_PAYLOAD || ("red(); require('fs').writeFileSync('") + path + "',``); //";
   data = {};
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);

@@ -14,7 +14,7 @@ test("Command Injection in ffmpeg-sdk", () => {
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
   return root
-    .execute("touch ffmpeg-sdk")
+    .execute(process.env.SECBENCH_PAYLOAD || ("touch ffmpeg-sdk"))
     .then(() => {})
     .catch((err) => {})
     .finally(() => {

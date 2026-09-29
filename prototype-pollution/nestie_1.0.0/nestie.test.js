@@ -5,7 +5,7 @@ test("prototype pollution in nestie", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  nestie({ "__proto__.polluted": "yes" });
+  nestie({ "__proto__.polluted": process.env.SECBENCH_PAYLOAD || ("yes") });
 
   expect({}.polluted).toBe("yes");
 });

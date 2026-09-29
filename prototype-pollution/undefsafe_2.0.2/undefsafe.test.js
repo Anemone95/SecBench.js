@@ -4,7 +4,7 @@ test("prototype pollution in undefsafe ", () => {
 
   const a = require("undefsafe");
   const obj = {};
-  const payload = "__proto__.polluted";
+  const payload = process.env.SECBENCH_PAYLOAD || (process.env.SECBENCH_PAYLOAD || "__proto__.polluted");
   a({}, payload, "yes");
 
   expect(obj.polluted).toBe("yes");

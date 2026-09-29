@@ -3,6 +3,6 @@ test("prototype pollution in object-path", () => {
   const objectPath = require("object-path");
 
   expect({}.polluted).toBe(undefined);
-  objectPath.withInheritedProps.set({}, [["__proto__"], "polluted"], "yes");
+  objectPath.withInheritedProps.set({}, [[process.env.SECBENCH_PAYLOAD || "__proto__"], "polluted"], "yes");
   expect({}.polluted).toBe("yes");
 });

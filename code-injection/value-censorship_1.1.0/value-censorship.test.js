@@ -7,5 +7,5 @@ test("Arbitrary code execution in  value-censorship", () => {
         ;1 +(Object.prototype.polluted = 'yes')//
         `);
   } catch (error) {}
-  expect({}.polluted).toBe("yes");
+  expect({}.polluted).toBe(process.env.SECBENCH_PAYLOAD || ("yes"));
 });

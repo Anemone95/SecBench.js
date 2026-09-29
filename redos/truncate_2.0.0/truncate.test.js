@@ -6,7 +6,7 @@ test("ReDos in truncate", () => {
   let pump = "ww--";
   let suffix = "";
   let nPumps = 20000;
-  let attackString = prefix;
+  let attackString = process.env.SECBENCH_PAYLOAD || (prefix);
   for (var i = 0; i < nPumps; i++) {
     attackString += pump;
   }

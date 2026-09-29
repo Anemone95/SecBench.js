@@ -3,7 +3,7 @@ test("prototype pollution in libnested", () => {
   expect({}.polluted).toBe(undefined);
 
   const libnested = require("libnested");
-  libnested.set({}, ["__proto__", "polluted"], "yes");
+  libnested.set({}, [process.env.SECBENCH_PAYLOAD || "__proto__", "polluted"], "yes");
 
   expect({}.polluted).toBe("yes");
 });

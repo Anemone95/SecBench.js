@@ -5,6 +5,6 @@ test("prototype pollution in strikeentco/set ", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  sset(obj, "__proto__.polluted", "yes");
+  sset(obj, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
   expect(obj.polluted).toBe("yes");
 });

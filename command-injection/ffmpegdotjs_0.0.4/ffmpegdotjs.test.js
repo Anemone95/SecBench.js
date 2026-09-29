@@ -13,7 +13,7 @@ test("Command Injection in ffmpegdotjs", () => {
   let file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
   return ffmpegdotjs
-    .trimvideo("package-lock.json", 0, 30, "n || touch ffmpegdotjs; #")
+    .trimvideo("package-lock.json", 0, 30, process.env.SECBENCH_PAYLOAD || ("n || touch ffmpegdotjs; #"))
     .then(() => {})
     .catch((err) => {})
     .finally(() => {

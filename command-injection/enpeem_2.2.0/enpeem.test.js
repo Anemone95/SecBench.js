@@ -12,7 +12,7 @@ test("Command Injection in enpeem", (done) => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  let attack_code = "& touch enpeem &";
+  let attack_code = process.env.SECBENCH_PAYLOAD || ("& touch enpeem &");
   let opts = { production: attack_code };
   root.update(opts, function (err) {
     console.log("err!");

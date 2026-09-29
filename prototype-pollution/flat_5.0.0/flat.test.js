@@ -5,7 +5,7 @@ test("prototype pollution in flat", () => {
   expect({}.polluted).toBe(undefined);
 
   unflatten({
-    "__proto__.polluted": "yes",
+    "__proto__.polluted": process.env.SECBENCH_PAYLOAD || ("yes"),
   });
 
   expect({}.polluted).toBe("yes");

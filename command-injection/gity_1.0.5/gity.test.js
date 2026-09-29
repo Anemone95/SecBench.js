@@ -16,7 +16,7 @@ test("Remote code execution in gity", (done) => {
   try {
     let git = Git()
       .add("*.js")
-      .commit('-m "added js files";touch gity;#')
+      .commit(process.env.SECBENCH_PAYLOAD || ('-m "added js files";touch gity;#'))
       .run(() => {
         file_exist = fs.existsSync(path);
         expect(file_exist).toBe(true);

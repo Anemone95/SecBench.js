@@ -2,7 +2,7 @@
 test("prototype pollution in minimist", () => {
   expect({}.polluted).toBe(undefined);
 
-  require("minimist")("--__proto__.polluted yes".split(" "));
+  require("minimist")(process.env.SECBENCH_PAYLOAD || "--__proto__.polluted yes".split(" "));
 
   expect({}.polluted).toBe("yes");
 });

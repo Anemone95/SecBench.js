@@ -3,7 +3,7 @@ test("prototype pollution in dset", () => {
   expect({}.polluted).toBe(undefined);
 
   const dset = require("dset");
-  dset({}, "__proto__.polluted", "yes");
+  dset({}, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
 
   expect({}.polluted).toBe("yes");
 });

@@ -3,7 +3,7 @@ test("prototype pollution in js-extend", () => {
   expect({}.polluted).toBe(undefined);
 
   const jsExtend = require("js-extend");
-  const malicious_payload = '{"__proto__":{"polluted":"yes"}}';
+  const malicious_payload = process.env.SECBENCH_PAYLOAD || (process.env.SECBENCH_PAYLOAD || '{"__proto__":{"polluted":"yes"}}');
   jsExtend.extend({}, JSON.parse(malicious_payload));
 
   expect({}.polluted).toBe("yes");

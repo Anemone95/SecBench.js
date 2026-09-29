@@ -3,7 +3,7 @@ test("prototype pollution in Templ8", () => {
   expect({}.polluted).toBe(undefined);
 
   const Templ8 = require("Templ8");
-  const tpl = new Templ8('{{__proto__.polluted="yes"}}');
+  const tpl = new Templ8(process.env.SECBENCH_PAYLOAD || '{{__proto__.polluted="yes"}}');
   tpl.parse();
 
   try {

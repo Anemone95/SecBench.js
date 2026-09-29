@@ -2,7 +2,7 @@ test("Arbitrary code execution in reduce-css-calc", () => {
   expect.assertions(2);
   const fs = require("fs");
   const reduceCSSCalc = require("reduce-css-calc");
-  const path = "./reduce-css-calc";
+  const path = process.env.SECBENCH_PAYLOAD || ("./reduce-css-calc");
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
   try {

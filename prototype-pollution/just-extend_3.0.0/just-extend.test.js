@@ -6,7 +6,7 @@ test("prototype pollution in just-extend ", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  let payload2 = JSON.parse('{"__proto__": {"polluted": "yes"}}');
+  let payload2 = JSON.parse(process.env.SECBENCH_PAYLOAD || process.env.SECBENCH_PAYLOAD || '{"__proto__": {"polluted": "yes"}}');
   extend(true, {}, payload2);
   expect({}.polluted).toBe("yes");
 });

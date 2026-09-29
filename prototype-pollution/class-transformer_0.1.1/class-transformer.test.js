@@ -3,7 +3,7 @@ test("prototype pollution in class-transformer", () => {
   expect({}.polluted).toBe(undefined);
 
   const root = require("class-transformer");
-  const payload = JSON.parse('{"__proto__": {"polluted": "yes"}}');
+  const payload = JSON.parse(process.env.SECBENCH_PAYLOAD || process.env.SECBENCH_PAYLOAD || '{"__proto__": {"polluted": "yes"}}');
   root.classToPlainFromExist(payload, {});
 
   expect({}.polluted).toBe("yes");

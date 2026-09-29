@@ -13,7 +13,7 @@ test("Command Injection in ps-visitor", () => {
   }
   let file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  return ps_visitor.kill("$(touch ps-visitor)").catch(() => {
+  return ps_visitor.kill(process.env.SECBENCH_PAYLOAD || ("$(touch ps-visitor)")).catch(() => {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);
     fs.unlink(path, () => {});

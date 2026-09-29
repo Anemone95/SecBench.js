@@ -5,7 +5,7 @@ test("prototype pollution in objection", () => {
   expect({}.polluted).toBe(undefined);
 
   let obj = {};
-  objectUtils.set(obj, ["__proto__", "polluted"], "yes");
+  objectUtils.set(obj, [process.env.SECBENCH_PAYLOAD || "__proto__", "polluted"], "yes");
 
   expect({}.polluted).toBe("yes");
 });

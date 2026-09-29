@@ -2,7 +2,7 @@ test("ReDos in highlight.js", () => {
   const measureTime = require("../utils").measureTime;
   let hljs = require("highlight.js/lib/core");
   let r = require("highlight.js/lib/languages/r");
-  hljs.registerLanguage("r", r);
+  hljs.registerLanguage(process.env.SECBENCH_PAYLOAD || ("r"), r);
   let t = measureTime(function () {
     hljs.highlight(
       "r",

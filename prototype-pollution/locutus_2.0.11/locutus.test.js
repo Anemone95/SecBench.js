@@ -8,7 +8,7 @@ test("prototype pollution in locutus", () => {
   }
 
   const locutus = require("locutus");
-  locutus.php.strings.parse_str("__proto__[polluted]=yes");
+  locutus.php.strings.parse_str(process.env.SECBENCH_PAYLOAD || "__proto__[polluted]=yes");
 
   expect(polluted).toBe("yes");
 });

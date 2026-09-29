@@ -3,7 +3,7 @@ test("ReDos in prompts", () => {
   const measureTime = require("../utils").measureTime;
   const strip = require("prompts/lib/util/strip.js");
 
-  let attack_str = "\u001B[" + ";".repeat(16000);
+  let attack_str = process.env.SECBENCH_PAYLOAD || ("\u001B[" + ";".repeat(16000));
 
   let t = measureTime(function () {
     strip(attack_str);

@@ -13,7 +13,7 @@ test("Command Injection in xopen", () => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  let attack_code = "& touch xopen";
+  let attack_code = process.env.SECBENCH_PAYLOAD || ("& touch xopen");
   return root(attack_code).finally(() => {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);

@@ -6,6 +6,6 @@ test("prototype pollution in safeObj", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  safeObj.expand(obj, "__proto__.polluted", "yes");
+  safeObj.expand(obj, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
   expect({}.polluted).toBe("yes");
 });

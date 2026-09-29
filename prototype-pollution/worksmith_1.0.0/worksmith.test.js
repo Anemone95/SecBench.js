@@ -6,6 +6,6 @@ test("prototype pollution in worksmith", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  worksmith.setValue({}, "__proto__.polluted", "yes");
+  worksmith.setValue({}, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
   expect({}.polluted).toBe("yes");
 });

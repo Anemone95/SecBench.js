@@ -13,7 +13,7 @@ test("Command Injection in get-npm-package-version", () => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  a("& touch get-npm-package-version");
+  a(process.env.SECBENCH_PAYLOAD || ("& touch get-npm-package-version"));
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(true);
   fs.unlink(path, function (err) {});

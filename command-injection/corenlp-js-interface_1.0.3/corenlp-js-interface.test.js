@@ -13,7 +13,7 @@ test("Command Injection in corenlp-js-interface", () => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  a("') touch corenlp-js-interface # '", "", "", "");
+  a(process.env.SECBENCH_PAYLOAD || ("') touch corenlp-js-interface # '"), "", "", "");
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(true);
   fs.unlink(path, function (err) {});

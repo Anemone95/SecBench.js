@@ -4,7 +4,7 @@ test("prototype pollution in eivindfjeldstad-dot", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  let path = "__proto__.polluted";
+  let path = process.env.SECBENCH_PAYLOAD || "__proto__.polluted";
   a.set({}, path, "yes");
 
   expect({}.polluted).toBe("yes");

@@ -13,7 +13,7 @@ test("Command Injection in local-devices", () => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  let userInput = "127.0.0.1 | touch local-devices";
+  let userInput = process.env.SECBENCH_PAYLOAD || ("127.0.0.1 | touch local-devices");
   return find(userInput).then(() => {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);

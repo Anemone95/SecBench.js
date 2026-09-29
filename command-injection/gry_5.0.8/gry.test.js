@@ -14,7 +14,7 @@ test("Command Injection in gry", (done) => {
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
   let myRepo = new Repo(".");
-  myRepo.pull("test; touch gry; #", function () {
+  myRepo.pull(process.env.SECBENCH_PAYLOAD || ("test; touch gry; #"), function () {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);
     fs.unlink(path, function (err) {

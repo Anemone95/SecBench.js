@@ -2,7 +2,7 @@ test("ReDos in terminal-kit", () => {
   const termkit = require("terminal-kit");
   const measureTime = require("../utils").measureTime;
 
-  let payload = "^[".repeat(35000);
+  let payload = process.env.SECBENCH_PAYLOAD || ("^[".repeat(35000));
 
   let t = measureTime(function () {
     termkit.markupWidth(payload);

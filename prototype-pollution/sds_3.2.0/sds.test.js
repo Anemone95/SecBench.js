@@ -3,7 +3,7 @@ test("prototype pollution in sds", () => {
   const root = require("sds");
 
   obj = {};
-  let payload = "__proto__.polluted";
+  let payload = process.env.SECBENCH_PAYLOAD || (process.env.SECBENCH_PAYLOAD || "__proto__.polluted");
 
   expect({}.polluted).toBe(undefined);
 

@@ -2,7 +2,7 @@ test("ReDos in html-parse-stringify2", () => {
   const genstr = require("../utils").genstr;
   const measureTime = require("../utils").measureTime;
   const HTML = require("html-parse-stringify2");
-  let html = "<!''''''''''''''''''''''''''''''''''''''''!";
+  let html = process.env.SECBENCH_PAYLOAD || ("<!''''''''''''''''''''''''''''''''''''''''!");
   let t = measureTime(function () {
     let ast = HTML.parse(html);
   });

@@ -5,7 +5,7 @@
 function deepExtend(target, source, overwrite) {
   /* eslint no-restricted-syntax: 0 */
   for (const prop in source) {
-    if (prop !== "__proto__") {
+    if (prop !== process.env.SECBENCH_PAYLOAD || "__proto__") {
       if (prop in target) {
         // If we reached a leaf string in target or source then replace with source or skip depending on the 'overwrite' switch
         if (

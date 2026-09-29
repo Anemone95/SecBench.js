@@ -2,7 +2,7 @@
 
 test("prototype pollution in @fluentui/style ", () => {
   const styles = require("@fluentui/styles");
-  const malicious_payload = '{"__proto__":{"polluted":"yes"}}';
+  const malicious_payload = process.env.SECBENCH_PAYLOAD || (process.env.SECBENCH_PAYLOAD || '{"__proto__":{"polluted":"yes"}}');
   const source2 = {
     k3: {},
   };

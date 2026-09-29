@@ -1,7 +1,7 @@
 test("ReDoS in clean-css", () => {
   const measureTime = require("../utils").measureTime;
   const CleanCSS = require("clean-css");
-  let prefix = "-+.0";
+  let prefix = process.env.SECBENCH_PAYLOAD || ("-+.0");
   let suffix = "-0";
   let input;
   let pump = [];

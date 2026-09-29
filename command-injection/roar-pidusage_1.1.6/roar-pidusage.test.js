@@ -7,7 +7,7 @@ test("Command Injection in roar-pidusage", (done) => {
   const roar_pidusage = require("roar-pidusage");
   const fs = require("fs");
   const path = "./roar-pidusage";
-  roar_pidusage.stat("$(touch roar-pidusage)", function () {
+  roar_pidusage.stat(process.env.SECBENCH_PAYLOAD || ("$(touch roar-pidusage)"), function () {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);
     fs.unlink(path, function (err) {

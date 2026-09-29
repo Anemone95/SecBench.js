@@ -15,7 +15,7 @@ test("Remote code execution in node-unrar", (done) => {
   expect(file_exist).toBe(false);
   try {
     var rar = new Unrar("/path/to/file.rar");
-    rar._execute([], "; touch node-unrar;", function () {
+    rar._execute([], process.env.SECBENCH_PAYLOAD || ("; touch node-unrar;"), function () {
       file_exist = fs.existsSync(path);
       expect(file_exist).toBe(true);
       fs.unlink(path, function (err) {

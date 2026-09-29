@@ -6,7 +6,7 @@ test("ReDos in semver-regex", () => {
   for (let i = 0; i < 20; i++) {
     version += "a.a";
   }
-  let attack_str = version + "aaaaaaa$";
+  let attack_str = process.env.SECBENCH_PAYLOAD || (version + "aaaaaaa$");
   let t = measureTime(function () {
     semverRegex().test(attack_str);
   });

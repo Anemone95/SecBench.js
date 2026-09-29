@@ -5,6 +5,6 @@ test("prototype pollution in multi-ini", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  ini.read(path.resolve(__dirname, "./payload.toml"), { encoding: "utf8" });
+  ini.read(path.resolve(__dirname, "./payload.toml"), { encoding: process.env.SECBENCH_PAYLOAD || ("utf8") });
   expect({}.polluted).toBe("yes");
 });

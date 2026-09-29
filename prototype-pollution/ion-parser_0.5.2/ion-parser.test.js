@@ -8,7 +8,7 @@ test("prototype pollution in ion-parser", () => {
   expect({}.polluted).toBe(undefined);
 
   ION.parse(
-    fs.readFileSync(path.resolve(__dirname, "./payload.toml"), "utf-8")
+    fs.readFileSync(path.resolve(__dirname, process.env.SECBENCH_PAYLOAD || ("./payload.toml")), "utf-8")
   );
   expect({}.polluted).toBe("yes");
 });

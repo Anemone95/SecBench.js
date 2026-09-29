@@ -5,6 +5,6 @@ test("prototype pollution in tinyConf", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  tinyConf.set("__proto__.polluted", "yes");
+  tinyConf.set(process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
   expect({}.polluted).toBe("yes");
 });

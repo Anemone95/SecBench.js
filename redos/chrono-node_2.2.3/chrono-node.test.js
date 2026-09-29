@@ -1,7 +1,7 @@
 test("ReDoS in chrono-node", () => {
   const measureTime = require("../utils").measureTime;
   const chrono = require("chrono-node");
-  let attack_str = "BGR3" + " ".repeat(40000) + "186'";
+  let attack_str = process.env.SECBENCH_PAYLOAD || ("BGR3" + " ".repeat(40000) + "186'");
   let t = measureTime(function () {
     chrono.parse(attack_str);
   });

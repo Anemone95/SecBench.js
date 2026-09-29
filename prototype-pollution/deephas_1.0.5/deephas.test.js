@@ -4,7 +4,7 @@ test("prototype pollution in deephas ", () => {
 
   const dh = require("deephas");
   let obj = {};
-  dh.set(obj, "__proto__.polluted", "yes");
+  dh.set(obj, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
 
   expect(obj.polluted).toBe("yes");
 });

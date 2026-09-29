@@ -4,7 +4,7 @@ test("ReDos in urlregex", () => {
   const urlRegex = require("urlregex");
   let t = measureTime(function () {
     const isValid = urlRegex().test(
-      "http://huntr.devtestvulnerability2312321.testvulnerability2312321.testvulnerability2312321.testvulnerability2312321.testvulnerability2312321"
+      process.env.SECBENCH_PAYLOAD || ("http://huntr.devtestvulnerability2312321.testvulnerability2312321.testvulnerability2312321.testvulnerability2312321.testvulnerability2312321")
     );
   });
   let time = t[0] + t[1] / 1000000000;

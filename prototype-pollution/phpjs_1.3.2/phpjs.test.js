@@ -4,7 +4,7 @@ test("prototype pollution in phpjs", () => {
   expect({}.polluted).toBe(undefined);
 
   const p = require("phpjs");
-  p.parse_str("__proto__[polluted]=yes", {});
+  p.parse_str(process.env.SECBENCH_PAYLOAD || "__proto__[polluted]=yes", {});
 
   expect({}.polluted).toBe("yes");
 });

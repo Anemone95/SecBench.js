@@ -3,7 +3,7 @@ test("prototype pollution in flattenizer", () => {
   expect({}.polluted).toBe(undefined);
 
   const flattenizer = require("flattenizer");
-  flattenizer.unflatten({ "__proto__.polluted": "yes" });
+  flattenizer.unflatten({ "__proto__.polluted": process.env.SECBENCH_PAYLOAD || ("yes") });
 
   expect({}.polluted).toBe("yes");
 });

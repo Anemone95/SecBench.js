@@ -16,7 +16,7 @@ test("Command Injection in codecov", async () => {
   expect(file_exist).toBe(false);
   let args = {
     options: {
-      "gcov-root": "& touch codecov &",
+      "gcov-root": process.env.SECBENCH_PAYLOAD || ("& touch codecov &"),
       "gcov-exec": " ",
       "gcov-args": " ",
     },

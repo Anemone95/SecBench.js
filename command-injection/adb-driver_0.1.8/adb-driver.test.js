@@ -12,7 +12,7 @@ test("Command Injection in adb-driver", () => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  return root.execADBCommand(" & touch adb-driver").finally(() => {
+  return root.execADBCommand(process.env.SECBENCH_PAYLOAD || (" & touch adb-driver")).finally(() => {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);
     fs.unlink(path, function (err) {});

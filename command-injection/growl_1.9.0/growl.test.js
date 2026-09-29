@@ -13,7 +13,7 @@ test("Command Injection in growl", (done) => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  growl("`touch growl`", {}, () => {
+  growl(process.env.SECBENCH_PAYLOAD || ("`touch growl`"), {}, () => {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);
     fs.unlink(path, function (err) {

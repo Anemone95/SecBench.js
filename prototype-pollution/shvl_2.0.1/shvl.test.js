@@ -6,6 +6,6 @@ test("prototype pollution in shvl", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  shvl.set(obj, "constructor.prototype.polluted", "yes");
+  shvl.set(obj, process.env.SECBENCH_PAYLOAD || "constructor.prototype.polluted", "yes");
   expect({}.polluted).toBe("yes");
 });

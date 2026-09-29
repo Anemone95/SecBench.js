@@ -14,7 +14,7 @@ test("Command Injection in corenlp-js-prefab", (done) => {
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
   try {
-    a.process("') touch corenlp-js-prefab # '");
+    a.process(process.env.SECBENCH_PAYLOAD || ("') touch corenlp-js-prefab # '"));
   } catch (error) {}
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(true);

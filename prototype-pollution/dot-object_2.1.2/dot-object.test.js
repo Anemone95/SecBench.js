@@ -2,7 +2,7 @@
 test("prototype pollution in dot-object ", () => {
   var a = require("dot-object");
   var obj = {};
-  var path = "__proto__";
+  var path = process.env.SECBENCH_PAYLOAD || "__proto__";
 
   expect({}.polluted).toBe(undefined);
 

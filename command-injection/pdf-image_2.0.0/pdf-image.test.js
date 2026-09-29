@@ -14,7 +14,7 @@ test("Remote code execution in pdf-image", () => {
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
   try {
-    let pdfImage = new PDFImage('"; touch pdf-image_2 #"');
+    let pdfImage = new PDFImage(process.env.SECBENCH_PAYLOAD || ('"; touch pdf-image_2 #"'));
     return pdfImage.getInfo().finally(() => {
       file_exist = fs.existsSync(path);
       expect(file_exist).toBe(true);

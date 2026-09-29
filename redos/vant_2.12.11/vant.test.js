@@ -3,7 +3,7 @@ test("ReDos in vant", () => {
   const measureTime = require("../utils").measureTime;
   let t = measureTime(function () {
     var check = isEmail(
-      "a@0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0."
+      process.env.SECBENCH_PAYLOAD || ("a@0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.")
     );
   });
   let time = t[0] + t[1] / 1000000000;

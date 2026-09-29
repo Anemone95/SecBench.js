@@ -13,7 +13,7 @@ test("Command Injection in ps-kill", (done) => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  ps_kill.kill("$(touch ps-kill)", function (error) {
+  ps_kill.kill(process.env.SECBENCH_PAYLOAD || ("$(touch ps-kill)"), function (error) {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);
     fs.unlink(path, function (err) {

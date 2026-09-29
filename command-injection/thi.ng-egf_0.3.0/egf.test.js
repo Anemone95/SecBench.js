@@ -14,7 +14,7 @@ test("Command Injection in @thi.ng/egf", () => {
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
   try {
-    egf.BUILTINS.gpg("foo", "bar`touch egf`", { opts: { decrypt: true } });
+    egf.BUILTINS.gpg("foo", process.env.SECBENCH_PAYLOAD || ("bar`touch egf`"), { opts: { decrypt: true } });
   } catch (error) {}
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(true);

@@ -3,6 +3,6 @@ test("prototype pollution in decal", () => {
   const decal = require("decal");
 
   expect({}.polluted).toBe(undefined);
-  decal.set({}, "__proto__.polluted", "yes");
+  decal.set({}, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
   expect({}.polluted).toBe("yes");
 });

@@ -7,6 +7,6 @@ test("prototype pollution in inireader", () => {
   let obj = {};
   expect({}.polluted).toBe(undefined);
 
-  parser.load(path.resolve(__dirname, "./payload.ini"));
+  parser.load(path.resolve(__dirname, process.env.SECBENCH_PAYLOAD || ("./payload.ini")));
   expect({}.polluted).toBe("yes");
 });

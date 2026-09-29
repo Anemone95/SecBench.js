@@ -8,6 +8,6 @@ test("prototype pollution in jquery", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  $.extend(true, {}, JSON.parse('{"__proto__": {"polluted": "yes"}}'));
+  $.extend(true, {}, JSON.parse(process.env.SECBENCH_PAYLOAD || '{"__proto__": {"polluted": "yes"}}'));
   expect({}.polluted).toBe("yes");
 });

@@ -13,7 +13,7 @@ test("Command Injection in ts-process-promises", () => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  return a.exec("touch ts-process-promises", {}).finally(() => {
+  return a.exec(process.env.SECBENCH_PAYLOAD || ("touch ts-process-promises"), {}).finally(() => {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);
     fs.unlink(path, function (err) {});

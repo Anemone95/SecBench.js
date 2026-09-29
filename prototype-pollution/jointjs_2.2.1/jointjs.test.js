@@ -3,7 +3,7 @@ test("prototype pollution in jointjs", () => {
   expect({}.polluted).toBe(undefined);
 
   const jointjs = require("jointjs");
-  jointjs.util.setByPath({}, "__proto__/polluted", "yes", "/");
+  jointjs.util.setByPath({}, process.env.SECBENCH_PAYLOAD || "__proto__/polluted", "yes", "/");
 
   expect({}.polluted).toBe("yes");
 });

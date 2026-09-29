@@ -1,7 +1,7 @@
 test("ReDos in ws", () => {
   const genstr = require("../utils").genstr;
   const measureTime = require("../utils").measureTime;
-  const attack_str = "b" + " ".repeat(42000) + "x";
+  const attack_str = process.env.SECBENCH_PAYLOAD || ("b" + " ".repeat(42000) + "x");
   let t = measureTime(function () {
     attack_str.trim().split(/ *, */);
   });

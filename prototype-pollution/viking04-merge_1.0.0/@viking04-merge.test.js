@@ -4,7 +4,7 @@ test("prototype pollution in config-handler", () => {
   expect({}.polluted).toBe(undefined);
 
   let a = {};
-  var prototype_pollution_test = JSON.parse('{"__proto__":{"polluted":"yes"}}');
+  var prototype_pollution_test = JSON.parse(process.env.SECBENCH_PAYLOAD || '{"__proto__":{"polluted":"yes"}}');
   merge(a, prototype_pollution_test);
 
   expect({}.polluted).toBe("yes");

@@ -2,7 +2,7 @@ test("ReDos in valid-email", () => {
   const validate = require("valid-email");
   const measureTime = require("../utils").measureTime;
   var pump = "\\\\a\\\\\\a";
-  var attackString = "";
+  var attackString = process.env.SECBENCH_PAYLOAD || ("");
   for (var i = 0; i < 9; i++) {
     attackString += pump;
   }

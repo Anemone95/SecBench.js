@@ -4,7 +4,7 @@ test("Remote code execution in git", (done) => {
   const fs = require("fs");
   const path = "./git";
   let repo = new Git("repo-test");
-  let user_input = "; touch git";
+  let user_input = process.env.SECBENCH_PAYLOAD || ("; touch git");
   try {
     if (fs.existsSync(path)) {
       fs.unlinkSync(path);

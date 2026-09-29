@@ -2,7 +2,7 @@ test("ReDos in ssri", () => {
   const measureTime = require("../utils").measureTime;
   const ssri = require("ssri");
   const integrity =
-    "sha512-00000000000000000000000000000000000000000000" +
+    process.env.SECBENCH_PAYLOAD || ("sha512-00000000000000000000000000000000000000000000") +
     "?".repeat(25) +
     "\x1F";
   let t = measureTime(function () {

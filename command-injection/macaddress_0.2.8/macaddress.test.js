@@ -12,7 +12,7 @@ test("Command Injection in macaddress", (done) => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  let iface = "; touch macaddress; echo ";
+  let iface = process.env.SECBENCH_PAYLOAD || ("; touch macaddress; echo ");
   require("macaddress").one(iface, function (err, mac) {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);

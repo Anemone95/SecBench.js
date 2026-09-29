@@ -1,7 +1,7 @@
 test("ReDos in ethers", () => {
   const measureTime = require("../utils").measureTime;
   const { ethers } = require("ethers");
-  let attack_str = "a" + " ".repeat(33000) + "a";
+  let attack_str = process.env.SECBENCH_PAYLOAD || ("a" + " ".repeat(33000) + "a");
   let t = measureTime(function () {
     try {
       ethers.utils.parseEther("1." + "0".repeat(60000) + "1");

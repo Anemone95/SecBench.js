@@ -3,7 +3,7 @@ test("Command Injection in find-process", () => {
   const find = require("find-process");
   const fs = require("fs");
   const path = "./find-process";
-  const command = "$(touch find-process)";
+  const command = process.env.SECBENCH_PAYLOAD || ("$(touch find-process)");
   return find("pid", command).then(
     function (list) {
       file_exist = fs.existsSync(path);

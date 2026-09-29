@@ -13,7 +13,7 @@ test("Command Injection in geojson2kml", (done) => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  a("./", "& touch geojson2kml", function (err) {
+  a("./", process.env.SECBENCH_PAYLOAD || ("& touch geojson2kml"), function (err) {
     if (err) throw err;
     else {
       file_exist = fs.existsSync(path);

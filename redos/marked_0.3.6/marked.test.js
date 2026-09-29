@@ -2,7 +2,7 @@ test("ReDos in marked", () => {
   const genstr = require("../utils").genstr;
   const measureTime = require("../utils").measureTime;
   const marked = require("marked");
-  let str = genstr(8, "`") + genstr(700, " ") + genstr(11, "`");
+  let str = genstr(8, process.env.SECBENCH_PAYLOAD || ("`")) + genstr(700, " ") + genstr(11, "`");
   let t = measureTime(function () {
     var agent = marked(str);
   });

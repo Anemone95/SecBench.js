@@ -3,7 +3,7 @@
 test("prototype pollution in vega-util", () => {
   const util = require("vega-util");
   const config = "{style: {point: {shape: triangle-right}}}";
-  const malicious_payload = '{"__proto__":{"polluted":"yes"}}';
+  const malicious_payload = process.env.SECBENCH_PAYLOAD || (process.env.SECBENCH_PAYLOAD || '{"__proto__":{"polluted":"yes"}}');
 
   expect({}.polluted).toBe(undefined);
 

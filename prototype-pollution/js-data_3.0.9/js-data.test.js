@@ -3,7 +3,7 @@ test("prototype pollution in js-data", () => {
   expect({}.polluted).toBe(undefined);
 
   const { utils } = require("js-data");
-  const source = JSON.parse('{"__proto__":{"polluted":"yes"}}');
+  const source = JSON.parse(process.env.SECBENCH_PAYLOAD || '{"__proto__":{"polluted":"yes"}}');
   utils.deepMixIn({}, source);
 
   expect({}.polluted).toBe("yes");

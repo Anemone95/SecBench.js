@@ -5,6 +5,6 @@ test("prototype pollution in ts-dot-prop", () => {
   let obj = {};
   expect({}.polluted).toBe(undefined);
 
-  tsDot.set(obj, "__proto__.polluted", "yes");
+  tsDot.set(obj, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
   expect({}.polluted).toBe("yes");
 });

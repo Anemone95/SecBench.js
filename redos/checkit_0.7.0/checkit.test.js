@@ -1,7 +1,7 @@
 test("ReDoS in checkit", () => {
   const measureTime = require("../utils").measureTime;
   const check = require("checkit");
-  const prefix = "http://a";
+  const prefix = process.env.SECBENCH_PAYLOAD || ("http://a");
   const pump = "a";
   const suffix = "\t";
   const nPumps = 1000000;

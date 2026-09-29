@@ -6,6 +6,6 @@ test("prototype pollution in nis-utils", () => {
   const object1 = {};
   expect({}.polluted).toBe(undefined);
 
-  nisUtils.object.setValue({}, "__proto__.polluted", "yes");
+  nisUtils.object.setValue({}, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
   expect({}.polluted).toBe("yes");
 });

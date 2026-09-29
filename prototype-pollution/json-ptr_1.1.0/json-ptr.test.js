@@ -3,7 +3,7 @@ test("prototype pollution in json-ptr", () => {
   expect({}.polluted).toBe(undefined);
 
   const { JsonPointer } = require("json-ptr");
-  JsonPointer.set({}, "/constructor/prototype/polluted", "yes", true);
+  JsonPointer.set({}, process.env.SECBENCH_PAYLOAD || ("/constructor/prototype/polluted"), "yes", true);
 
   expect({}.polluted).toBe("yes");
 });

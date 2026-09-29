@@ -6,7 +6,7 @@ test("prototype pollution in simpl-schema", () => {
   expect({}.polluted).toBe(undefined);
 
   SimpleSchema.setDefaultMessages(
-    JSON.parse('{"__proto__":{"polluted":"yes"}}')
+    JSON.parse(process.env.SECBENCH_PAYLOAD || '{"__proto__":{"polluted":"yes"}}')
   );
   expect({}.polluted).toBe("yes");
 });

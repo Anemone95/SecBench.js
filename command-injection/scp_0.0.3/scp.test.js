@@ -14,7 +14,7 @@ test("Command Injection in scp", (done) => {
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
   let options = {
-    file: "& touch scp; #",
+    file: process.env.SECBENCH_PAYLOAD || ("& touch scp; #"),
     user: "username",
     host: "myServer",
     port: "20",

@@ -3,7 +3,7 @@ test("Arbitrary code execution in wifiscanner", () => {
   const fs = require("fs");
   let wifiscanner = require("wifiscanner");
   const sleep = require("sleep");
-  const path = "./wifiscanner.txt";
+  const path = process.env.SECBENCH_PAYLOAD || ("./wifiscanner.txt");
   let options = {
     args: "./wifiscanner.txt",
     binaryPath: "touch",

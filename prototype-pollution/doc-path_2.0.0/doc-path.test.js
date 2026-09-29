@@ -5,6 +5,6 @@ test("prototype pollution in doc-path", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  path.setPath({}, "__proto__.polluted", "yes");
+  path.setPath({}, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
   expect({}.polluted).toBe("yes");
 });

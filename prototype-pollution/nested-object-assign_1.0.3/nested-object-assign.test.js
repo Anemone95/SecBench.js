@@ -3,7 +3,7 @@
 test("prototype pollution in nested-object-assign", () => {
   const assign = require("nested-object-assign");
   expect({}.polluted).toBe(undefined);
-  assign({}, JSON.parse('{"__proto__": {"polluted": "yes"}}'));
+  assign({}, JSON.parse(process.env.SECBENCH_PAYLOAD || '{"__proto__": {"polluted": "yes"}}'));
 
   expect({}.polluted).toBe("yes");
 });

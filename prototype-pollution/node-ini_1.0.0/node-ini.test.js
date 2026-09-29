@@ -4,7 +4,7 @@ test("prototype pollution in node-ini", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  ini.parse("./payload.ini", function (err, data) {
+  ini.parse(process.env.SECBENCH_PAYLOAD || ("./payload.ini"), function (err, data) {
     expect({}.polluted).toBe("yes");
   });
 });

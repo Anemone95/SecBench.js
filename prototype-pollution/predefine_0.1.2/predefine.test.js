@@ -3,7 +3,7 @@ test("prototype pollution in predefine", () => {
   expect({}.polluted).toBe(undefined);
 
   var predefine = require("predefine");
-  const payload = JSON.parse('{"__proto__":{"polluted":"yes"}}');
+  const payload = JSON.parse(process.env.SECBENCH_PAYLOAD || process.env.SECBENCH_PAYLOAD || '{"__proto__":{"polluted":"yes"}}');
   predefine.merge({}, payload);
 
   expect({}.polluted).toBe("yes");

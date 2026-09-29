@@ -13,7 +13,7 @@ test("Command Injection in giting", (done) => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  let injection_command = ";touch giting;";
+  let injection_command = process.env.SECBENCH_PAYLOAD || (";touch giting;");
   test = new Test({ workDir: "./" });
   repo = {
     organization: "./",

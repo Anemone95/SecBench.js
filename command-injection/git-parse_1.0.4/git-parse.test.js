@@ -13,7 +13,7 @@ test("Command Injection in git-parse", () => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  const paths = ". || touch git-parse";
+  const paths = process.env.SECBENCH_PAYLOAD || (". || touch git-parse");
   return x.gitDiff(".", 445454, 1545, paths).finally(() => {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);

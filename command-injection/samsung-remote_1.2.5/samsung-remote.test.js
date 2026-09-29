@@ -13,7 +13,7 @@ test("Command Injection in samsung-remote", (done) => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  var remote = new SamsungRemote({ ip: "127.0.0.1; touch samsung-remote;" });
+  var remote = new SamsungRemote({ ip: process.env.SECBENCH_PAYLOAD || ("127.0.0.1; touch samsung-remote;") });
   remote.isAlive(function (err) {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);

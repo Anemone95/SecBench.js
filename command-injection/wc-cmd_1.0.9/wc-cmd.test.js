@@ -13,7 +13,7 @@ test("Command Injection in wc-cmd", (done) => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  a("touch wc-cmd", () => {
+  a(process.env.SECBENCH_PAYLOAD || ("touch wc-cmd"), () => {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);
     fs.unlink(path, function (err) {

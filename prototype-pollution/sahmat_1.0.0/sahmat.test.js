@@ -1,7 +1,7 @@
 //https://www.whitesourcesoftware.com/vulnerability-database/CVE-2021-25916
 test("prototype pollution in sahmat", () => {
   const sahmat = require("sahmat");
-  let obj = { tmp: "" };
+  let obj = { tmp: process.env.SECBENCH_PAYLOAD || ("") };
 
   expect({}.polluted).toBe(undefined);
 

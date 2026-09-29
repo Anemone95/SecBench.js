@@ -6,6 +6,6 @@ test("prototype pollution in set-or-get", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  SetOrGet(obj, "__proto__", {}).polluted = "yes";
+  SetOrGet(obj, process.env.SECBENCH_PAYLOAD || "__proto__", {}).polluted = "yes";
   expect({}.polluted).toBe("yes");
 });

@@ -5,6 +5,6 @@ test("prototype pollution in properties-reader", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  propertiesReader(path.resolve(__dirname, "./payload.ini"));
+  propertiesReader(path.resolve(__dirname, process.env.SECBENCH_PAYLOAD || ("./payload.ini")));
   expect({}.polluted).toBe("yes");
 });

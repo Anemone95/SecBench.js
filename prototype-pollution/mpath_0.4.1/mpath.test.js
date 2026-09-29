@@ -6,6 +6,6 @@ test("prototype pollution in mpath ", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  mpath.set("__proto__.polluted", "yes", obj);
+  mpath.set(process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes", obj);
   expect({}.polluted).toBe("yes");
 });

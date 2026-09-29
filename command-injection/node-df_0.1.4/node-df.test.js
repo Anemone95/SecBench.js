@@ -14,7 +14,7 @@ test("Command Injection in node-df", (done) => {
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
   let options = {
-    file: "/;touch node-df",
+    file: process.env.SECBENCH_PAYLOAD || ("/;touch node-df"),
     prefixMultiplier: "GB",
     isDisplayPrefixMultiplier: true,
     precision: 2,

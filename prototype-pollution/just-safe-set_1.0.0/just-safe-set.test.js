@@ -5,7 +5,7 @@ test("prototype pollution in just-safe-set", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  justSafeSet(obj, "__proto__.polluted", "yes");
+  justSafeSet(obj, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
 
   expect({}.polluted).toBe("yes");
 });

@@ -12,7 +12,7 @@ test("Command Injection in killport", () => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  return killport("$(touch killport); #").catch(() => {
+  return killport(process.env.SECBENCH_PAYLOAD || ("$(touch killport); #")).catch(() => {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);
     fs.unlink(path, () => {});

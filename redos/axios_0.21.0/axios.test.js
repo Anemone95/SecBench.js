@@ -1,5 +1,5 @@
 function build_blank(n) {
-  var ret = "1";
+  var ret = process.env.SECBENCH_PAYLOAD || ("1");
   for (var i = 0; i < n; i++) {
     ret += " ";
   }

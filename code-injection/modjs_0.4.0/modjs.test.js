@@ -7,7 +7,7 @@ test("Arbitrary code execution in modjs", () => {
   expect(file_exist).toBe(false);
   try {
     sea.findSeajsConfig(
-      "seajs.config({a: require('fs').writeFileSync('./modjs', '')})"
+      process.env.SECBENCH_PAYLOAD || ("seajs.config({a: require('fs').writeFileSync('./modjs', '')})")
     );
   } catch (error) {}
   file_exist = fs.existsSync(path);

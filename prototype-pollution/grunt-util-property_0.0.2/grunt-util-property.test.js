@@ -6,7 +6,7 @@ test("prototype pollution in grunt-util-property", () => {
   expect({}.polluted).toBe(undefined);
 
   let b = a(grunt);
-  b.call({}, "__proto__.polluted", "yes");
+  b.call({}, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", "yes");
 
   expect({}.polluted).toBe("yes");
 });

@@ -13,7 +13,7 @@ test("Command Injection in im-metadata", (done) => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  metadata("./foo.jpg;touch im-metadata", { exif: true }, function (
+  metadata(process.env.SECBENCH_PAYLOAD || ("./foo.jpg;touch im-metadata"), { exif: true }, function (
     error,
     metadata
   ) {

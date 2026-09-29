@@ -13,7 +13,7 @@ test("Command Injection in npm-help", () => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  var module = "& touch npm-help";
+  var module = process.env.SECBENCH_PAYLOAD || ("& touch npm-help");
   root.latestVersion(module);
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(true);

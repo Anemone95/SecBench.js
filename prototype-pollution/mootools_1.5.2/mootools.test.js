@@ -4,7 +4,7 @@ test("prototype pollution in mootools", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  Object.merge({}, JSON.parse('{"__proto__": {"polluted": "yes"}}'));
+  Object.merge({}, JSON.parse(process.env.SECBENCH_PAYLOAD || '{"__proto__": {"polluted": "yes"}}'));
 
   expect({}.polluted).toBe("yes");
 });

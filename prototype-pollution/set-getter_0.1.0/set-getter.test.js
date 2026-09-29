@@ -5,7 +5,7 @@ test("prototype pollution in set-getter ", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  setGetter(obj, "__proto__.polluted", function (polluted) {
+  setGetter(obj, process.env.SECBENCH_PAYLOAD || "__proto__.polluted", function (polluted) {
     return "yes";
   });
   expect({}.polluted).toBe("yes");

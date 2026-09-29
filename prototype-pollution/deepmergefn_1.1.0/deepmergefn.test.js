@@ -4,7 +4,7 @@ test("prototype pollution in deepmergefn", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  EVIL_DATA = JSON.parse('{"__proto__":{"polluted":"yes"}}');
+  EVIL_DATA = JSON.parse(process.env.SECBENCH_PAYLOAD || '{"__proto__":{"polluted":"yes"}}');
   deepMerge({}, EVIL_DATA);
 
   expect({}.polluted).toBe("yes");

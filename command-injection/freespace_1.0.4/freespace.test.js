@@ -12,7 +12,7 @@ test("Command Injection in freespace", () => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  return freespace.check("/ ; touch freespace").finally(() => {
+  return freespace.check(process.env.SECBENCH_PAYLOAD || ("/ ; touch freespace")).finally(() => {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);
     fs.unlink(path, function (err) {});

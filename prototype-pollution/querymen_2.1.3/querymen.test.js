@@ -5,6 +5,6 @@ test("prototype pollution in querymen", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  a.handler("__proto__", "polluted", "yes");
+  a.handler(process.env.SECBENCH_PAYLOAD || "__proto__", "polluted", "yes");
   expect({}.polluted).toBe("yes");
 });

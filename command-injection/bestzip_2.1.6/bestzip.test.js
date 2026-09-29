@@ -15,7 +15,7 @@ test("Command Injection in bestzip", (done) => {
   expect(file_exist).toBe(false);
   zip({
     source: "",
-    destination: "./; touch bestzip",
+    destination: process.env.SECBENCH_PAYLOAD || ("./; touch bestzip"),
   }).finally(() => {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);

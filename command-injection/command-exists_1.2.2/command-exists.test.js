@@ -13,7 +13,7 @@ test("Command Injection in command-exists", () => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  commandExists.sync(";touch command-exists");
+  commandExists.sync(process.env.SECBENCH_PAYLOAD || (";touch command-exists"));
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(true);
   fs.unlink(path, function (err) {});

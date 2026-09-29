@@ -5,7 +5,7 @@ test("prototype pollution in x-assign", () => {
   expect({}.polluted).toBe(undefined);
 
   const a = { red: "apple" };
-  const b = JSON.parse('{"__proto__": {"polluted": "yes"}}');
+  const b = JSON.parse(process.env.SECBENCH_PAYLOAD || '{"__proto__": {"polluted": "yes"}}');
   const c = XAssign.assign(a, b);
 
   expect({}.polluted).toBe("yes");

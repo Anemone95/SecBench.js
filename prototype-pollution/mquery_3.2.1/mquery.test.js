@@ -2,7 +2,7 @@
 test("prototype pollution in mquery", () => {
   const mquery = require("mquery");
   let obj = {};
-  var payload = JSON.parse('{"__proto__": {"polluted": "yes"}}');
+  var payload = JSON.parse(process.env.SECBENCH_PAYLOAD || process.env.SECBENCH_PAYLOAD || '{"__proto__": {"polluted": "yes"}}');
 
   expect({}.polluted).toBe(undefined);
 

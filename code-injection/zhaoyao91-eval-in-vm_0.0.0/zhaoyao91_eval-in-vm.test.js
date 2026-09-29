@@ -4,7 +4,7 @@ test("Arbitrary code execution in @zhaoyao91/eval-in-vm", () => {
   expect({}.polluted).toBe(undefined);
   try {
     ("use strict");
-    const result = eval1("1 + (this.constructor.prototype.polluted = `yes`);");
+    const result = eval1(process.env.SECBENCH_PAYLOAD || ("1 + (this.constructor.prototype.polluted = `yes`);"));
   } catch (error) {}
   expect({}.polluted).toBe("yes");
 });

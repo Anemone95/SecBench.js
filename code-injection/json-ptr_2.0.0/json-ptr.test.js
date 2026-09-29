@@ -2,7 +2,7 @@ test("Arbitrary code execution in json-ptr", () => {
   expect.assertions(2);
   const fs = require("fs");
   const jptr = require("json-ptr");
-  const path = "./json-ptr";
+  const path = process.env.SECBENCH_PAYLOAD || ("./json-ptr");
   file_exist = fs.existsSync(path);
   expect({}.polluted).toBe(undefined);  
   JsonPointer = jptr.JsonPointer;

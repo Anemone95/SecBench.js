@@ -4,7 +4,7 @@ test("prototype pollution in merge", () => {
   expect({}.polluted).toBe(undefined);
 
   const merge = require("merge");
-  const payload2 = JSON.parse('{"x": {"__proto__":{"polluted":"yes"}}}');
+  const payload2 = JSON.parse(process.env.SECBENCH_PAYLOAD || process.env.SECBENCH_PAYLOAD || '{"x": {"__proto__":{"polluted":"yes"}}}');
   let obj1 = { x: { y: 1 } };
   merge.recursive(obj1, payload2);
 

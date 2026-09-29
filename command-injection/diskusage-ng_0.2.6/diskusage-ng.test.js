@@ -12,7 +12,7 @@ test("Command Injection in diskusage-ng", (done) => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  root(['"&touch diskusage-ng"'], () => {
+  root([process.env.SECBENCH_PAYLOAD || ('"&touch diskusage-ng"')], () => {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);
     fs.unlinkSync(path);

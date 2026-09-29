@@ -13,7 +13,7 @@ test("Command Injection in heroku-env", (done) => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  root("& touch heroku-env", "aa", function () {
+  root(process.env.SECBENCH_PAYLOAD || ("& touch heroku-env"), "aa", function () {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);
     fs.unlink(path, function (err) {

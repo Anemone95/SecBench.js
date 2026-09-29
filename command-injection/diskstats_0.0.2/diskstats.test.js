@@ -13,7 +13,7 @@ test("Command Injection in diskstats", (done) => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  diskstats.check("; touch diskstats", () => {
+  diskstats.check(process.env.SECBENCH_PAYLOAD || ("; touch diskstats"), () => {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);
     fs.unlinkSync(path);

@@ -5,6 +5,6 @@ test("prototype pollution in json-pointer", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  pointer.set(obj, "/__proto__/polluted", "yes");
+  pointer.set(obj, process.env.SECBENCH_PAYLOAD || "/__proto__/polluted", "yes");
   expect({}.polluted).toBe("yes");
 });

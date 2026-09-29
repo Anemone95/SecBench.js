@@ -13,7 +13,7 @@ test("Command Injection in node-ps", (done) => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
-  a.lookup({ psargs: ["& touch node-ps #"] }, function () {
+  a.lookup({ psargs: [process.env.SECBENCH_PAYLOAD || ("& touch node-ps #")] }, function () {
     file_exist = fs.existsSync(path);
     expect(file_exist).toBe(true);
     fs.unlink(path, function (err) {

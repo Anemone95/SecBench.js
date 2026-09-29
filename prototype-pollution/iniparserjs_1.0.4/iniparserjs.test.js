@@ -5,7 +5,7 @@ test("prototype pollution in iniparserjs", () => {
   var path = require("path");
   var IniParser = require("iniparserjs");
 
-  var config = new IniParser(path.join(__dirname, "test.ini"), "UTF8");
+  var config = new IniParser(path.join(__dirname, process.env.SECBENCH_PAYLOAD || ("test.ini")), "UTF8");
   // var sections = config.sections()
   // var keysOfSection1 = config.keysOfSection("section1")
   console.log("After:", {}.polluted);

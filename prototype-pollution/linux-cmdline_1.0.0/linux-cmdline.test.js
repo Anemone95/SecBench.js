@@ -3,7 +3,7 @@ test("prototype pollution in linux-cmdline", () => {
   expect({}.polluted).toBe(undefined);
 
   const linuxCmdline = require("linux-cmdline");
-  linuxCmdline("__proto__.polluted=yes");
+  linuxCmdline(process.env.SECBENCH_PAYLOAD || "__proto__.polluted=yes");
 
   expect({}.polluted).toBe("yes");
 });

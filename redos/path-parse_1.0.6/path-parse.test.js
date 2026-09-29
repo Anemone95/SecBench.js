@@ -9,7 +9,7 @@ test("ReDos in path-parse", () => {
   const measureTime = require("../utils").measureTime;
   const pathParse = require("path-parse");
   let t = measureTime(function () {
-    let attack_str = build_attack(50000);
+    let attack_str = process.env.SECBENCH_PAYLOAD || (build_attack(50000));
     pathParse(attack_str);
   });
   let time = t[0] + t[1] / 1000000000;

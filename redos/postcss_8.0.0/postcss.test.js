@@ -9,7 +9,7 @@ test("ReDos in postcss", () => {
   const genstr = require("../utils").genstr;
   const measureTime = require("../utils").measureTime;
   const postcss = require("postcss");
-  let attack_str = build_attack(50000);
+  let attack_str = process.env.SECBENCH_PAYLOAD || (build_attack(50000));
   let t = measureTime(function () {
     try {
       postcss.parse(attack_str);

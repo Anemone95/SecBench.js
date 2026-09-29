@@ -5,6 +5,6 @@ test("prototype pollution in bodymen ", () => {
   //a.handler("__proto__","polluted","yes");
   expect({}.polluted).toBe(undefined);
 
-  x.handler("__proto__", "polluted", "yes");
+  x.handler(process.env.SECBENCH_PAYLOAD || "__proto__", "polluted", "yes");
   expect({}.polluted).toBe("yes");
 });
