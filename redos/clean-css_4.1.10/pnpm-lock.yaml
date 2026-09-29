@@ -1,0 +1,31 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      clean-css:
+        specifier: 4.1.10
+        version: 4.1.10
+
+packages:
+
+  clean-css@4.1.10:
+    resolution: {integrity: sha512-qdSbuB8HPZYRbd1eTBsKvaaJ0udCRiGy2Y2A/i0RgxZ9MPir1sDrXPkgFE2SfMpUnEaoct8mtc6HCsVk4d+oNg==}
+    engines: {node: '>= 4.0'}
+
+  source-map@0.5.7:
+    resolution: {integrity: sha512-LbrmJOMUSdEVxIKvdcJzQC+nQhe8FUZQTXQy6+I75skNgn3OoQ0DZA8YnFa7gp8tqtL3KPf1kmo0R5DoApeSGQ==}
+    engines: {node: '>=0.10.0'}
+
+snapshots:
+
+  clean-css@4.1.10:
+    dependencies:
+      source-map: 0.5.7
+
+  source-map@0.5.7: {}

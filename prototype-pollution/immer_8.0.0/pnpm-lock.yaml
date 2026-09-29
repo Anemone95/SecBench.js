@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      immer:
+        specifier: 8.0.0
+        version: 8.0.0
+
+packages:
+
+  immer@8.0.0:
+    resolution: {integrity: sha512-jm87NNBAIG4fHwouilCHIecFXp5rMGkiFrAuhVO685UnMAlOneEAnOyzPt8OnP47TC11q/E7vpzZe0WvwepFTg==}
+
+snapshots:
+
+  immer@8.0.0: {}

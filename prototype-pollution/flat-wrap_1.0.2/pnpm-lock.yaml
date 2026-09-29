@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      flat-wrap:
+        specifier: 1.0.2
+        version: 1.0.2
+
+packages:
+
+  flat-wrap@1.0.2:
+    resolution: {integrity: sha512-ChpkBHgGLySZ1x2o0yj5nmdEGxOMCAWzzlqUJnD2D3yy8GpoV4rzTI487wQyTk1IrTmeqoz+Q/MuaeZHCzMkxw==}
+
+snapshots:
+
+  flat-wrap@1.0.2: {}

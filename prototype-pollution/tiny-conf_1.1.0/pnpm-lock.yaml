@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      tiny-conf:
+        specifier: 1.1.0
+        version: 1.1.0
+
+packages:
+
+  tiny-conf@1.1.0:
+    resolution: {integrity: sha512-MR0PueJgSZNyGl8vIDVCfVB7qgP9mlDYvVUX8mstPkhOab6+iKW+X6UK0FT2E5uMSEQnUdfsj1rWDZb+B0CEAw==}
+
+snapshots:
+
+  tiny-conf@1.1.0: {}

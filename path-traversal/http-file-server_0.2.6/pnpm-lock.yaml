@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      http-file-server:
+        specifier: 0.2.6
+        version: 0.2.6
+
+packages:
+
+  http-file-server@0.2.6:
+    resolution: {integrity: sha512-HjYIAPyq72O5fLn1t97fHP//uQUXEJeCQmugaDliLag9XsJ0xmuBWnuhM+aKC1+K/vd+5va3dzzFoyaDM/D+Ww==}
+    engines: {node: '>=0.9.0'}
+
+snapshots:
+
+  http-file-server@0.2.6: {}

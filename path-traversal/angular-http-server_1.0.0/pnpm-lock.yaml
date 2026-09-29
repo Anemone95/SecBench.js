@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      angular-http-server:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  angular-http-server@1.0.0:
+    resolution: {integrity: sha512-ibR9fWdFGaytyUaByLqTAZC8QfhlId/Up1EHXXFJGoT+JH3fdWYjGz4mI1cuP3hWVq/bFVcK+x76J/EWFHmclg==}
+    hasBin: true
+
+snapshots:
+
+  angular-http-server@1.0.0: {}

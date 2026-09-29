@@ -1,0 +1,30 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      tough-cookie:
+        specifier: 2.3.2
+        version: 2.3.2
+
+packages:
+
+  punycode@1.4.1:
+    resolution: {integrity: sha512-jmYNElW7yvO7TV33CjSmvSiE2yco3bV2czu/OzDKdMNVZQWfxCblURLhf+47syQRBntjfLdd/H0egrzIG+oaFQ==}
+
+  tough-cookie@2.3.2:
+    resolution: {integrity: sha512-42UXjmzk88F7URyg9wDV/dlQ7hXtl/SDV6xIMVdDq82cnDGQDyg8mI8xGBPOwpEfbhvrja6cJ8H1wr0xxykBKA==}
+    engines: {node: '>=0.8'}
+
+snapshots:
+
+  punycode@1.4.1: {}
+
+  tough-cookie@2.3.2:
+    dependencies:
+      punycode: 1.4.1

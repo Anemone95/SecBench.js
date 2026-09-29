@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      zhanglina:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  zhanglina@1.0.0:
+    resolution: {integrity: sha512-MU4mYB1wmYxvL/oD25sZTs76YE97MjtoYOQ47pguHkr8FmrNVkbYBDWy1N25rtRadkM+8709WTb0PIAlOjeO1Q==}
+
+snapshots:
+
+  zhanglina@1.0.0: {}

@@ -1,0 +1,38 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      static-server-gx:
+        specifier: 1.2.1
+        version: 1.2.1
+
+packages:
+
+  servers1@1.2.1:
+    resolution: {integrity: sha512-P9E8+77G8INOIWB5+8yVNP3itO4q9qAzL0EWi/WrN9umpBGC+TkXZHEAq2e8M42MyOM/1CR7LCf5npO8/p1koQ==}
+    hasBin: true
+
+  static-server-gx@1.2.1:
+    resolution: {integrity: sha512-ggigkbgf5GJCUzqXb0W1AJCEiEiYxuWpr3g8h1MdyzRgsS/X53eeUWOQs0H4bblcVxhpUSRDbVDFfMaNlS6BCw==}
+    hasBin: true
+
+  w1703_server@1.2.0:
+    resolution: {integrity: sha512-BTnczFI34yDRX7DO10C2FbOe0zYj8iS7xXYKqUkYpd1zZXLlt7gVAxikeccLLtcw5ztWAs30RvFKEhCe8Nzj0w==}
+    hasBin: true
+
+snapshots:
+
+  servers1@1.2.1: {}
+
+  static-server-gx@1.2.1:
+    dependencies:
+      servers1: 1.2.1
+      w1703_server: 1.2.0
+
+  w1703_server@1.2.0: {}

@@ -1,0 +1,42 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      content:
+        specifier: 3.0.5
+        version: 3.0.5
+
+packages:
+
+  boom@5.3.3:
+    resolution: {integrity: sha512-UdzFI5w5zxU56pCAhV1ToNnYh7TxO7R0cp1X0qLrjyCJHJNYWos8XMtIx4LLXwfPHbPV1E3FD0kxA6od98P7ng==}
+    engines: {node: '>=6.0.0'}
+    deprecated: This module has moved and is now available at @hapi/boom. Please update your dependencies as this version is no longer maintained and may contain bugs and security issues.
+
+  content@3.0.5:
+    resolution: {integrity: sha512-MQVYZuNnm5N0xalwtRGlZrcKFwgE6VKXCEh3XkCeoWUo3gL5BS52UiqswRvAwQW1ocfdCNkEKI5uy0pNGax+IQ==}
+    engines: {node: '>=4.5.0'}
+    deprecated: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
+
+  hoek@4.3.1:
+    resolution: {integrity: sha512-v7E+yIjcHECn973i0xHm4kJkEpv3C8sbYS4344WXbzYqRyiDD7rjnnKo4hsJkejQBAFdRMUGNHySeSPKSH9Rqw==}
+    engines: {node: '>=6.0.0'}
+    deprecated: This module has moved and is now available at @hapi/hoek. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.
+
+snapshots:
+
+  boom@5.3.3:
+    dependencies:
+      hoek: 4.3.1
+
+  content@3.0.5:
+    dependencies:
+      boom: 5.3.3
+
+  hoek@4.3.1: {}

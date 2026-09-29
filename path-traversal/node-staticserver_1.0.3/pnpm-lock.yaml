@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      node-staticserver:
+        specifier: 1.0.3
+        version: 1.0.3
+
+packages:
+
+  node-staticserver@1.0.3:
+    resolution: {integrity: sha512-NBDZizalobf6YD4YOfEbAuho5x9+9R8qNo5F9X9BIz9Dk8nP3vkZ1+YbYROlLwdW866an9B9NA2z7y+lbrFEyg==}
+
+snapshots:
+
+  node-staticserver@1.0.3: {}

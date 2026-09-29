@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      trim-off-newlines:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  trim-off-newlines@1.0.0:
+    resolution: {integrity: sha512-bA30jQPrRBE9ObnI3BGGCtuCBZYex08s0IrGp/aFs7az7KEBrvGo/4GxC4wKuKj7Kxk8OEzAwzUTDo51eaKU4g==}
+    engines: {node: '>=0.10.0'}
+
+snapshots:
+
+  trim-off-newlines@1.0.0: {}

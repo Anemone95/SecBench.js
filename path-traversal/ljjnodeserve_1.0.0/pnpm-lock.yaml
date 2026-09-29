@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      ljjnodeserve:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  ljjnodeserve@1.0.0:
+    resolution: {integrity: sha512-uK3ZDbF+mU0rRJI5fhShbwx6zZTzfZnX7NRM45ws3CvINJZJtp3HUq5Q5NEjj0VR7PD8v1YB5xlruw6cBs/TLA==}
+
+snapshots:
+
+  ljjnodeserve@1.0.0: {}

@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      zxyserver:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  zxyserver@1.0.0:
+    resolution: {integrity: sha512-f/a8yQyU1HJeGdstKLLyfynukYWi7dX+cjdmX1zSq8yzDMrhQz1H0Hxd3dGXqWWziyEdGWnVsbm/Orv9rnsFWw==}
+
+snapshots:
+
+  zxyserver@1.0.0: {}

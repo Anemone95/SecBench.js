@@ -1,0 +1,24 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      mixin-deep:
+        specifier: 2.0.0
+        version: 2.0.0
+
+packages:
+
+  mixin-deep@2.0.0:
+    resolution: {integrity: sha512-2tAhDtV+OCFCeknyf2cJD5rD+xfvM2ax/RZ3iI1G67Eh6x5UxKJlGDVpmCX27y7WvuXpAkMHQs9ooaxIHIit+A==}
+    engines: {node: '>=4'}
+    deprecated: Critical bug fixed in v2.0.1, please upgrade to the latest version.
+
+snapshots:
+
+  mixin-deep@2.0.0: {}

@@ -1,0 +1,24 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      port-killer:
+        specifier: 1.0.1
+        version: 1.0.1
+
+packages:
+
+  port-killer@1.0.1:
+    resolution: {integrity: sha512-S1/KooiclL1A92kUNJeLOfYkLsEO026eAXHjkrTU0KWRuYaNbGsiAF2l7LbsunJVN90Re1hP4osE+1tubas/mQ==}
+    engines: {node: '>=8.7.0'}
+    hasBin: true
+
+snapshots:
+
+  port-killer@1.0.1: {}

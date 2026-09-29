@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      node-latex-pdf:
+        specifier: 0.0.2
+        version: 0.0.2
+
+packages:
+
+  node-latex-pdf@0.0.2:
+    resolution: {integrity: sha512-ETpgNg1IEW3/sO8VhYIdZh890MaL6uAEhik/tlWPCDGL32B2k6qvDHqCwJIbXeuqWgUGiU+zBhA9dGIm4UEWTA==}
+
+snapshots:
+
+  node-latex-pdf@0.0.2: {}

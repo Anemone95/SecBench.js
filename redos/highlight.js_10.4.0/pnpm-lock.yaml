@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      highlight.js:
+        specifier: 10.4.0
+        version: 10.4.0
+
+packages:
+
+  highlight.js@10.4.0:
+    resolution: {integrity: sha512-EfrUGcQ63oLJbj0J0RI9ebX6TAITbsDBLbsjr881L/X5fMO9+oadKzEF21C7R3ULKG6Gv3uoab2HiqVJa/4+oA==}
+    deprecated: Potential vulnerability. Please upgrade to @latest
+
+snapshots:
+
+  highlight.js@10.4.0: {}

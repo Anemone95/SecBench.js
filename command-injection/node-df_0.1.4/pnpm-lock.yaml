@@ -1,0 +1,29 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      node-df:
+        specifier: 0.1.4
+        version: 0.1.4
+
+packages:
+
+  node-df@0.1.4:
+    resolution: {integrity: sha512-9DJSSoyaimvfyGUU5UMEI/uzVBS0N+xkki9B38Usn/N1KldKAbRoAMwTf6hdyqNLwHYYpa2MrOeLt/xYJFcFWw==}
+
+  underscore@1.13.8:
+    resolution: {integrity: sha512-DXtD3ZtEQzc7M8m4cXotyHR+FAS18C64asBYY5vqZexfYryNNnDc02W4hKg3rdQuqOYas1jkseX0+nZXjTXnvQ==}
+
+snapshots:
+
+  node-df@0.1.4:
+    dependencies:
+      underscore: 1.13.8
+
+  underscore@1.13.8: {}

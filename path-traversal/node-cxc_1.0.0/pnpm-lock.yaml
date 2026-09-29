@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      node-cxc:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  node-cxc@1.0.0:
+    resolution: {integrity: sha512-RpAlmkrt7vih4Zr8RP4OmZnSQzLFu+W+4X7ZNkN91amMU1l/+O/li5IfBQ6oSm1yhcTlRWQjKMfPwpX0zw64/A==}
+
+snapshots:
+
+  node-cxc@1.0.0: {}

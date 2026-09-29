@@ -1,0 +1,73 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      utilitify:
+        specifier: 1.0.2
+        version: 1.0.2
+
+packages:
+
+  kind-of@6.0.3:
+    resolution: {integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==}
+    engines: {node: '>=0.10.0'}
+
+  lodash.findindex@4.6.0:
+    resolution: {integrity: sha512-9er6Ccz6sEST3bHFtUrCFWk14nE8cdL/RoW1RRDV1BxqN3qsmsT56L14jhfctAqhVPVcdJw4MRxEaVoAK+JVvw==}
+
+  lodash.get@4.4.2:
+    resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
+    deprecated: This package is deprecated. Use the optional chaining (?.) operator instead.
+
+  lodash.isnumber@3.0.3:
+    resolution: {integrity: sha512-QYqzpfwO3/CWf3XP+Z+tkQsfaLL/EnUlXWVkIk5FUPc4sBdTehEqZONuyRt2P67PXAk+NXmTBcc97zw9t1FQrw==}
+
+  lodash.omit@4.18.0:
+    resolution: {integrity: sha512-hZXIupXdHtocTnvIJ2aCd2vxKYtxex6gbiGuPvgBRnFQO9yu3AtmDAbVuCXcSsQx3INo/1g71OktlFFA/ES8Xg==}
+
+  lodash.set@4.3.2:
+    resolution: {integrity: sha512-4hNPN5jlm/N/HLMCO43v8BXKq9Z7QdAGc/VGrRD61w8gN9g/6jF9A4L1pbUgBLCffi0w9VsXfTOij5x8iTyFvg==}
+
+  lodash.topath@4.5.2:
+    resolution: {integrity: sha512-1/W4dM+35DwvE/iEd1M9ekewOSTlpFekhw9mhAtrwjVqUr83/ilQiyAvmg4tVX7Unkcfl1KC+i9WdaT4B6aQcg==}
+
+  lodash.transform@4.6.0:
+    resolution: {integrity: sha512-LO37ZnhmBVx0GvOU/caQuipEh4GN82TcWv3yHlebGDgOxbxiwwzW5Pcx2AcvpIv2WmvmSMoC492yQFNhy/l/UQ==}
+
+  utilitify@1.0.2:
+    resolution: {integrity: sha512-hVNGN8RevWmc8HxR10/wq851OsMOKyyrnHXeDSGdAzVaPDcrAf9DSsgtI7t1ajIZt8PKadGXAu8Y1kbBfF6ybw==}
+
+snapshots:
+
+  kind-of@6.0.3: {}
+
+  lodash.findindex@4.6.0: {}
+
+  lodash.get@4.4.2: {}
+
+  lodash.isnumber@3.0.3: {}
+
+  lodash.omit@4.18.0: {}
+
+  lodash.set@4.3.2: {}
+
+  lodash.topath@4.5.2: {}
+
+  lodash.transform@4.6.0: {}
+
+  utilitify@1.0.2:
+    dependencies:
+      kind-of: 6.0.3
+      lodash.findindex: 4.6.0
+      lodash.get: 4.4.2
+      lodash.isnumber: 3.0.3
+      lodash.omit: 4.18.0
+      lodash.set: 4.3.2
+      lodash.topath: 4.5.2
+      lodash.transform: 4.6.0

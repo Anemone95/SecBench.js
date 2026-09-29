@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      serveryztyzt:
+        specifier: 1.4.0
+        version: 1.4.0
+
+packages:
+
+  serveryztyzt@1.4.0:
+    resolution: {integrity: sha512-evpAz9kBHv3A8Rx3iEtiS/AadHUFNEY84Z0TmGYejxGJePs7v+uoqzRKhoYV0JOTOKJ6fsIuLcexCo581Nr+7g==}
+
+snapshots:
+
+  serveryztyzt@1.4.0: {}

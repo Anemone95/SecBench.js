@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      mobile-detect:
+        specifier: 1.3.6
+        version: 1.3.6
+
+packages:
+
+  mobile-detect@1.3.6:
+    resolution: {integrity: sha512-Nft/oRzY0+9l/GU0FxlyZpFhZKfia5BjBk/Oz0Ixfz5zFUxlw6gbEpwP7cfGky8bN8l21wEmwvPnnx34FeOQ6Q==}
+
+snapshots:
+
+  mobile-detect@1.3.6: {}

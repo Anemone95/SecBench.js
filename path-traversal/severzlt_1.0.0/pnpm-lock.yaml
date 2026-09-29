@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      severzlt:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  severzlt@1.0.0:
+    resolution: {integrity: sha512-jdpOdbdF/RAKTjaOjbgJWUyhfo+bJyVXXu4Ql6Er7FwAlBsx+Du2LL4k4xZaAqt/sHozLvmNxMi4h7pw0OUDYQ==}
+
+snapshots:
+
+  severzlt@1.0.0: {}

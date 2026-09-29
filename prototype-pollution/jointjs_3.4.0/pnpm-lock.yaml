@@ -1,0 +1,71 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      jointjs:
+        specifier: 3.4.0
+        version: 3.4.0
+
+packages:
+
+  backbone@1.4.1:
+    resolution: {integrity: sha512-ADy1ztN074YkWbHi8ojJVFe3vAanO/lrzMGZWUClIP7oDD/Pjy2vrASraUP+2EVCfIiTtCW4FChVow01XneivA==}
+
+  dagre@0.8.5:
+    resolution: {integrity: sha512-/aTqmnRta7x7MCCpExk7HQL2O4owCT2h8NT//9I1OQ9vt29Pa0BzSAkR5lwFUcQ7491yVi/3CXU9jQ5o0Mn2Sw==}
+
+  graphlib@2.1.8:
+    resolution: {integrity: sha512-jcLLfkpoVGmH7/InMC/1hIvOPSUh38oJtGhvrOFGzioE1DZ+0YW16RgmOJhHiuWTvGiJQ9Z1Ik43JvkRPRvE+A==}
+
+  jointjs@3.4.0:
+    resolution: {integrity: sha512-MNedaJhXwWAOs+rI0Z7FkmD04ZuHyNceNN5t4kvZ+YNCWsvoIY1MsPjJZuKW11f+OZMpLv2cVfaOqFxlupGb7Q==}
+    deprecated: |-
+      This package has been deprecated in favor of '@joint/core'. The repository name has changed to improve organization and naming conventions. Please update your dependencies to use the new package name:
+
+      npm install @joint/core
+
+      For more information, visit the JointJS repository at: https://github.com/clientio/joint
+
+  jquery@3.6.4:
+    resolution: {integrity: sha512-v28EW9DWDFpzcD9O5iyJXg3R3+q+mET5JhnjJzQUZMHOv67bpSIHq81GEYpPNZHG+XXHsfSme3nxp/hndKEcsQ==}
+
+  lodash@4.17.23:
+    resolution: {integrity: sha512-LgVTMpQtIopCi79SJeDiP0TfWi5CNEc/L/aRdTh3yIvmZXTnheWpKjSZhnvMl8iXbC1tFg9gdHHDMLoV7CnG+w==}
+
+  underscore@1.13.8:
+    resolution: {integrity: sha512-DXtD3ZtEQzc7M8m4cXotyHR+FAS18C64asBYY5vqZexfYryNNnDc02W4hKg3rdQuqOYas1jkseX0+nZXjTXnvQ==}
+
+snapshots:
+
+  backbone@1.4.1:
+    dependencies:
+      underscore: 1.13.8
+
+  dagre@0.8.5:
+    dependencies:
+      graphlib: 2.1.8
+      lodash: 4.17.23
+
+  graphlib@2.1.8:
+    dependencies:
+      lodash: 4.17.23
+
+  jointjs@3.4.0:
+    dependencies:
+      backbone: 1.4.1
+      dagre: 0.8.5
+      graphlib: 2.1.8
+      jquery: 3.6.4
+      lodash: 4.17.23
+
+  jquery@3.6.4: {}
+
+  lodash@4.17.23: {}
+
+  underscore@1.13.8: {}

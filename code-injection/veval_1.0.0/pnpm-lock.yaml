@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      veval:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  veval@1.0.0:
+    resolution: {integrity: sha512-+dBcjij89S/DdHaIJEARMiFi2wHj8D3lnPbez/fcU+m63gaELeg1noYiBIn1bjrqVmtph84HALoxzdninKmHHw==}
+
+snapshots:
+
+  veval@1.0.0: {}

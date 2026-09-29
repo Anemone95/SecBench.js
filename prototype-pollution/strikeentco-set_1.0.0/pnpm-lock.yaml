@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@strikeentco/set':
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  '@strikeentco/set@1.0.0':
+    resolution: {integrity: sha512-y6CyiyfeTDta2GbraRI7TQtNDVXKLSRkn1ctxbf7PtRM8CEKCCRWQi5FKaZEsvqqK91GzzZvtLXQFG+MsKOe4A==}
+    engines: {node: '>=6.0.0'}
+
+snapshots:
+
+  '@strikeentco/set@1.0.0': {}

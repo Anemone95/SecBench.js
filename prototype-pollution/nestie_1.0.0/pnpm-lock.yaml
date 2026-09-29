@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      nestie:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  nestie@1.0.0:
+    resolution: {integrity: sha512-kqV8S8idHH7+itzEr4JhKjlsDb1O1QEaHeDfPUssuufm3L/R1PDqfMoMzIGsqVhqynxlaQ4DtnM+ozq/mW96AQ==}
+    engines: {node: '>=8'}
+
+snapshots:
+
+  nestie@1.0.0: {}

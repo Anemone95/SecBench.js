@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      node-dig:
+        specifier: 1.0.1
+        version: 1.0.1
+
+packages:
+
+  node-dig@1.0.1:
+    resolution: {integrity: sha512-Hp9F1yPPPJAvQJK5tyTYHjFIxaTgKfTHV6CEV6CBEFLV78eSkTnHGGP2QwMZ8DGJBDm99mXg27KeSpIZco7okw==}
+
+snapshots:
+
+  node-dig@1.0.1: {}

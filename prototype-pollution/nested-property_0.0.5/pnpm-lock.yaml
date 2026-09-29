@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      nested-property:
+        specifier: 0.0.5
+        version: 0.0.5
+
+packages:
+
+  nested-property@0.0.5:
+    resolution: {integrity: sha512-qxEzfsrf5n7JNBZ/gH8P8xaLHqlNUgMnE8YfxteLJB8qqn+MbPuXVnwfLo1USbjkgk4DEwIvsWDnRTkkq3DGSA==}
+
+snapshots:
+
+  nested-property@0.0.5: {}

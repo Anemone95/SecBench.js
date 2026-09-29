@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      serve-here.js:
+        specifier: 1.1.0
+        version: 1.1.0
+
+packages:
+
+  serve-here.js@1.1.0:
+    resolution: {integrity: sha512-e3kTuNFw9ib6EwNn7h9AE68D1QBAeQYECnwaRy3ZJvhnKL3N8Iyj+pVfkfd4k/1uzMvjDhqwuV2cXMs5hi37KA==}
+    hasBin: true
+
+snapshots:
+
+  serve-here.js@1.1.0: {}

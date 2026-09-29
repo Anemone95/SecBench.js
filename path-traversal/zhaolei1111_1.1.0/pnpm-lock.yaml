@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      zhaolei1111:
+        specifier: 1.1.0
+        version: 1.1.0
+
+packages:
+
+  zhaolei1111@1.1.0:
+    resolution: {integrity: sha512-T71hm+tImiIamaii8NSMASwvFS8vtjV/BP+vuMddhec4Ihlm7CHLROB97kN4v+o7W5Sjqd1RVvNT/n8MBvTSPg==}
+    deprecated: deprecate
+
+snapshots:
+
+  zhaolei1111@1.1.0: {}

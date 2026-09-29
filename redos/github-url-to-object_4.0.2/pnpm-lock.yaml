@@ -1,0 +1,29 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      github-url-to-object:
+        specifier: 4.0.2
+        version: 4.0.2
+
+packages:
+
+  github-url-to-object@4.0.2:
+    resolution: {integrity: sha512-l7yZG9Gze9HHfUbMRnXqGtkFLMNiPj9HCqRpdIvttTa6HXi53N7MSfEAJD0IoqtvibRVdujeqCxa8cyhkifNSA==}
+
+  is-url@1.2.4:
+    resolution: {integrity: sha512-ITvGim8FhRiYe4IQ5uHSkj7pVaPDrCTkNd3yq3cV7iZAcJdHTUMPMEHcqSOy9xZ9qFenQCvi+2wjH9a1nXqHww==}
+
+snapshots:
+
+  github-url-to-object@4.0.2:
+    dependencies:
+      is-url: 1.2.4
+
+  is-url@1.2.4: {}

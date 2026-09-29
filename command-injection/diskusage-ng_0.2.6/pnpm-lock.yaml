@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      diskusage-ng:
+        specifier: 0.2.6
+        version: 0.2.6
+
+packages:
+
+  diskusage-ng@0.2.6:
+    resolution: {integrity: sha512-8tjPmYaS6VkACNnAQsF1s7WfYpId2pLUR+xVSEoPCiIodhdHKDYnhkehgzfWKJr71SkPJiGn8bhBtwVGl7Za4g==}
+    engines: {node: '>=0.10.0'}
+
+snapshots:
+
+  diskusage-ng@0.2.6: {}

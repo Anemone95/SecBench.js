@@ -1,0 +1,42 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@fluentui/styles':
+        specifier: 0.47.15
+        version: 0.47.15
+
+packages:
+
+  '@babel/runtime@7.29.7':
+    resolution: {integrity: sha512-Nq8OhGWiZIZGV6hLHoyAKLLcJihP/xFeBMGJoUrxTX2psI8dCifzLhZISFb+VWS3wFMRDmCGw5R+dOySCqPLhw==}
+    engines: {node: '>=6.9.0'}
+
+  '@fluentui/styles@0.47.15':
+    resolution: {integrity: sha512-gkbPxA9j/yLg8bnk5TunYR7TFy6l4qd9FxBDIKvyrdUQMcLD60BUENPF00tHAFRhpqUWaKovq0TM3sA/ClXG+A==}
+
+  csstype@2.6.21:
+    resolution: {integrity: sha512-Z1PhmomIfypOpoMjRQB70jfvy/wxT50qW08YXO5lMIJkrdq4yOTR+AW7FqutScmB9NkLwxo+jU+kZLbofZZq/w==}
+
+  lodash@4.18.1:
+    resolution: {integrity: sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q==}
+
+snapshots:
+
+  '@babel/runtime@7.29.7': {}
+
+  '@fluentui/styles@0.47.15':
+    dependencies:
+      '@babel/runtime': 7.29.7
+      csstype: 2.6.21
+      lodash: 4.18.1
+
+  csstype@2.6.21: {}
+
+  lodash@4.18.1: {}

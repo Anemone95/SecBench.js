@@ -1,0 +1,62 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      mathjs:
+        specifier: 3.10.3
+        version: 3.10.3
+
+packages:
+
+  complex.js@2.0.1:
+    resolution: {integrity: sha512-zu2kFxCi8x66budGAEfHcLk0+dcT4EdtiwJ9oIFrvDq8ARJ4T4F3hC0qXc5tn+FzIOYaEOZfO6ew6t6wmGfwpg==}
+
+  decimal.js@7.1.1:
+    resolution: {integrity: sha512-JAYTBScouq/tbesTv17VT4/Zf4kOguK6LRp9lK8IasQpzC1u4X5z+fNIasI3Le+kBXpo83hyTp6asVgTHIDlGw==}
+
+  fraction.js@4.0.0:
+    resolution: {integrity: sha512-VFj4e6g5arfi1iH4YOHao6Aq8ZB9e+R4mW8dUZA0qeLqVQWKMc4+4N/U1eTWPuddMsXd0MjwGRFRzBW2G7msBA==}
+
+  mathjs@3.10.3:
+    resolution: {integrity: sha512-LXHITVjSqeWZpeXS4vkt5Fkgh9cPjTVquXSnEC4H2W7T+TBlsBtRwEaRrqnvE9JvnrzVRmU7UsrmX41FP0an1A==}
+    engines: {node: '>= 0.1'}
+    hasBin: true
+
+  seed-random@2.2.0:
+    resolution: {integrity: sha512-34EQV6AAHQGhoc0tn/96a9Fsi6v2xdqe/dMUwljGRaFOzR3EgRmECvD0O8vi8X+/uQ50LGHfkNu/Eue5TPKZkQ==}
+
+  tiny-emitter@1.0.2:
+    resolution: {integrity: sha512-y87VH5ncX+MzK2rqEF6v7Ad8gOdQDV1jiFT5bXUrWGBTFN9EFLrvufpWryNipgFDCzQ4fTOTPUCZGLYoQ2D9UA==}
+
+  typed-function@0.10.5:
+    resolution: {integrity: sha512-5BI8zKF/aZhsXJJKcRvcOuDCzBVY4R08Ok8ilRWHpQ5Np+LwzWeGzaIUNUw++d19Vvv8iqzvaN9/h5WDdY8cmg==}
+    engines: {node: '>= 0.10'}
+
+snapshots:
+
+  complex.js@2.0.1: {}
+
+  decimal.js@7.1.1: {}
+
+  fraction.js@4.0.0: {}
+
+  mathjs@3.10.3:
+    dependencies:
+      complex.js: 2.0.1
+      decimal.js: 7.1.1
+      fraction.js: 4.0.0
+      seed-random: 2.2.0
+      tiny-emitter: 1.0.2
+      typed-function: 0.10.5
+
+  seed-random@2.2.0: {}
+
+  tiny-emitter@1.0.2: {}
+
+  typed-function@0.10.5: {}

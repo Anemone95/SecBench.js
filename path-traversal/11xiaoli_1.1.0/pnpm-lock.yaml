@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      11xiaoli:
+        specifier: 1.1.0
+        version: 1.1.0
+
+packages:
+
+  11xiaoli@1.1.0:
+    resolution: {integrity: sha512-GeEko9gNKzYw4craK7U9P6jv+uam9VJnPjJymoLcbqA3zEb9/P0OZ4+EHLm97JiR/aC1l8Yz35pSFgThfH57zA==}
+
+snapshots:
+
+  11xiaoli@1.1.0: {}

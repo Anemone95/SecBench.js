@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      myprolyz:
+        specifier: 1.1.0
+        version: 1.1.0
+
+packages:
+
+  myprolyz@1.1.0:
+    resolution: {integrity: sha512-XWGErFXqtdpnOCPNytWE6af4AcqzcWaAsrLWw8XK+sSVvH9ERIciDucqI4gmlQ/u5zPaxxnhMaVK91dpbVMSCA==}
+
+snapshots:
+
+  myprolyz@1.1.0: {}

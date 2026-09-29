@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      vega-util:
+        specifier: 1.13.0
+        version: 1.13.0
+
+packages:
+
+  vega-util@1.13.0:
+    resolution: {integrity: sha512-QYVAq7TLFGps18oA13Nwm82lMkQ7oak2dnQAYgEqCRaX5Nx4YFJ7R3R+iymDM0xFmwvervsTtD5arvMIY+HfFA==}
+
+snapshots:
+
+  vega-util@1.13.0: {}

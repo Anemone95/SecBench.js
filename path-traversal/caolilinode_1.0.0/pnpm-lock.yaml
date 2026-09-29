@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      caolilinode:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  caolilinode@1.0.0:
+    resolution: {integrity: sha512-mVQU3joPC0c8fzWm57gCan7v5E4ohLWLwL0WHxYzoqjwM71Bf3Yq9LhtUPyGwbZ2RUCeu2vPLJWej29qq9Rjhw==}
+
+snapshots:
+
+  caolilinode@1.0.0: {}

@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      yypsulie11:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  yypsulie11@1.0.0:
+    resolution: {integrity: sha512-cjTuHNfCcQoryzdA/Ud7qOVPvT/GsyzrN8LdjlnJ5d9Yo93uDRHD8suNleK6OgnMJneO/8b29qkSDfhh480dPg==}
+
+snapshots:
+
+  yypsulie11@1.0.0: {}

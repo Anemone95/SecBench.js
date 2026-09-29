@@ -1,0 +1,30 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      node-rules:
+        specifier: 3.0.0
+        version: 3.0.0
+
+packages:
+
+  node-rules@3.0.0:
+    resolution: {integrity: sha512-iMpEO+m1JU8D1u/28zu5ydreQ866dknH80Dbgwba36vK0k1pC8z5n+AFLsLBTS3y7Rd/GVEET0UnqeNExuYBJw==}
+    engines: {node: '>= 0.4.x'}
+
+  underscore@1.13.8:
+    resolution: {integrity: sha512-DXtD3ZtEQzc7M8m4cXotyHR+FAS18C64asBYY5vqZexfYryNNnDc02W4hKg3rdQuqOYas1jkseX0+nZXjTXnvQ==}
+
+snapshots:
+
+  node-rules@3.0.0:
+    dependencies:
+      underscore: 1.13.8
+
+  underscore@1.13.8: {}

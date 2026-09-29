@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      zs123:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  zs123@1.0.0:
+    resolution: {integrity: sha512-i+rMV6q7lTaKFOH+bznOghsp1/u0Z6uPxWgwH8/1snW0+zmVeL6CZnSj2zJrvJ71hYgz/cqQODflV9kSkWT4Hw==}
+
+snapshots:
+
+  zs123@1.0.0: {}

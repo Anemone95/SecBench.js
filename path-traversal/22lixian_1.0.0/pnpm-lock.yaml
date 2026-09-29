@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      22lixian:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  22lixian@1.0.0:
+    resolution: {integrity: sha512-vXHaaIcOxo8uuuxoYvRiUPlM0l6VPC/E1+pTMD69lb6dkhZqFf8v6xcsFnlCZz9BFGBsVuoR9TxpqlA0sZbgGg==}
+
+snapshots:
+
+  22lixian@1.0.0: {}

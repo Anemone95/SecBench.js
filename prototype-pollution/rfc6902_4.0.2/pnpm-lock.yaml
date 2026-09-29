@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      rfc6902:
+        specifier: 4.0.2
+        version: 4.0.2
+
+packages:
+
+  rfc6902@4.0.2:
+    resolution: {integrity: sha512-MJOC4iDSv3Qn5/QvhPbrNoRongti6moXSShcRmtbNqOk0WPxlviEdMV4bb9PaULhSxLUXzWd4AjAMKQ3j3y54w==}
+
+snapshots:
+
+  rfc6902@4.0.2: {}

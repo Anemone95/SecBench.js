@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      controlled-merge:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  controlled-merge@1.0.0:
+    resolution: {integrity: sha512-akSmHJ6F3mRiZQ+RpSwPWwd0znyhWczkL8SzTKfjv6t1B4kyJv3QA3VJouGeSNP5Yx3STV9PsNpn+nFkiWQyyw==}
+
+snapshots:
+
+  controlled-merge@1.0.0: {}

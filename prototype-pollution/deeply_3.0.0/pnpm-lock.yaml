@@ -1,0 +1,38 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      deeply:
+        specifier: 3.0.0
+        version: 3.0.0
+
+packages:
+
+  deeply@3.0.0:
+    resolution: {integrity: sha512-26Im0tS4/FUIPVFjtMbBvC+X4p+R8F1E35GF7p6I9dM8hVdxmAqgFGYzRaSiLWmp+NuqAnV+90NVGUBxDZU2Pw==}
+    engines: {node: '>= 6'}
+
+  fulcon@2.0.0:
+    resolution: {integrity: sha512-BuOhjdlrovbIzVajxL4WcXXK7iAWoTuSATKGMF9BEwAu2En+saHTB8IF/+LbXTWIx46hX4/Nqn2rv38VTh4mrA==}
+    engines: {node: '>= 6'}
+
+  precise-typeof@2.0.1:
+    resolution: {integrity: sha512-VcSaY01jyA0vf8LjFuwplqUZLYyEPGrkCn+KZQGNqHtiEwRzGLynB7CoKl55LXvHKL3vZxfHAVRd4EHqMJG7ZQ==}
+    engines: {node: '>= 6'}
+
+snapshots:
+
+  deeply@3.0.0:
+    dependencies:
+      fulcon: 2.0.0
+      precise-typeof: 2.0.1
+
+  fulcon@2.0.0: {}
+
+  precise-typeof@2.0.1: {}

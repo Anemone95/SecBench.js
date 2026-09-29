@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      x-assign:
+        specifier: 0.1.4
+        version: 0.1.4
+
+packages:
+
+  x-assign@0.1.4:
+    resolution: {integrity: sha512-m+9DyZWR0Jxqrdv3Nz4PMoWb57jPRHxRVh0wDHxvMYt8XCgsiptNs8EhadWcQFQkeFFaRySLri/8U8KVNjY0CQ==}
+    engines: {node: '>= 8'}
+
+snapshots:
+
+  x-assign@0.1.4: {}

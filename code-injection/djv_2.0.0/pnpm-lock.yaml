@@ -1,0 +1,30 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      djv:
+        specifier: 2.0.0
+        version: 2.0.0
+
+packages:
+
+  '@korzio/djv-draft-04@2.0.1':
+    resolution: {integrity: sha512-MeTVcNsfCIYxK6T7jW1sroC7dBAb4IfLmQe6RoCqlxHN5NFkzNpgdnBPR+/0D2wJDUJHM9s9NQv+ouhxKjvUjg==}
+
+  djv@2.0.0:
+    resolution: {integrity: sha512-9og7LXUe5cpMxbkZsKkLjH8fCKzF+zo9EKWjoTJVizg/cZJ8hFY+26T1+HGYKaRUuqKljpVLNj+ltHWFbFyMAQ==}
+
+snapshots:
+
+  '@korzio/djv-draft-04@2.0.1':
+    optional: true
+
+  djv@2.0.0:
+    optionalDependencies:
+      '@korzio/djv-draft-04': 2.0.1

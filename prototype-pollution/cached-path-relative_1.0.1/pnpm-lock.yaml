@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      cached-path-relative:
+        specifier: 1.0.1
+        version: 1.0.1
+
+packages:
+
+  cached-path-relative@1.0.1:
+    resolution: {integrity: sha512-cI79dgUmNqTnvvcEofBa2MikCUUPi91mot41JzWBXe0jyR4+fSQfuzkSmuGrRl3rtFRVAJTBvw39vyHkMHHbVg==}
+
+snapshots:
+
+  cached-path-relative@1.0.1: {}

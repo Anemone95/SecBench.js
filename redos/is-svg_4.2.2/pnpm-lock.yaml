@@ -1,0 +1,30 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      is-svg:
+        specifier: 4.2.2
+        version: 4.2.2
+
+packages:
+
+  html-comment-regex@1.1.2:
+    resolution: {integrity: sha512-P+M65QY2JQ5Y0G9KKdlDpo0zK+/OHptU5AaBwUfAIDJZk1MYf32Frm84EcOytfJE0t5JvkAnKlmjsXDnWzCJmQ==}
+
+  is-svg@4.2.2:
+    resolution: {integrity: sha512-JlA7Mc7mfWjdxxTkJ094oUK9amGD7gQaj5xA/NCY0vlVvZ1stmj4VX+bRuwOMN93IHRZ2ctpPH/0FO6DqvQ5Rw==}
+    engines: {node: '>=6'}
+
+snapshots:
+
+  html-comment-regex@1.1.2: {}
+
+  is-svg@4.2.2:
+    dependencies:
+      html-comment-regex: 1.1.2

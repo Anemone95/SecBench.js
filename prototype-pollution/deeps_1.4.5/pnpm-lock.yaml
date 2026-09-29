@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      deeps:
+        specifier: 1.4.5
+        version: 1.4.5
+
+packages:
+
+  deeps@1.4.5:
+    resolution: {integrity: sha512-sLkOeUZJX5Zj9aILXUWyUn2YLrKDJLgRmm5tZVTmIdh43L/6UknpzaRAFItKg9LMS+3hu6y8QAxEYavBLTzEuQ==}
+    engines: {node: '>=0.10'}
+
+snapshots:
+
+  deeps@1.4.5: {}

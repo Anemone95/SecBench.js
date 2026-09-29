@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      paypal-adaptive:
+        specifier: 0.4.1
+        version: 0.4.1
+
+packages:
+
+  paypal-adaptive@0.4.1:
+    resolution: {integrity: sha512-Eea+f2QbcmE37Ky3Esv+d6mtsHj6kK+NXQdHd9Lvfm2t0uMMgUcG2mzZ6gi4uNeWVaS/IypdhLyFueN2Ygapbg==}
+
+snapshots:
+
+  paypal-adaptive@0.4.1: {}

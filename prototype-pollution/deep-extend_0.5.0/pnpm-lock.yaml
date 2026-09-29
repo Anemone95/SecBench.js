@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      deep-extend:
+        specifier: 0.5.0
+        version: 0.5.0
+
+packages:
+
+  deep-extend@0.5.0:
+    resolution: {integrity: sha512-avbqfQK2M9h+GcX7OVmEvnhodw0rFdzXYRGD4b17BIRxyXVo9he2AIaE0ts1PrPA8sHgv0N6dHd99bL7Hky4Qg==}
+    engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
+
+snapshots:
+
+  deep-extend@0.5.0: {}

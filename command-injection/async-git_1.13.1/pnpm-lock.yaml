@@ -1,0 +1,35 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      async-git:
+        specifier: 1.13.1
+        version: 1.13.1
+
+packages:
+
+  '@does/exist@1.1.0':
+    resolution: {integrity: sha512-Hpl7sjh3Z5hsIf/W0ZiqBqGU81Kii+4E3s+Mta5RTwbsIUvNJry43PSs+pT0wUAcaS0hxYQ17JTv+g44arA/TQ==}
+
+  async-execute@1.2.0:
+    resolution: {integrity: sha512-YH6K9LgkvZjo27hry0kZuDRwQ/xsuzjCRwR3EOgVMe2a5etYmDxgmKUGdfWX0pLXZKJW/VaHa89lggXCKSY1dQ==}
+
+  async-git@1.13.1:
+    resolution: {integrity: sha512-tlj9kACwUkFcQFNJkv4m96+fAe7K/njbPXfyy31jIC1ELI+LQ/eXVc84CSJQGUyBd9+ByZSBZSsuJj6gVrq8PQ==}
+
+snapshots:
+
+  '@does/exist@1.1.0': {}
+
+  async-execute@1.2.0: {}
+
+  async-git@1.13.1:
+    dependencies:
+      '@does/exist': 1.1.0
+      async-execute: 1.2.0

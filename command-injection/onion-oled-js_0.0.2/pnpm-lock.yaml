@@ -1,0 +1,36 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      onion-oled-js:
+        specifier: 0.0.2
+        version: 0.0.2
+
+packages:
+
+  asap@2.0.6:
+    resolution: {integrity: sha512-BSHWgDSAiKs50o2Re8ppvp3seVHXSRM44cdSsT9FfNEUUZLOGWVCsiWaRPWM1Znn+mqZ1OfVZ3z3DWEzSp7hRA==}
+
+  onion-oled-js@0.0.2:
+    resolution: {integrity: sha512-Npv9EtjWPlsvPmVbNM1Qt+MH/VMzgBbcxX9F4q+x4IQH76xkfACiGEnEaP3C87On5QNhtfSX8s6pB82gDBYGUQ==}
+
+  promise@7.3.1:
+    resolution: {integrity: sha512-nolQXZ/4L+bP/UGlkfaIujX9BKxGwmQ9OT4mOt5yvy8iK1h3wqTEJCijzGANTCCl9nWjY41juyAn2K3Q1hLLTg==}
+
+snapshots:
+
+  asap@2.0.6: {}
+
+  onion-oled-js@0.0.2:
+    dependencies:
+      promise: 7.3.1
+
+  promise@7.3.1:
+    dependencies:
+      asap: 2.0.6

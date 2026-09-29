@@ -1,0 +1,29 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      chrono-node:
+        specifier: 2.2.3
+        version: 2.2.3
+
+packages:
+
+  chrono-node@2.2.3:
+    resolution: {integrity: sha512-2CFyIEVdRmgOdtZqJ1F3C+gaex81h9QXr4HuSyPjVFWFs2kgrCDgUitxBwC7NM2ia8ZeBBGkQ1Jq1RZCaW76Wg==}
+
+  dayjs@1.11.23:
+    resolution: {integrity: sha512-QDTCU0M0MxR3hQfnlDJfwekQiaanm1ubOD231u73WBckQ/fsamwRLiE2GBz6D3a/xF1NgfiDLJjXBa1hYOYTtQ==}
+
+snapshots:
+
+  chrono-node@2.2.3:
+    dependencies:
+      dayjs: 1.11.23
+
+  dayjs@1.11.23: {}

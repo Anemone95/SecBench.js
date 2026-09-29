@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      urlregex:
+        specifier: 0.5.0
+        version: 0.5.0
+
+packages:
+
+  urlregex@0.5.0:
+    resolution: {integrity: sha512-X8PKQlesRvPc+8cQjYOElULYs/lE2CMAlu3z+H3hKenyvRtQqc+VhXr5PqZa29dQZax+T2HyUl8acGsnkklkVw==}
+
+snapshots:
+
+  urlregex@0.5.0: {}

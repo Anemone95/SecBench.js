@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      macaddress:
+        specifier: 0.2.8
+        version: 0.2.8
+
+packages:
+
+  macaddress@0.2.8:
+    resolution: {integrity: sha512-igFoAz9Ih4sE9MnJLA/3aS+GQeU5OUXKwV0JMIwyQtGqyNPdwJhcVdIDjFIFDeyaw7jdQvK1FxJv5GoNYkl6zA==}
+
+snapshots:
+
+  macaddress@0.2.8: {}

@@ -1,0 +1,74 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      marsdb:
+        specifier: 0.6.11
+        version: 0.6.11
+
+packages:
+
+  check-types@6.0.0:
+    resolution: {integrity: sha512-QXzTKI9y+qGYqgoFoGmJYbK68bdyQODC6Ga0IsW2S2vu6ZPkc1IPaO7xOicX213d1m0gxefKAzGSSYFEh2iSlg==}
+
+  double-ended-queue@0.9.7:
+    resolution: {integrity: sha512-XVVC/DMQpu5d+bbMKfLpeliLIqaZO5oWX0OWv/qBtrfKxA3bviGTKrCA/+TILekF+dynL/T/oPlYKB1WeWZDmQ==}
+
+  eventemitter3@1.1.1:
+    resolution: {integrity: sha512-idmH3G0vJjQv2a5N74b+oXcOUKYBqSGJGN1eVV6ELGdUnesAO8RZsU74eaS3VfldRet8N9pFupxppBUKztrBdQ==}
+
+  fast.js@0.1.1:
+    resolution: {integrity: sha512-DIVG0bJTAgVg6iUiAvmVBzE+8ZAPZ3cmuzTjkC9PxLM2/6TqUtfgr+1P3bCHUdlDAstZYLqOQTLKU4+srK6Y0w==}
+
+  geojson-utils@1.1.0:
+    resolution: {integrity: sha512-9irmjugYFrMvGjMw+qW5BQpghJO4ClFMDdPzVe2oDgtH2DhoKMaXqjIYPS5VpfrcnV0kOSrXcj8D9Izmr0AM9Q==}
+
+  invariant@2.2.4:
+    resolution: {integrity: sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==}
+
+  js-tokens@4.0.0:
+    resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
+
+  loose-envify@1.4.0:
+    resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
+    hasBin: true
+
+  marsdb@0.6.11:
+    resolution: {integrity: sha512-kZzVOZh62OL6s2XWrlbI7NmSlLJEeXpmttXasFwFqvbKmFtmhth3LlaxH4/Ompkh6SQ22M8Jr8peaV2c7T9SVA==}
+
+snapshots:
+
+  check-types@6.0.0: {}
+
+  double-ended-queue@0.9.7: {}
+
+  eventemitter3@1.1.1: {}
+
+  fast.js@0.1.1: {}
+
+  geojson-utils@1.1.0: {}
+
+  invariant@2.2.4:
+    dependencies:
+      loose-envify: 1.4.0
+
+  js-tokens@4.0.0: {}
+
+  loose-envify@1.4.0:
+    dependencies:
+      js-tokens: 4.0.0
+
+  marsdb@0.6.11:
+    dependencies:
+      check-types: 6.0.0
+      double-ended-queue: 0.9.7
+      eventemitter3: 1.1.1
+      fast.js: 0.1.1
+      geojson-utils: 1.1.0
+      invariant: 2.2.4

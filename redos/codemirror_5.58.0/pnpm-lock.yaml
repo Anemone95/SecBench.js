@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      codemirror:
+        specifier: 5.58.0
+        version: 5.58.0
+
+packages:
+
+  codemirror@5.58.0:
+    resolution: {integrity: sha512-OUK+7EgaYnLyC0F09UWjckLWvviy02IDDGTW5Zmj60a3gdGnFtUM6rVsqrfl5+YSylQVQBNfAGG4KF7tQOb4/Q==}
+
+snapshots:
+
+  codemirror@5.58.0: {}

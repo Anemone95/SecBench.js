@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      objutil:
+        specifier: 2.17.3
+        version: 2.17.3
+
+packages:
+
+  objutil@2.17.3:
+    resolution: {integrity: sha512-VK35wbEs3aGsCdU0ilUxIsgR/8Iw9K3fENCuJF+U/gY2xYTeCeagMwyUna8oJ5fEB87HdfrX/u3ui5vIPkXawg==}
+
+snapshots:
+
+  objutil@2.17.3: {}

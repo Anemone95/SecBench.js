@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      tree-kit:
+        specifier: 0.6.1
+        version: 0.6.1
+
+packages:
+
+  tree-kit@0.6.1:
+    resolution: {integrity: sha512-7mV4KbsLMuA6ths3J1wpVUj2PLmLdoNEGnP9fm3kxef4UXYC/A0rL5gKsqtkUaCMuRYUMORyioy8IpBWUBQ1Ig==}
+
+snapshots:
+
+  tree-kit@0.6.1: {}

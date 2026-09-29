@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@fabiocaccamo/utils.js':
+        specifier: 0.17.0
+        version: 0.17.0
+
+packages:
+
+  '@fabiocaccamo/utils.js@0.17.0':
+    resolution: {integrity: sha512-K/ecr+1sGRDp4HtKQzUKGRj75ukFtXbNotkQAP5fGmYPNF+BGi5IOQR7YEIhYOX5zFeFQVl/4BqkYNvr+K7tgA==}
+
+snapshots:
+
+  '@fabiocaccamo/utils.js@0.17.0': {}

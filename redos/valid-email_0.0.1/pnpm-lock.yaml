@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      valid-email:
+        specifier: 0.0.1
+        version: 0.0.1
+
+packages:
+
+  valid-email@0.0.1:
+    resolution: {integrity: sha512-xOvrYuPWJQhfxfMv3p8spYPxBgBjJ+mkCTM4O4n/anyAxYypX61QJjjAe8/g6MISxc06BhYBBQgKXZWp9NtD+w==}
+    engines: {node: 0.8.x}
+
+snapshots:
+
+  valid-email@0.0.1: {}

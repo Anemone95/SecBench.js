@@ -1,0 +1,51 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      arpping:
+        specifier: 2.0.0
+        version: 2.0.0
+      sleep:
+        specifier: 6.3.0
+        version: 6.3.0
+
+packages:
+
+  arpping@2.0.0:
+    resolution: {integrity: sha512-+bkS6pf3vvYRfC/zDKKP9saFw4u73i7JgD75s37LU8i/OffAFhrIvQaKTzv0x1/P0JqYho/97yHD8b8jkhT78w==}
+
+  child_process@1.0.2:
+    resolution: {integrity: sha512-Wmza/JzL0SiWz7kl6MhIKT5ceIlnFPJX+lwUGj7Clhy5MMldsSoJR0+uvRzOS5Kv45Mq7t1PoE8TsOA9bzvb6g==}
+
+  nan@2.29.0:
+    resolution: {integrity: sha512-GlGk3HIvitbvs+LT3g6XUP1kpirKNvmDFwF/bmo6XNWSb/eYEs/O4bfgIEIXCZ+lIOTS5xNwDvSGMw6FJdAhtA==}
+
+  os@0.1.2:
+    resolution: {integrity: sha512-ZoXJkvAnljwvc56MbvhtKVWmSkzV712k42Is2mA0+0KTSRakq5XXuXpjZjgAt9ctzl51ojhQWakQQpmOvXWfjQ==}
+
+  sleep@6.3.0:
+    resolution: {integrity: sha512-+WgYl951qdUlb1iS97UvQ01pkauoBK9ML9I/CMPg41v0Ze4EyMlTgFTDDo32iYj98IYqxIjDMRd+L71lawFfpQ==}
+    engines: {node: '>=0.8.0'}
+
+snapshots:
+
+  arpping@2.0.0:
+    dependencies:
+      os: 0.1.2
+      child_process: 1.0.2
+
+  child_process@1.0.2: {}
+
+  nan@2.29.0: {}
+
+  os@0.1.2: {}
+
+  sleep@6.3.0:
+    dependencies:
+      nan: 2.29.0

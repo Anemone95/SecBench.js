@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      shvl:
+        specifier: 2.0.1
+        version: 2.0.1
+
+packages:
+
+  shvl@2.0.1:
+    resolution: {integrity: sha512-VU7R5Uxp38LKHooGuZe0TcX2EPK95nn8DvclAvTPyD9/qHmXvt3dR2pJ4JLZ8uLjxQNQ3zNLFJCreteIj3cvpw==}
+    deprecated: older versions vulnerable to prototype pollution
+
+snapshots:
+
+  shvl@2.0.1: {}

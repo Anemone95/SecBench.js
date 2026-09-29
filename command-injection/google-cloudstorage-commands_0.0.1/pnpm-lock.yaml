@@ -1,0 +1,24 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      google-cloudstorage-commands:
+        specifier: 0.0.1
+        version: 0.0.1
+
+packages:
+
+  google-cloudstorage-commands@0.0.1:
+    resolution: {integrity: sha512-w2RDY/vxzv4sOfFfUAuKYGyfEYEm54C3ak36uftrtNdsBA9d41jRkfirt9+SAfOS23XyfBtfJbcyEEOW23rCPw==}
+    engines: {node: '>=6.7.0'}
+    deprecated: old
+
+snapshots:
+
+  google-cloudstorage-commands@0.0.1: {}

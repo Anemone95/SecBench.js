@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      mixin-pro:
+        specifier: 0.6.0
+        version: 0.6.0
+
+packages:
+
+  mixin-pro@0.6.0:
+    resolution: {integrity: sha512-zJZdQ3GJ12no+14Utse7G+nn1Cq4XM+YUEWV4VYiJh7q+by/HPE+Sd7btjRR/Cw+DqurUCH8a4UV92GPIM990A==}
+    engines: {node: '>= 0.4.0'}
+
+snapshots:
+
+  mixin-pro@0.6.0: {}

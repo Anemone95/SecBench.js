@@ -1,0 +1,24 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      ansi-html:
+        specifier: 0.0.7
+        version: 0.0.7
+
+packages:
+
+  ansi-html@0.0.7:
+    resolution: {integrity: sha512-JoAxEa1DfP9m2xfB/y2r/aKcwXNlltr4+0QSBC4TrLfcxyvepX2Pv0t/xpgGV5bGsDzCYV8SzjWgyCW0T9yYbA==}
+    engines: {'0': node >= 0.8.0}
+    hasBin: true
+
+snapshots:
+
+  ansi-html@0.0.7: {}

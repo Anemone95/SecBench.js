@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      iniparserjs:
+        specifier: 1.0.4
+        version: 1.0.4
+
+packages:
+
+  iniparserjs@1.0.4:
+    resolution: {integrity: sha512-YILVs8VT+HuVCnUnyqISn7P592/wgWyDmFuAzHx957EwYefBjnydxXMbXA0VmcgaiBxllc5U4AdnCuDsFytF6g==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+
+snapshots:
+
+  iniparserjs@1.0.4: {}

@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      node-ini:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  node-ini@1.0.0:
+    resolution: {integrity: sha512-njSaIB7PsMKYO9C8VcxNywrrcDLfgYv4FC3wdfL8xSI23qZbbjCQVvIoe0Ryf2tCcJeMo7oCzNhqaCT7yoimag==}
+
+snapshots:
+
+  node-ini@1.0.0: {}

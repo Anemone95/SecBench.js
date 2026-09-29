@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      serverlyr:
+        specifier: 1.1.0
+        version: 1.1.0
+
+packages:
+
+  serverlyr@1.1.0:
+    resolution: {integrity: sha512-Yeifcj8xHqNCwwxPOzvcpfWFv1RmubsWlNbdvO3AtdG5rifPb11xcIZLzgOa7sqw8dGnobw+NuPsnl+MkiOLNQ==}
+
+snapshots:
+
+  serverlyr@1.1.0: {}

@@ -1,0 +1,24 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      dilu:
+        specifier: 0.1.3
+        version: 0.1.3
+
+packages:
+
+  dilu@0.1.3:
+    resolution: {integrity: sha512-MvmlAkJ0/LWmxUrDGvXh9ofnIUM66NifjgdIj+Ky3lfkachOlAj/Oqp6bRj7ZrLySZp8Izxw9SLNz+nZutz74A==}
+    engines: {node: '>=0.6.12'}
+    hasBin: true
+
+snapshots:
+
+  dilu@0.1.3: {}

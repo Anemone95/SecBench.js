@@ -1,0 +1,31 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      wind-mvc:
+        specifier: 0.0.6
+        version: 0.0.6
+
+packages:
+
+  formidable@1.0.14:
+    resolution: {integrity: sha512-aOskFHEfYwkSKSzGui5jhQ+uyLo2NTwpzhndggz2YZHlv0HkAi+zG5ZEBCL3GTvqLyr/FzX9Mvx9DueCmu2HzQ==}
+    engines: {node: '>=0.8.0'}
+    deprecated: 'Please upgrade to latest, formidable@v2 or formidable@v3! Check these notes: https://bit.ly/2ZEqIau'
+
+  wind-mvc@0.0.6:
+    resolution: {integrity: sha512-xoZXlBltwTICJwX66oL7syhDnqe49N1ypUdcYngsXm2pJ16raedxhq9Mt+w5+tkOn5JFG60vzbBu+ulRCGijPA==}
+
+snapshots:
+
+  formidable@1.0.14: {}
+
+  wind-mvc@0.0.6:
+    dependencies:
+      formidable: 1.0.14

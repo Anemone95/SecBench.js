@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      node-oojs:
+        specifier: 1.4.0
+        version: 1.4.0
+
+packages:
+
+  node-oojs@1.4.0:
+    resolution: {integrity: sha512-YOkJdcCAfbLh4ukXBD0HL7jx1NEaiIP+Is2+rnW5WcWDwKjBAZ74tAgW8sZ4wglN9CvmGXgeMobqtOHLrnRCJA==}
+    engines: {node: '>=0.10.0'}
+
+snapshots:
+
+  node-oojs@1.4.0: {}

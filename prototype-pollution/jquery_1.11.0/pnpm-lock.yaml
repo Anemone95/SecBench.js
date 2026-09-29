@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      jquery:
+        specifier: 1.11.0
+        version: 1.11.0
+
+packages:
+
+  jquery@1.11.0:
+    resolution: {integrity: sha512-hfN15gXeUqsx3HxHrHYzVzfWayuGwrCMONhvexiaIV/aUlLqC8Im+G7KrKTPkHzD7HCgeAaQ7VeHRn3Dlve8Hg==}
+    deprecated: This version is deprecated. Please upgrade to the latest version or find support at https://www.herodevs.com/support/jquery-nes or https://tuxcare.com/lp/click-jquery-support/.
+
+snapshots:
+
+  jquery@1.11.0: {}

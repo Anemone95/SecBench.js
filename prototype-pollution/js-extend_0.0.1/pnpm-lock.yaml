@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      js-extend:
+        specifier: 0.0.1
+        version: 0.0.1
+
+packages:
+
+  js-extend@0.0.1:
+    resolution: {integrity: sha512-HbVVSfcnZ75O60khYiRgLp0OCLFg0V/KpmWphAA6Zidn7jY5IoggrdyjE9wFOnionXvrNYMcYSFf00NsN1XDXQ==}
+
+snapshots:
+
+  js-extend@0.0.1: {}

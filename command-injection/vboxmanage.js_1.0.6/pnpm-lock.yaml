@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      vboxmanage.js:
+        specifier: 1.0.6
+        version: 1.0.6
+
+packages:
+
+  vboxmanage.js@1.0.6:
+    resolution: {integrity: sha512-vnn0VeMTq51V5L7I8QRng8EbNiqRaVOsEiZDZKR1norDNg5pQ3VEPtWa/5JjBTLtp3Yukx3zVVSAxBF988ZduA==}
+    deprecated: security issue fixed in v1.0.9
+
+snapshots:
+
+  vboxmanage.js@1.0.6: {}

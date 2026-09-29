@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      express-validators:
+        specifier: 1.0.3
+        version: 1.0.3
+
+packages:
+
+  express-validators@1.0.3:
+    resolution: {integrity: sha512-WFlsQ8hrcit1SFld6P0NzAXvxowddigPa2W7AXpMmJaf01CxTicwXoSm/T5/9kmUbYu86sfkS5rOrBKfgbyuFw==}
+
+snapshots:
+
+  express-validators@1.0.3: {}

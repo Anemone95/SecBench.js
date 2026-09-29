@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      npm-user-validate:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  npm-user-validate@1.0.0:
+    resolution: {integrity: sha512-qLSaQEo7cydvg+R34d/kMTYd+Bv0s0v+s+Az5Irog9mTW7cDkLxIEUymAO4FYnDqD1be9XzQ+Iz/vvIm1ymrbw==}
+
+snapshots:
+
+  npm-user-validate@1.0.0: {}

@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      serve46:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  serve46@1.0.0:
+    resolution: {integrity: sha512-bwFvMfCnLuf6u4UQY4G4okE/h74Kyrv+AEOvsjC0VZ9YJXdVljYRoIA+VQ4zBdzFS6kT9iCJ3LDxMLMZW0mNPQ==}
+
+snapshots:
+
+  serve46@1.0.0: {}

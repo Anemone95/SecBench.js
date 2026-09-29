@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      serverliujiayi1:
+        specifier: 1.1.0
+        version: 1.1.0
+
+packages:
+
+  serverliujiayi1@1.1.0:
+    resolution: {integrity: sha512-fzjbqZqqEkA3qcCI8Y5C8E+ZKs4k4IgeWbjebocIQztCju9p7qVlS6X4pj6/HBprgZKLHD5lRSUYgrClqqtBXA==}
+
+snapshots:
+
+  serverliujiayi1@1.1.0: {}

@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      js-ini:
+        specifier: 1.2.0
+        version: 1.2.0
+
+packages:
+
+  js-ini@1.2.0:
+    resolution: {integrity: sha512-pfgmRIkB8rCa1GoK3qdaRqRLcx/n2NxT1Z7eAJIE5CDdJFSzsIIR4ya+kI2VUuVk5+XjhKBrb3maAqGMtblC2Q==}
+
+snapshots:
+
+  js-ini@1.2.0: {}

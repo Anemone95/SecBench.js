@@ -1,0 +1,30 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      deep-defaults:
+        specifier: 1.0.5
+        version: 1.0.5
+
+packages:
+
+  deep-defaults@1.0.5:
+    resolution: {integrity: sha512-5ev/sNkiHTmeTqbDJEDgdQa/Ub0eOMQNix9l+dLLGbwOos7/in5HdvHXI014wqxsET4YeJG9Eq4qj0PJRL8rSw==}
+    deprecated: not actively maintained; find alternatives
+
+  lodash@4.18.1:
+    resolution: {integrity: sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q==}
+
+snapshots:
+
+  deep-defaults@1.0.5:
+    dependencies:
+      lodash: 4.18.1
+
+  lodash@4.18.1: {}

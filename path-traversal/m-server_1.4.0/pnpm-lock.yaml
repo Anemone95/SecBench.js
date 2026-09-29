@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      m-server:
+        specifier: 1.4.0
+        version: 1.4.0
+
+packages:
+
+  m-server@1.4.0:
+    resolution: {integrity: sha512-Wyj7qjl/15a799gfrby/s2j5q+qA+EafC8lv9ySNl5POpNSu6uIHGo1g7GBHYEIpSqA8WikneEtl04z/BL+McQ==}
+    hasBin: true
+
+snapshots:
+
+  m-server@1.4.0: {}

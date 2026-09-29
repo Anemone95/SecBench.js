@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      portprocesses:
+        specifier: 1.0.4
+        version: 1.0.4
+
+packages:
+
+  portprocesses@1.0.4:
+    resolution: {integrity: sha512-Jm2s5ChFbcgjwsrToDwZs0nAgomkUyCE+8m766OTZboC7aavtebOJUcOmMTg6otFrhZoRH5hetRBEFHq8+kHQw==}
+    hasBin: true
+
+snapshots:
+
+  portprocesses@1.0.4: {}

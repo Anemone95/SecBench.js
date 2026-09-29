@@ -1,0 +1,50 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      set-or-get:
+        specifier: 1.2.10
+        version: 1.2.10
+
+packages:
+
+  deffy@2.2.5:
+    resolution: {integrity: sha512-6TX2cfIo97eKqWmqgMDAUulCwnveAe3K+4VGsTGPJsL3NtSEnSBFZ3sUXdS4EBhZ8GbdaZBzXQ04ton18dJrug==}
+
+  function.name@1.0.14:
+    resolution: {integrity: sha512-s99L814NRuLxwF2sJMIcLhkQhueGXb3oKyvorzrUKKwlVB0SBbWrgZt4+EwKAo3ujCXnT7vshmCvXgZA09kCMw==}
+
+  noop6@1.0.10:
+    resolution: {integrity: sha512-WZvuCILZFZHK+WuqCQwxLBGllkBK1ct8s8Mu9FMDbEsBE6/bqNxyFGbX7Xky+6bYFL8X2Ou4Cis4CJyrwXLvQA==}
+
+  set-or-get@1.2.10:
+    resolution: {integrity: sha512-WKa6X5jx/DbCmhq/c1gUUjmNMXVOhWuyqtg0teWqqLeLfnSTraHjGO69oiHMLB+Fm5nHyW8uZxGcJPf/C10oAA==}
+
+  typpy@2.4.0:
+    resolution: {integrity: sha512-a16Uv5doNtvHzaG4wZCHmXN+l9xxmTMpyODtPz7B3DSTsDVNXilTSJGuNw68sUh0Un4bf+ghRMbEcJCI6r06mQ==}
+
+snapshots:
+
+  deffy@2.2.5:
+    dependencies:
+      typpy: 2.4.0
+
+  function.name@1.0.14:
+    dependencies:
+      noop6: 1.0.10
+
+  noop6@1.0.10: {}
+
+  set-or-get@1.2.10:
+    dependencies:
+      deffy: 2.2.5
+
+  typpy@2.4.0:
+    dependencies:
+      function.name: 1.0.14

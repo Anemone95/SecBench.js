@@ -1,0 +1,30 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      json-ptr:
+        specifier: 2.0.0
+        version: 2.0.0
+
+packages:
+
+  json-ptr@2.0.0:
+    resolution: {integrity: sha512-VGP7ucQzBLJFUC8sWR57ALW/+iui9NCE2i61SULum4TBfu9664bCdWjuRkjghbg1rj1k+8+PciKbfFJdGQlS1w==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+
+  tslib@2.8.1:
+    resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
+
+snapshots:
+
+  json-ptr@2.0.0:
+    dependencies:
+      tslib: 2.8.1
+
+  tslib@2.8.1: {}

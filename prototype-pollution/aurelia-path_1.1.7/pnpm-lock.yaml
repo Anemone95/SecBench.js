@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      aurelia-path:
+        specifier: 1.1.0
+        version: 1.1.0
+
+packages:
+
+  aurelia-path@1.1.0:
+    resolution: {integrity: sha512-VepOxgLdEsuiWAUQQ9YccRNBBXlW3rFE7lobkoEtDOZx6eCu/tT/EGVMP2q4KoXNdJsEaw158FT7J/jb7bOF8g==}
+
+snapshots:
+
+  aurelia-path@1.1.0: {}

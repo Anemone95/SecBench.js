@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      git-add-remote:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  git-add-remote@1.0.0:
+    resolution: {integrity: sha512-TX0cvFILzJ2oObGD+THJTzo6HtH8QApTTrLzUitMN3zoy4Gq8EiQgCdF4wM7Jw8nW+oKhW0I+13rx+KHxTI7fA==}
+    engines: {node: '>=0.10.0'}
+
+snapshots:
+
+  git-add-remote@1.0.0: {}

@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      yxxserver:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  yxxserver@1.0.0:
+    resolution: {integrity: sha512-kZVfPwJe52ga2k+P4HttUo5tyf3FErkVUjqtW12NzHG3cuN9avOrlPapaXcomIipFiFAdSdY5YaljskXzcSPKA==}
+
+snapshots:
+
+  yxxserver@1.0.0: {}

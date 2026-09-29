@@ -1,0 +1,43 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      reduce-css-calc:
+        specifier: 1.2.0
+        version: 1.2.0
+
+packages:
+
+  balanced-match@0.1.0:
+    resolution: {integrity: sha512-4xb6XqAEo3Z+5pEDJz33R8BZXI8FRJU+cDNLdKgDpmnz+pKKRVYLpdv+VvUAC7yUhBMj4izmyt19eCGv1QGV7A==}
+
+  balanced-match@1.0.2:
+    resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
+
+  reduce-css-calc@1.2.0:
+    resolution: {integrity: sha512-Vt2O+yqktbk2LDsusgpNW+i/J1eULvRhwFPOjOlvQuFWPIPozi6nU2oC/xwFFRl43TPmYckQPxw8t6KLXQh5ag==}
+    deprecated: Please update to reduce-css-calc 1.2.5 or higher to avoid an arbitrary code execution issue
+
+  reduce-function-call@1.0.3:
+    resolution: {integrity: sha512-Hl/tuV2VDgWgCSEeWMLwxLZqX7OK59eU1guxXsRKTAyeYimivsKdtcV4fu3r710tpG5GmDKDhQ0HSZLExnNmyQ==}
+
+snapshots:
+
+  balanced-match@0.1.0: {}
+
+  balanced-match@1.0.2: {}
+
+  reduce-css-calc@1.2.0:
+    dependencies:
+      balanced-match: 0.1.0
+      reduce-function-call: 1.0.3
+
+  reduce-function-call@1.0.3:
+    dependencies:
+      balanced-match: 1.0.2

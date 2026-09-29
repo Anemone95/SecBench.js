@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      sgqserve:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  sgqserve@1.0.0:
+    resolution: {integrity: sha512-ObqmxYoiY9F1XAqiPqrAKw+7wnEoO+LgLdBAlItr18lWITS7BxecnE6X0V9MxBaEW/28nqE05y6oxDVrVttQ/Q==}
+
+snapshots:
+
+  sgqserve@1.0.0: {}

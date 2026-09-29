@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      dot-prop:
+        specifier: 2.0.0
+        version: 2.0.0
+
+packages:
+
+  dot-prop@2.0.0:
+    resolution: {integrity: sha512-JjDfiZb/w1COfOzrS8oi4FpuPedebRufstH4pKEzF9Zc4ZCJmVOROFpR6sTDLNrGWX5NCpdWFdLPm2JbymKD+g==}
+    engines: {node: '>=0.10.0'}
+
+snapshots:
+
+  dot-prop@2.0.0: {}

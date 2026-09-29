@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      dot-notes:
+        specifier: 3.2.0
+        version: 3.2.0
+
+packages:
+
+  dot-notes@3.2.0:
+    resolution: {integrity: sha512-P7XLMEpalS4VJyNUKEWdrmgk1gRDk0X5HyZ/YuLwamaPp4+L02L/4VQimSSdvrjtu7fqaucAJK0U/tpN6EJ/KQ==}
+
+snapshots:
+
+  dot-notes@3.2.0: {}

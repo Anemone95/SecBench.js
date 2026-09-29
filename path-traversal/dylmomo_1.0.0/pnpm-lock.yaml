@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      dylmomo:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  dylmomo@1.0.0:
+    resolution: {integrity: sha512-o7bOc++3I6jbljBn3VPsM6xKWAIDXyRfqLCmnjQ5mEQAnouzWAh9f3wQ1aVZH8mYJWb4YZ9kQcD8OW2UvZ5O1A==}
+
+snapshots:
+
+  dylmomo@1.0.0: {}

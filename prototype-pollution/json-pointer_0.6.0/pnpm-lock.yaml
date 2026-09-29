@@ -1,0 +1,29 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      json-pointer:
+        specifier: 0.6.0
+        version: 0.6.0
+
+packages:
+
+  foreach@2.0.6:
+    resolution: {integrity: sha512-k6GAGDyqLe9JaebCsFCoudPPWfihKu8pylYXRlqP1J7ms39iPoTtk2fviNglIeQEwdh0bQeKJ01ZPyuyQvKzwg==}
+
+  json-pointer@0.6.0:
+    resolution: {integrity: sha512-Z2l5XEdi/23LrS6Y0a8/0s2rEvvfTYut70+Vkbpb5Tr4dTpyXUkJzEvucinUbIeXeer0n4dl5vVLRf8u9Jhmsw==}
+
+snapshots:
+
+  foreach@2.0.6: {}
+
+  json-pointer@0.6.0:
+    dependencies:
+      foreach: 2.0.6

@@ -1,0 +1,78 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      gedi:
+        specifier: 1.6.3
+        version: 1.6.3
+
+packages:
+
+  clean-merge@1.0.0:
+    resolution: {integrity: sha512-/47XGaK1zHjRRGX3/I0XzVbnI9rCEpyUhYSw8VBb4rQsM5n2qrxulkNZAw+iZBYADjTr7pD+0+z1g3XPPhMIbQ==}
+
+  gedi-paths@1.0.4:
+    resolution: {integrity: sha512-Rm80qUIRXY1sJER79Bt1Qcsl4DukQ1cUyr6NFEcaZ8Vor/BxKRrCHlBgCXhq7ITK8Y7Rg8FnH8lqLCmTUG8gIA==}
+
+  gedi@1.6.3:
+    resolution: {integrity: sha512-LcpuGBfWSKKGSlL40Xb7UMc5axky+N5UHYyEf2vgk3UWmXADbsucAmenSczu/bF/gTjzXLcKFepwhuvlueibEA==}
+
+  gel-js@1.11.8:
+    resolution: {integrity: sha512-2b4yJAJfvZfZ0tmKLNcQXirazJh1pxhpTq3VNSdsJOV8LPQrq1Xj+O8T5wLL8n0zgrOdWYmG+S/U9c9YK9MeAQ==}
+    engines: {node: '>=0.6'}
+
+  lang-js@2.2.1:
+    resolution: {integrity: sha512-90RmSNBaGrCjFER7MlytBUbF9XnIhJilfdJep2SRVa1jttadsq4ri4wvx33hP+BurrS48ORGtwmGodx6jbTEHQ==}
+
+  leak-map@1.0.2:
+    resolution: {integrity: sha512-roxR8Lt2Yl7wB2+LXrHPxjDwsWoajVRiCPyn4PGXr0JSYk1ENLDlK31ouMXp0w+8My9x6P8HOhZCuf4EKNFJ0w==}
+
+  merge@1.2.1:
+    resolution: {integrity: sha512-VjFo4P5Whtj4vsLzsYBu5ayHhoHJ0UqNm7ibvShmbmoz7tGi0vXaoJbGdB+GmDMLUdg8DpQXEIeVDAe8MaABvQ==}
+
+  spec-js@1.0.0:
+    resolution: {integrity: sha512-LP57aczVwrG4JCDabmw3pVnSlNv15RYCL6/2KJ1N4uw1go2371ew+TQAn64HtrRAW+3Qi1vH3BfmY1vCQBWBwQ==}
+
+  weak-map@1.0.8:
+    resolution: {integrity: sha512-lNR9aAefbGPpHO7AEnY0hCFjz1eTkWCXYvkTRrTHs9qv8zJp+SkVYpzfLIFXQQiG3tVvbNFQgVg2bQS8YGgxyw==}
+
+snapshots:
+
+  clean-merge@1.0.0: {}
+
+  gedi-paths@1.0.4: {}
+
+  gedi@1.6.3:
+    dependencies:
+      gedi-paths: 1.0.4
+      gel-js: 1.11.8
+      lang-js: 2.2.1
+      leak-map: 1.0.2
+      spec-js: 1.0.0
+      weak-map: 1.0.8
+
+  gel-js@1.11.8:
+    dependencies:
+      clean-merge: 1.0.0
+      gedi-paths: 1.0.4
+      lang-js: 2.2.1
+      merge: 1.2.1
+      spec-js: 1.0.0
+
+  lang-js@2.2.1:
+    dependencies:
+      spec-js: 1.0.0
+
+  leak-map@1.0.2: {}
+
+  merge@1.2.1: {}
+
+  spec-js@1.0.0: {}
+
+  weak-map@1.0.8: {}

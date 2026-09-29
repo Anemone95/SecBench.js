@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      deephas:
+        specifier: 1.0.5
+        version: 1.0.5
+
+packages:
+
+  deephas@1.0.5:
+    resolution: {integrity: sha512-3FmD/kVtkfmXrD1KVoEbvREpvFJ2OF7zfSePUcfmFLzmLX9yNU4No93oHqTFYKuz7yqyQ6eubJMgWRcyu7JdiA==}
+
+snapshots:
+
+  deephas@1.0.5: {}

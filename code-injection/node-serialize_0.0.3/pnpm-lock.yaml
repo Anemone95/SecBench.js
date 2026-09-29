@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      node-serialize:
+        specifier: 0.0.3
+        version: 0.0.3
+
+packages:
+
+  node-serialize@0.0.3:
+    resolution: {integrity: sha512-X8woUve1M8xtzfkh3ZiyPRJxLhNesIE82RPlWGXYCBOXSFqGcTlCvCM0WMMN9py424scdo0+iIW2ETISFp6o5Q==}
+    engines: {'0': node >=0.6.0}
+
+snapshots:
+
+  node-serialize@0.0.3: {}

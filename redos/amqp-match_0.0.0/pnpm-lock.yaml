@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      amqp-match:
+        specifier: 0.0.0
+        version: 0.0.0
+
+packages:
+
+  amqp-match@0.0.0:
+    resolution: {integrity: sha512-PgmbDBenrgLTlOZJdLy/3zbC9lzlOuL83j48QQx2oLpF8rvxIyMTsvkbUBEloYwONuTZfo20j3G79oK+PONNeg==}
+
+snapshots:
+
+  amqp-match@0.0.0: {}

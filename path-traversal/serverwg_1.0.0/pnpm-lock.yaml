@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      serverwg:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  serverwg@1.0.0:
+    resolution: {integrity: sha512-jBjhK7FwAz7L8jHofNVGWMcWRkwCfOfG82NfDHgkL57uNkPjP37re2wMXcMaItgnZtiEC+NgkWe/iiQBjk/vuw==}
+
+snapshots:
+
+  serverwg@1.0.0: {}

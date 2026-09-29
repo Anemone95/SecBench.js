@@ -1,0 +1,51 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      compass-compile:
+        specifier: 0.0.1
+        version: 0.0.1
+
+packages:
+
+  compass-compile@0.0.1:
+    resolution: {integrity: sha512-ZoaSVIS0zi36OnMKCTbTRwSQfHyyOcK+liWYRQRTK6Z2VHrRSihvs5LeUDMNe568HKmrvB/rxzG+skfkcwVCSg==}
+
+  dargs@4.1.0:
+    resolution: {integrity: sha512-jyweV/k0rbv2WK4r9KLayuBrSh2Py0tNmV7LBoSMH4hMQyrG8OPyIOWB2VEx4DJKXWmK4lopYMVvORlDt2S8Aw==}
+    engines: {node: '>=0.10.0'}
+
+  merge@1.2.1:
+    resolution: {integrity: sha512-VjFo4P5Whtj4vsLzsYBu5ayHhoHJ0UqNm7ibvShmbmoz7tGi0vXaoJbGdB+GmDMLUdg8DpQXEIeVDAe8MaABvQ==}
+
+  number-is-nan@1.0.1:
+    resolution: {integrity: sha512-4jbtZXNAsfZbAHiiqjLPBiCl16dES1zI4Hpzzxw61Tk+loF+sBDBKx1ICKKKwIqQ7M0mFn1TmkN7euSncWgHiQ==}
+    engines: {node: '>=0.10.0'}
+
+  rsvp@3.6.2:
+    resolution: {integrity: sha512-OfWGQTb9vnwRjwtA2QwpG2ICclHC3pgXZO5xt8H2EfgDquO0qVdSb5T88L4qJVAEugbS56pAuV4XZM58UX8ulw==}
+    engines: {node: 0.12.* || 4.* || 6.* || >= 7.*}
+
+snapshots:
+
+  compass-compile@0.0.1:
+    dependencies:
+      dargs: 4.1.0
+      merge: 1.2.1
+      rsvp: 3.6.2
+
+  dargs@4.1.0:
+    dependencies:
+      number-is-nan: 1.0.1
+
+  merge@1.2.1: {}
+
+  number-is-nan@1.0.1: {}
+
+  rsvp@3.6.2: {}

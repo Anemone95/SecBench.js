@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      cuciuci:
+        specifier: 1.1.0
+        version: 1.1.0
+
+packages:
+
+  cuciuci@1.1.0:
+    resolution: {integrity: sha512-1Wwx9GX3yx7vcIU5kiyhEEeSf1OieS4NYZJN1rnbBXvQVDN+kuP7RfzKsAjnk52Z5i4bE5oifVCTuushFPV9zw==}
+
+snapshots:
+
+  cuciuci@1.1.0: {}

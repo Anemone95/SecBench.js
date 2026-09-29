@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      command-exists:
+        specifier: 1.2.2
+        version: 1.2.2
+
+packages:
+
+  command-exists@1.2.2:
+    resolution: {integrity: sha512-5e7IAEMuanKt2PBQeJG3wTCQwPtdWYrfBfZHLTilHsWWqsRcVUuYCy5vgvP4NAb3QqW0UZ9sZDiSogEhoGLpyw==}
+    deprecated: Potential security vulnerability fixed in v.1.2.4
+
+snapshots:
+
+  command-exists@1.2.2: {}

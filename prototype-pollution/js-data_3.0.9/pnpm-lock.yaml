@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      js-data:
+        specifier: 3.0.9
+        version: 3.0.9
+
+packages:
+
+  js-data@3.0.9:
+    resolution: {integrity: sha512-GUc6AYXCH9bn21fIuk74D2LiisvZG49SVKlyNC00M0Wb6rM6+ExEIuj5RW15b6gGk6rgXCotrp85zy9mnHVRQg==}
+
+snapshots:
+
+  js-data@3.0.9: {}

@@ -1,0 +1,30 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      im-metadata:
+        specifier: 3.0.1
+        version: 3.0.1
+
+packages:
+
+  filesize-parser@1.5.2:
+    resolution: {integrity: sha512-v1qaIj8F6il3QX5bkN37/VD1CjewUWpzyagwElPvWy0PjLsoxo2yR6zrrvovtjVJJfk++PJjMjSovPC54EJhdA==}
+
+  im-metadata@3.0.1:
+    resolution: {integrity: sha512-8xWXVWxLWi8B4juGKA9DYlxImgotlw2yBRpEYL7DkDTYG2TiOYeJm9/YyrkQwaG/FrddwPKNs4w9lrJcik93YA==}
+    engines: {iojs: '>=1.0.0', node: '>=0.10'}
+
+snapshots:
+
+  filesize-parser@1.5.2: {}
+
+  im-metadata@3.0.1:
+    dependencies:
+      filesize-parser: 1.5.2

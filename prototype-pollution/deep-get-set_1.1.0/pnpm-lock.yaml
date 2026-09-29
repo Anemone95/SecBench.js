@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      deep-get-set:
+        specifier: 1.1.0
+        version: 1.1.0
+
+packages:
+
+  deep-get-set@1.1.0:
+    resolution: {integrity: sha512-8uWDqb4t/umc0VIIsi86F21UhDiB5CMaKy1y7Et/DAytEpVmXQWbZaw+khIzx4Dmwb5Fmz83QW6RfkCksNMgsg==}
+
+snapshots:
+
+  deep-get-set@1.1.0: {}

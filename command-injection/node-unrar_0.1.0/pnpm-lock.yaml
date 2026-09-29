@@ -1,0 +1,38 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      node-unrar:
+        specifier: 0.1.0
+        version: 0.1.0
+      sleep:
+        specifier: ^6.3.0
+        version: 6.3.0
+
+packages:
+
+  nan@2.29.0:
+    resolution: {integrity: sha512-GlGk3HIvitbvs+LT3g6XUP1kpirKNvmDFwF/bmo6XNWSb/eYEs/O4bfgIEIXCZ+lIOTS5xNwDvSGMw6FJdAhtA==}
+
+  node-unrar@0.1.0:
+    resolution: {integrity: sha512-lXWOksn4IeUrYL8h/zGS6FRLRlYabo2mEcwRmUfXv9rtMhh/GI4yFJw2Z4l+cVDUMNKKm+zp2VAeFds5q7CI/A==}
+
+  sleep@6.3.0:
+    resolution: {integrity: sha512-+WgYl951qdUlb1iS97UvQ01pkauoBK9ML9I/CMPg41v0Ze4EyMlTgFTDDo32iYj98IYqxIjDMRd+L71lawFfpQ==}
+    engines: {node: '>=0.8.0'}
+
+snapshots:
+
+  nan@2.29.0: {}
+
+  node-unrar@0.1.0: {}
+
+  sleep@6.3.0:
+    dependencies:
+      nan: 2.29.0

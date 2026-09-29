@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      whereis:
+        specifier: 0.4.0
+        version: 0.4.0
+
+packages:
+
+  whereis@0.4.0:
+    resolution: {integrity: sha512-KMG6EpPfQOf7k156v1nvefVgorbhr0fqZ4G/PERbaxzfep8sE8Ul9x5G7Vv69wD6dBzbYGe9aLgMsXFrZo27cw==}
+    deprecated: 'whereis <= 0.4.0 is unsecure, switch to which package: https://github.com/npm/node-which'
+
+snapshots:
+
+  whereis@0.4.0: {}

@@ -1,0 +1,24 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      safetydance:
+        specifier: 2.0.1
+        version: 2.0.1
+
+packages:
+
+  safetydance@2.0.1:
+    resolution: {integrity: sha512-RuMpDOXn4bC+cIrzeZ6ZJR8/aaa+58KztATWO8KbEpfC4LRaYskn+Ll3H5KMikH1N1F47S+razKDqZklUkRkTg==}
+    engines: {'0': node >= 4.0.0}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+
+snapshots:
+
+  safetydance@2.0.1: {}

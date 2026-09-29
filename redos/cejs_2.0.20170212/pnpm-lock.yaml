@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      cejs:
+        specifier: 2.0.20170212
+        version: 2.0.20170212
+
+packages:
+
+  cejs@2.0.20170212:
+    resolution: {integrity: sha512-Att5lop/NrpiNg+4UTANALruP8132g3xsSiEqqoCw85P2zOgLkLKsKNBnVqv83LZfqIxLh7N+ouJSj2Es2btkQ==}
+    engines: {node: '>=0.10'}
+
+snapshots:
+
+  cejs@2.0.20170212: {}

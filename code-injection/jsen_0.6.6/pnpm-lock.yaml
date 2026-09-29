@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      jsen:
+        specifier: 0.6.6
+        version: 0.6.6
+
+packages:
+
+  jsen@0.6.6:
+    resolution: {integrity: sha512-Kq9+wZsdGd/VrCw67vS38HkBFVg6pikAtL9lA8SQvKzlaxV/d2ot87BabQ6b+QH1EsjCCV4l/+14Gq+1kwdkCg==}
+
+snapshots:
+
+  jsen@0.6.6: {}

@@ -1,0 +1,31 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      merge-options:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  is-plain-obj@1.1.0:
+    resolution: {integrity: sha512-yvkRyxmFKEOQ4pNXCmJG5AEQNlXJS5LaONXo5/cLdTZdWvsZ1ioJEonLGAosKlMWE8lwUy/bJzMjcw8az73+Fg==}
+    engines: {node: '>=0.10.0'}
+
+  merge-options@1.0.0:
+    resolution: {integrity: sha512-uQm1GiW+h8wyOLBRWoIkc9Dj8SZ9P2vKwURFitJuSb+BwJ4dVG9apW/t2s5KqDCo6oLeGv0JyaqcElspU92/HA==}
+    engines: {node: '>=4'}
+
+snapshots:
+
+  is-plain-obj@1.1.0: {}
+
+  merge-options@1.0.0:
+    dependencies:
+      is-plain-obj: 1.1.0

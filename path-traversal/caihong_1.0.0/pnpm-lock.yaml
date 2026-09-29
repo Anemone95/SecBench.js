@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      caihong:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  caihong@1.0.0:
+    resolution: {integrity: sha512-wKpAWqRskzJIvWmBYO44ZAzQOh0Sm+ZrJMoReAS6592c9jC5s/KRAiEd0tV4k0Y+CE/8EnXiiPX8sd3RvM4a/Q==}
+
+snapshots:
+
+  caihong@1.0.0: {}

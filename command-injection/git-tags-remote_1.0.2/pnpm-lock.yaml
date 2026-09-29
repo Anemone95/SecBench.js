@@ -1,0 +1,30 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      git-tags-remote:
+        specifier: 1.0.2
+        version: 1.0.2
+
+packages:
+
+  git-tags-remote@1.0.2:
+    resolution: {integrity: sha512-YwdcWPhhCNJEUucJWwrGf/T31ZSrKLY8ocqaMCzhQCYpyi8y4YSPoNCSI/uc9YdtMGizDreRfM+tv5evkmXBfA==}
+
+  semver@5.7.2:
+    resolution: {integrity: sha512-cBznnQ9KjJqU67B52RMC65CMarK2600WFnbkcaiwWq3xy/5haFJlshgnpjovMVJ+Hff49d8GEn0b87C5pDQ10g==}
+    hasBin: true
+
+snapshots:
+
+  git-tags-remote@1.0.2:
+    dependencies:
+      semver: 5.7.2
+
+  semver@5.7.2: {}

@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      pytservce:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  pytservce@1.0.0:
+    resolution: {integrity: sha512-XP+gvvn4v/uuHIwK9IJ28ZRGuCJzwdJI6OPXEp9xjI2oJZNuoaadQBOtmsjN8uf+HfVeLybKV6F8a9cMxME0YQ==}
+
+snapshots:
+
+  pytservce@1.0.0: {}

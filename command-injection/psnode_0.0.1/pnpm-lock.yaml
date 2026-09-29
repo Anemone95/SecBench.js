@@ -1,0 +1,55 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      psnode:
+        specifier: 0.0.1
+        version: 0.0.1
+
+packages:
+
+  csv-generate@0.0.6:
+    resolution: {integrity: sha512-artADf2o+rZUc224aalspj+rQXeYXXSXZ4s7hylW9xLgawkn1Ac5yLG+qNb1rRTcQ2CdDFHixvRuC1GlujCCkw==}
+
+  csv-parse@1.3.3:
+    resolution: {integrity: sha512-byxnDBxM1AVF3YfmsK7Smop9/usNz7gAZYSo9eYp61TGcNXraJby1rAiLyJSt1/8Iho2qaxZOtZCOvQMXogPtg==}
+
+  csv-stringify@0.0.8:
+    resolution: {integrity: sha512-REHUwgPO2wPr69PZXW3cXmtvi+imJKvnqfxJw115rBsAMIKGQUP7a/nWo5SGzN5wmcKpN4v6uBcvc9CzvnT5zw==}
+
+  csv@0.4.6:
+    resolution: {integrity: sha512-mlH/iunX/O6BXnkfW5TzYCSlLX45ISyysGQLL6M+km6gjj/L8bbv5KEG9ngj2NstX6zKhEbMlaEhxHa5/Mjsuw==}
+    engines: {node: '>= 0.1.90'}
+
+  psnode@0.0.1:
+    resolution: {integrity: sha512-Wl4RH3+DzE41Eel5b8h2Inb0YOS5jSp55yhCCRs9XQh0ur+dfoQLkGkjMLsogJl6TbP1oqmzQQ+pVusOuImEZQ==}
+
+  stream-transform@0.1.2:
+    resolution: {integrity: sha512-3HXId/0W8sktQnQM6rOZf2LuDDMbakMgAjpViLk758/h0br+iGqZFFfUxxJSqEvGvT742PyFr4v/TBXUtowdCg==}
+
+snapshots:
+
+  csv-generate@0.0.6: {}
+
+  csv-parse@1.3.3: {}
+
+  csv-stringify@0.0.8: {}
+
+  csv@0.4.6:
+    dependencies:
+      csv-generate: 0.0.6
+      csv-parse: 1.3.3
+      csv-stringify: 0.0.8
+      stream-transform: 0.1.2
+
+  psnode@0.0.1:
+    dependencies:
+      csv: 0.4.6
+
+  stream-transform@0.1.2: {}

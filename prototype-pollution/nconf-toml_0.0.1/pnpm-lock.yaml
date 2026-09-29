@@ -1,0 +1,35 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      nconf-toml:
+        specifier: 0.0.1
+        version: 0.0.1
+
+packages:
+
+  nconf-toml@0.0.1:
+    resolution: {integrity: sha512-9ACZTWl08vqmURzMExY9BBX/7gT4g+G8BxW9Nlp+gHvgdwyxW/VjggnGhTyafJfdEmYH4hJmZvTlMYAg6gsA2w==}
+
+  toml@2.3.6:
+    resolution: {integrity: sha512-gVweAectJU3ebq//Ferr2JUY4WKSDe5N+z0FvjDncLGyHmIDoxgY/2Ie4qfEIDm4IS7OA6Rmdm7pdEEdMcV/xQ==}
+
+  tomlify-j0.4@1.0.4:
+    resolution: {integrity: sha512-rI0IMHfHtSzYjUpH3l25fhBB4VZr0Bc2uUibr7VcO8CY4zgi/RyYqGSz2uQZR+LtHlsOLfD7A2B2P0UVfvtefQ==}
+
+snapshots:
+
+  nconf-toml@0.0.1:
+    dependencies:
+      toml: 2.3.6
+      tomlify-j0.4: 1.0.4
+
+  toml@2.3.6: {}
+
+  tomlify-j0.4@1.0.4: {}

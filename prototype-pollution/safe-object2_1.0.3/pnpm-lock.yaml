@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      safe-object2:
+        specifier: 1.0.3
+        version: 1.0.3
+
+packages:
+
+  safe-object2@1.0.3:
+    resolution: {integrity: sha512-sdEUD+MPuhRRF4yE5EWNZjBKMT3PIEhOcYuyuwxhHXEG30ZcZeangEyWo+iG5pntVyU4xDhtf9g7KVbCm8Sy/Q==}
+
+snapshots:
+
+  safe-object2@1.0.3: {}

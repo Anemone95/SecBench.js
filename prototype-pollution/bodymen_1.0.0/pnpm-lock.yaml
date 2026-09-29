@@ -1,0 +1,37 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      bodymen:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  bodymen@1.0.0:
+    resolution: {integrity: sha512-WxOGrvDDinytfMacvLobn75YNjQZG1/phn9RjqNkU3jkktN6SJDi6E5HQ97NMOiZPgOME9NqU2+8VUtuD54fWg==}
+
+  lodash@4.18.1:
+    resolution: {integrity: sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q==}
+
+  rich-param@1.0.5:
+    resolution: {integrity: sha512-3YlDrPVjF2LLTjvbv0Z1PMkPgSQXnauVXlErL0gBGfxbhoqtf2pfBlynFe8fZVrtTHmAcbSt7cZ0fRyEnIlvAA==}
+
+snapshots:
+
+  bodymen@1.0.0:
+    dependencies:
+      lodash: 4.18.1
+      rich-param: 1.0.5
+
+  lodash@4.18.1: {}
+
+  rich-param@1.0.5:
+    dependencies:
+      lodash: 4.18.1

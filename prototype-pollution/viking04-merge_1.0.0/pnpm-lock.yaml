@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@viking04/merge':
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  '@viking04/merge@1.0.0':
+    resolution: {integrity: sha512-PFAAfmPGzWbhK4jCehN4x0d4khN9BFbAVtQ6wYqTf79OjJa4SXTpcZPKUO1ffo4gbH15xxiSYHSkvboNbo9giQ==}
+
+snapshots:
+
+  '@viking04/merge@1.0.0': {}

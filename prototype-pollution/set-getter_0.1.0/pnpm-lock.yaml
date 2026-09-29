@@ -1,0 +1,46 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      set-getter:
+        specifier: 0.1.0
+        version: 0.1.0
+
+packages:
+
+  is-buffer@1.1.6:
+    resolution: {integrity: sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==}
+
+  kind-of@3.2.2:
+    resolution: {integrity: sha512-NOW9QQXMoZGg/oqnVNoNTTIFEIid1627WCffUBJEdMxYApq7mNE7CpzucIPc+ZQg25Phej7IJSmX3hO+oblOtQ==}
+    engines: {node: '>=0.10.0'}
+
+  set-getter@0.1.0:
+    resolution: {integrity: sha512-lIj6AWViymAQLQyq1qehP44w4iGbSv6pYOKRQCDzqlmxctLyCrecuge0bxRPrNSnV8EeMHKR2fVTRl3LniQLNg==}
+    engines: {node: '>=0.10.0'}
+
+  to-object-path@0.3.0:
+    resolution: {integrity: sha512-9mWHdnGRuh3onocaHzukyvCZhzvr6tiflAy/JRFXcJX0TjgfWA9pk9t8CMbzmBE4Jfw58pXbkngtBtqYxzNEyg==}
+    engines: {node: '>=0.10.0'}
+
+snapshots:
+
+  is-buffer@1.1.6: {}
+
+  kind-of@3.2.2:
+    dependencies:
+      is-buffer: 1.1.6
+
+  set-getter@0.1.0:
+    dependencies:
+      to-object-path: 0.3.0
+
+  to-object-path@0.3.0:
+    dependencies:
+      kind-of: 3.2.2

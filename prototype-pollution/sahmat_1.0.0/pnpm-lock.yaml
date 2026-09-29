@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      sahmat:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  sahmat@1.0.0:
+    resolution: {integrity: sha512-k1vyycLJT3nN2Y7RJ1K2oBxmW6CJDqDuX/67j8pC7EX4Cvf6ZMXLImN6tzHWirIqIfoDwTWGvAysU2zQ/dcdxQ==}
+
+snapshots:
+
+  sahmat@1.0.0: {}

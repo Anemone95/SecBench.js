@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      zjjserver:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  zjjserver@1.0.0:
+    resolution: {integrity: sha512-49/OZr4zcudcOOje8h8GSW79Y6MmuEYAAtuisFnjDmlQx2rZyP925mljM3/V0NPXhPuUTMF5zoiQwtXO8elUSA==}
+
+snapshots:
+
+  zjjserver@1.0.0: {}

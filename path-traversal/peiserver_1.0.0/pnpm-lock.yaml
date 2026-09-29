@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      peiserver:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  peiserver@1.0.0:
+    resolution: {integrity: sha512-fypjnt6m2RIKNSi7XykKdWUA3xZgPS5sNos3eNtBJmXOXWpKAw3hYjIOsftSqM6yjm6MSuJ+22gDmrZtp0IbEw==}
+
+snapshots:
+
+  peiserver@1.0.0: {}

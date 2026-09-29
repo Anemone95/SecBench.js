@@ -1,0 +1,24 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      keyget:
+        specifier: 2.2.0
+        version: 2.2.0
+
+packages:
+
+  keyget@2.2.0:
+    resolution: {integrity: sha512-fFkMosazWOGGa7ktXYmHxVjSYc14fLc79cHzhV7RhcZxvinTG147P+qbeg0bjRu8OnSgY69lbbgU348M4Fayzg==}
+    deprecated: This version is vulnerable to prototype pollution. Use v2.3.0 or greater.
+    hasBin: true
+
+snapshots:
+
+  keyget@2.2.0: {}

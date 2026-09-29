@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      kill-process-by-name:
+        specifier: 1.0.5
+        version: 1.0.5
+
+packages:
+
+  kill-process-by-name@1.0.5:
+    resolution: {integrity: sha512-uxgO15GtTsK5ofd/c17saZ7GagZEJrMt5VY4AL5X+vVS3kw5uHfzyIk5+npRD8gowWvx3cB37vrCy/yr0PyD8A==}
+
+snapshots:
+
+  kill-process-by-name@1.0.5: {}

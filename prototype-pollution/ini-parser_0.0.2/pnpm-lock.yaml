@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      ini-parser:
+        specifier: 0.0.2
+        version: 0.0.2
+
+packages:
+
+  ini-parser@0.0.2:
+    resolution: {integrity: sha512-HwrdoAGH+GGo9bIwZ8dA2zJ7Mofha9JfiaobkY93WSfYfDC8t6kDTRiNkd2Lv2OOCagv8Z0qdkedasHC8pMQdQ==}
+
+snapshots:
+
+  ini-parser@0.0.2: {}

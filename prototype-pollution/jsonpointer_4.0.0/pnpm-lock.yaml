@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      jsonpointer:
+        specifier: 4.0.0
+        version: 4.0.0
+
+packages:
+
+  jsonpointer@4.0.0:
+    resolution: {integrity: sha512-BSyv7u/pT7TCkuAi6PK67D/qa8Q1cDCrh0SHkacQWs7yg2X84pz8b7SbBr3FLNrd8NDAUlInT+DNbR1N4RsT/A==}
+    engines: {node: '>=0.10.0'}
+
+snapshots:
+
+  jsonpointer@4.0.0: {}

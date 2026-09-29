@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      set-object-value:
+        specifier: 0.0.5
+        version: 0.0.5
+
+packages:
+
+  set-object-value@0.0.5:
+    resolution: {integrity: sha512-f4fnuaiGPERs2ezeN2Z7EsYN8Zzo5R9JbaXh9fGWSdl1Aoe2MxgxklWPRQa/frPk4eE0hA5A2yS/z/X8h+YgsA==}
+
+snapshots:
+
+  set-object-value@0.0.5: {}

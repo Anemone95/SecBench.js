@@ -1,0 +1,46 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      defaults-deep:
+        specifier: 0.2.0
+        version: 0.2.0
+
+packages:
+
+  defaults-deep@0.2.0:
+    resolution: {integrity: sha512-cMZS2IHve0zj2l9LCZHmb7hXVrYBhdwhBsP4IbPKiw2rcqCYSBZ/oYUXN8aOZ6OM00DhzMQgQ5R3RSpBW7Mr1g==}
+    engines: {node: '>=0.10.0'}
+
+  for-in@1.0.2:
+    resolution: {integrity: sha512-7EwmXrOjyL+ChxMhmG5lnW9MPt1aIeZEwKhQzoBUdTV0N3zuwWDZYVJatDvZ2OyzPUvdIAZDsCetk3coyMfcnQ==}
+    engines: {node: '>=0.10.0'}
+
+  for-own@0.1.5:
+    resolution: {integrity: sha512-SKmowqGTJoPzLO1T0BBJpkfp3EMacCMOuH40hOUbrbzElVktk4DioXVM99QkLCyKoiuOmyjgcWMpVz2xjE7LZw==}
+    engines: {node: '>=0.10.0'}
+
+  is-plain-object@0.1.0:
+    resolution: {integrity: sha512-pb50PSj2wtnl3sxe0uy8851298LRiZygwy48zRPwSIINOvDIZvO35ndeNTxFdNz5ilaWL37utyr3i+p9EeO4Sg==}
+    engines: {node: '>=0.10.0'}
+
+snapshots:
+
+  defaults-deep@0.2.0:
+    dependencies:
+      for-own: 0.1.5
+      is-plain-object: 0.1.0
+
+  for-in@1.0.2: {}
+
+  for-own@0.1.5:
+    dependencies:
+      for-in: 1.0.2
+
+  is-plain-object@0.1.0: {}

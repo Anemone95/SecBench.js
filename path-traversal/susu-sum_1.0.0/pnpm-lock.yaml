@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      susu-sum:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  susu-sum@1.0.0:
+    resolution: {integrity: sha512-vNYuNYhkHvx2SufO/BlDotvo9fQdpZhNsFNocq0aJYCsXXwnFjzKCgERcTfGmzTKdTV9v8r4hS3eVxjf4cUt4A==}
+
+snapshots:
+
+  susu-sum@1.0.0: {}

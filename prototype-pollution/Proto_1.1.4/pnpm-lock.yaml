@@ -1,0 +1,29 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      Proto:
+        specifier: 1.1.4
+        version: 1.1.4
+
+packages:
+
+  Proto@1.1.4:
+    resolution: {integrity: sha512-TsXUIfn8xWvLT+PS+ZcVz/b0OSTqwXfJwMpAB7vNDKW1ZvVGofMuuvbhTfRfTsRyD/vCdHtO04qGt0eL2CwnLw==}
+
+  describe-type@0.6.4:
+    resolution: {integrity: sha512-SAtEwQifiZmOtyaEfyv7pKFtNknwTNeyLkZDh4uoEFaQNSW3uTL+Q/+QbM5riqOI8K83XxHJ9/OKYO7dE1Z86Q==}
+
+snapshots:
+
+  Proto@1.1.4:
+    dependencies:
+      describe-type: 0.6.4
+
+  describe-type@0.6.4: {}

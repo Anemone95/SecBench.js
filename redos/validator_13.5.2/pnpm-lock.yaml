@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      validator:
+        specifier: 13.5.2
+        version: 13.5.2
+
+packages:
+
+  validator@13.5.2:
+    resolution: {integrity: sha512-mD45p0rvHVBlY2Zuy3F3ESIe1h5X58GPfAtslBjY7EtTqGquZTj+VX/J4RnHWN8FKq0C9WRVt1oWAcytWRuYLQ==}
+    engines: {node: '>= 0.10'}
+
+snapshots:
+
+  validator@13.5.2: {}

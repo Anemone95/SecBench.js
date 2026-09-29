@@ -1,0 +1,31 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      json8-merge-patch:
+        specifier: 1.0.1
+        version: 1.0.1
+
+packages:
+
+  json8-merge-patch@1.0.1:
+    resolution: {integrity: sha512-j6LO0N3gX6xiEpvK41B0D3bheBPaa4GZCw631RZNVbQonireWMnzEzC0UcBfesgRaFXEubfCMPHtN8EWieL9VQ==}
+    engines: {node: '>= 7.6.0'}
+
+  json8@1.0.5:
+    resolution: {integrity: sha512-TnyzPW+84OwR9znGJ1DeJkucxkCEP37vNLoPuK7p0VJ3MrjhxgW+t+AbkW9vfNzxMv0tIDvzOYS1rJ7eUdcTwA==}
+    engines: {node: '>= 7.6.0'}
+
+snapshots:
+
+  json8-merge-patch@1.0.1:
+    dependencies:
+      json8: 1.0.5
+
+  json8@1.0.5: {}

@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      wffserve:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  wffserve@1.0.0:
+    resolution: {integrity: sha512-ribwcMkr9K1yTtzhefxGkr1I2+Cwk50P08zd0yKmpgANxU5NdSDjg42hNYFFfAHriOBjGMftg9LpG2XMmtHFxw==}
+
+snapshots:
+
+  wffserve@1.0.0: {}

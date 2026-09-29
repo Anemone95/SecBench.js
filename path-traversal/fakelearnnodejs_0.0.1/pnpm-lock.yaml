@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      fakelearnnodejs:
+        specifier: 0.0.1
+        version: 0.0.1
+
+packages:
+
+  fakelearnnodejs@0.0.1:
+    resolution: {integrity: sha512-Ma9ESX6fKqLZ9anit6o2HzYa3XX0zWwUrmwW1bWXMCoSI022CLWKijMZXeLwdB5NSycUf0nuJEUyzO0Fsl5B5Q==}
+
+snapshots:
+
+  fakelearnnodejs@0.0.1: {}

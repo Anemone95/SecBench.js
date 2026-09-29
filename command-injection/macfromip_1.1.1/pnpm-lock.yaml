@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      macfromip:
+        specifier: 1.1.1
+        version: 1.1.1
+
+packages:
+
+  macfromip@1.1.1:
+    resolution: {integrity: sha512-+GRa0FI0vRCOlOp6OefKePHe39cXck0/HDL5ZZOsFUb9n+AyWaJO5lMdGe+8GRTQysTQ8xBDom8oroZA2x6Hsg==}
+
+snapshots:
+
+  macfromip@1.1.1: {}

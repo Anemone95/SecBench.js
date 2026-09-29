@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      liuyaserver:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  liuyaserver@1.0.0:
+    resolution: {integrity: sha512-K4wQD0NjR1sJBPOwAqIoiwqFH0u/O3tQzQBBRTnPzFKmAAsD3dRUU+dmiSu9wpo5fYS6tTC5Y9GSkuR8T99X/A==}
+
+snapshots:
+
+  liuyaserver@1.0.0: {}

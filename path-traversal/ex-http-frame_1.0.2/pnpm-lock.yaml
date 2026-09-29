@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      ex-http-frame:
+        specifier: 1.0.2
+        version: 1.0.2
+
+packages:
+
+  ex-http-frame@1.0.2:
+    resolution: {integrity: sha512-kWn3U0dCQzaH26jhgD7IQ5nKb03H5HNdnoREtqnkak9j29UyDaC5L5g3sot3yVlDrpBWZ79rv3lBmBmTN9FrKA==}
+
+snapshots:
+
+  ex-http-frame@1.0.2: {}

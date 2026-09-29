@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      gamebutler:
+        specifier: 1.0.4
+        version: 1.0.4
+
+packages:
+
+  gamebutler@1.0.4:
+    resolution: {integrity: sha512-bKKwwjYx7IJLgcg9mXqo7YK1eOQBmcFOmG4WNbIYH/cbSAzjcroNhSxCEnFF3MrvaU00bNSWt5AMZBIXOoRTCQ==}
+
+snapshots:
+
+  gamebutler@1.0.4: {}

@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      putil-merge:
+        specifier: 3.0.0
+        version: 3.0.0
+
+packages:
+
+  putil-merge@3.0.0:
+    resolution: {integrity: sha512-fl38g/Nnm6NFlIaVlABTzEzkoxRs1SRFzbAQfvOvhxHkLOJvMPnut2Blce22a1V9KMEVElbMg/HMy2RWt5WF4w==}
+    engines: {node: '>= 6.0'}
+
+snapshots:
+
+  putil-merge@3.0.0: {}

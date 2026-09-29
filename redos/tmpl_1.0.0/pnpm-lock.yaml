@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      tmpl:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  tmpl@1.0.0:
+    resolution: {integrity: sha512-aps7GCZD+RWpnnfIlfLfX4wg+/2298u2pJ1xKGX/yreaSMEggfWCjKGZwduxQk82oC8mPh9yrR0qcGghQEMAZw==}
+    engines: {node: '>= 0.4.1'}
+
+snapshots:
+
+  tmpl@1.0.0: {}

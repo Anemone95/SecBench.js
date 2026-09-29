@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      ltt.js:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  ltt.js@1.0.0:
+    resolution: {integrity: sha512-uxA3tS7wbtyElNDlc0XClaPeBGf/B5tBC0gNkbCCy1haPUB+b4fYpsaTzylDLgAtEOd5KIlkvq6MoBsYmBPUqA==}
+
+snapshots:
+
+  ltt.js@1.0.0: {}

@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@eivifj/dot':
+        specifier: 1.0.2
+        version: 1.0.2
+
+packages:
+
+  '@eivifj/dot@1.0.2':
+    resolution: {integrity: sha512-M+B2E6EvJ1I+xNB6Si+UB8+dlQuk/tO9IgYauGlnRJ6P+DwbwHcN+IchIKR1UN27Lr3ycEpPw36h0Y/8ytgx0w==}
+
+snapshots:
+
+  '@eivifj/dot@1.0.2': {}

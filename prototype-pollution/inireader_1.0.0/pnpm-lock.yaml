@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      inireader:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  inireader@1.0.0:
+    resolution: {integrity: sha512-XM1j2wxihQoC1vL+VtEZMFuptVTiMmuI4tBVUygOsusUt59FCDBDox+roCr/HBEoLMDNm9KS9XVXombjTBLt4A==}
+
+snapshots:
+
+  inireader@1.0.0: {}

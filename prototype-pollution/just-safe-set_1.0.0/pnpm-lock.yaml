@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      just-safe-set:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  just-safe-set@1.0.0:
+    resolution: {integrity: sha512-OgGuDY/hYtUkDsR5hclXj8P8+1KtXlC1+kRYa9iuzs6oazY0KMa4MP/R44vZ02lRoFHP+ZOAAADnZsJFSQ0+TQ==}
+
+snapshots:
+
+  just-safe-set@1.0.0: {}

@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      wangguojing123:
+        specifier: 1.3.0
+        version: 1.3.0
+
+packages:
+
+  wangguojing123@1.3.0:
+    resolution: {integrity: sha512-7IHiC3OkxXiJdZKXiUANzBsgrE5otSgbsTJ+pSnioRtvxJgOI7yx8usuLuXXALXLNMxHLEnZmoAdTlRtWucBIg==}
+
+snapshots:
+
+  wangguojing123@1.3.0: {}

@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      lessindex:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  lessindex@1.0.0:
+    resolution: {integrity: sha512-dLx/fAL+rop9peN/7W7DJP54+GG2IUyujoK5hrerGTXxuW3yjqW+jRYDB9dVhygx7SdbA7TH7bpJqxCqkvO8pQ==}
+
+snapshots:
+
+  lessindex@1.0.0: {}

@@ -1,0 +1,38 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      rdf-graph-array:
+        specifier: 0.3.0
+        version: 0.3.0
+
+packages:
+
+  rdf-graph-abstract@0.3.0:
+    resolution: {integrity: sha512-5FBWirDfy6bCfpobfbMuwWkoes55VntKFADAVWubjPVuSgNfjmpKCUs/H3+6wgA0hc02GP0pe3l4WHm6Imtc0g==}
+    deprecated: This package is no longer maintained
+
+  rdf-graph-array@0.3.0:
+    resolution: {integrity: sha512-R2SsyRrMreEu+pG/SLtHkI4DAMJknZ74sJM8H/dCZbFkTj/vW4lNr014I2Yx0jmajIygO6YwueQJzbopwAn2Ew==}
+    deprecated: This package is no longer maintained
+
+  rdf-normalize@0.3.0:
+    resolution: {integrity: sha512-g4a6jx1Ntz+HBzC6MrwaJNiCnPkb0Tml63s+gIyQVUPpDXbHRNKDS3qUShHpZx/3kSHHgb5/4AkufdlM5aXXIg==}
+
+snapshots:
+
+  rdf-graph-abstract@0.3.0:
+    dependencies:
+      rdf-normalize: 0.3.0
+
+  rdf-graph-array@0.3.0:
+    dependencies:
+      rdf-graph-abstract: 0.3.0
+
+  rdf-normalize@0.3.0: {}

@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      ffmpegdotjs:
+        specifier: 0.0.4
+        version: 0.0.4
+
+packages:
+
+  ffmpegdotjs@0.0.4:
+    resolution: {integrity: sha512-XC2bb2DShzjn3ATSeHI9/tf7BqIm//KStWqc25tcfh6+XRO3RiQDS3qVjdgIiUkZJ7g9gI51O8jd63b7FPuxqw==}
+
+snapshots:
+
+  ffmpegdotjs@0.0.4: {}

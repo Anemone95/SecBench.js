@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      realms-shim:
+        specifier: 1.1.0
+        version: 1.1.0
+
+packages:
+
+  realms-shim@1.1.0:
+    resolution: {integrity: sha512-7fXmHSYnUM+Wix0yM0TwoMa4WWHSaRXyYaKqfoYl8BNokUoKaKD9tiKdBHkMlF7grd3G5A/XYuv3+XPvWW6adA==}
+    deprecated: TC39 has taken Realms in a new direction (ShadowRealm) and the security properties of the realms-shim have not been maintained.
+
+snapshots:
+
+  realms-shim@1.1.0: {}

@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      mootools:
+        specifier: 1.5.2
+        version: 1.5.2
+
+packages:
+
+  mootools@1.5.2:
+    resolution: {integrity: sha512-S1cOCsakr8GJ3P1j66pXGgQfLtcRpFLcBkRcq0xXQ15T6IYtFWIQhqqqH8RR7eAa7/vFmKz90IIrzTnfrCHPFw==}
+    engines: {node: '>=0.4.0'}
+
+snapshots:
+
+  mootools@1.5.2: {}

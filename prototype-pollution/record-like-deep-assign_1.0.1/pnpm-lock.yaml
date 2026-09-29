@@ -1,0 +1,29 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      record-like-deep-assign:
+        specifier: 1.0.1
+        version: 1.0.1
+
+packages:
+
+  record-like-deep-assign@1.0.1:
+    resolution: {integrity: sha512-7O7VyKjZqYoV01ahZnBZ2Hhnvgb0/39Z1Ci5Nhg8Oowq0cILUTDpbGKIcyRWXlabnqGAHghseaJxSkRp3itE3w==}
+
+  ts-toolbelt@6.15.5:
+    resolution: {integrity: sha512-FZIXf1ksVyLcfr7M317jbB67XFJhOO1YqdTcuGaq9q5jLUoTikukZ+98TPjKiP2jC5CgmYdWWYs0s2nLSU0/1A==}
+
+snapshots:
+
+  record-like-deep-assign@1.0.1:
+    dependencies:
+      ts-toolbelt: 6.15.5
+
+  ts-toolbelt@6.15.5: {}

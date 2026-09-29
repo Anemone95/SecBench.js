@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      web-node-server:
+        specifier: 0.1.0
+        version: 0.1.0
+
+packages:
+
+  web-node-server@0.1.0:
+    resolution: {integrity: sha512-xg4VON7zxKLJwfZ9iooiGvqxEnIRTqb27sGf6ufkAbv8doLmnbDyF+qSQBTMr2zVcYq0okMjZov2Aj3GQTxlbA==}
+
+snapshots:
+
+  web-node-server@0.1.0: {}

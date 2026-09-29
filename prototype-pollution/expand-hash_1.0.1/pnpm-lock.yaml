@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      expand-hash:
+        specifier: 1.0.1
+        version: 1.0.1
+
+packages:
+
+  expand-hash@1.0.1:
+    resolution: {integrity: sha512-p0Sc7VRQFRB9TJhkVj5iNa/9KH+TuD8wTDgmwXaWFscWvfzQR9JPhnHDItbC6BwJhKkJjCStL+pmusjgWXQP2w==}
+    engines: {node: '>=4'}
+
+snapshots:
+
+  expand-hash@1.0.1: {}

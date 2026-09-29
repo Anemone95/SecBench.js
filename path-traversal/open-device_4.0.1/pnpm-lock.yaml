@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      open-device:
+        specifier: 4.0.1
+        version: 4.0.1
+
+packages:
+
+  open-device@4.0.1:
+    resolution: {integrity: sha512-/Vy0co+IlDt/5bzWC0rX5Fm0eEkq+fFt2UM9Q+poKTE/Rd4tdq2hwgo87/k6SyS0w2NIg7ogifLYFAVPWmsATg==}
+    hasBin: true
+
+snapshots:
+
+  open-device@4.0.1: {}

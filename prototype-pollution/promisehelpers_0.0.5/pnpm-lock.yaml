@@ -1,0 +1,29 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      promisehelpers:
+        specifier: 0.0.5
+        version: 0.0.5
+
+packages:
+
+  isarray@1.0.0:
+    resolution: {integrity: sha512-VLghIWNM6ELQzo7zwmcg0NmTVyWKYjvIeM83yjp0wRDTmUnrM678fQbcKBo6n2CJEF0szoG//ytg+TKla89ALQ==}
+
+  promisehelpers@0.0.5:
+    resolution: {integrity: sha512-k3K2lpKbvctFqYsUETfMc0Xbha1KcXDwLJUzaYEXqMvSTtMmENPRP4dPvp4otF7SfXGDQrzMG96NrPOdmSypRg==}
+
+snapshots:
+
+  isarray@1.0.0: {}
+
+  promisehelpers@0.0.5:
+    dependencies:
+      isarray: 1.0.0

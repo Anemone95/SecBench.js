@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@cookiex/deep':
+        specifier: 0.0.6
+        version: 0.0.6
+
+packages:
+
+  '@cookiex/deep@0.0.6':
+    resolution: {integrity: sha512-fKDyF2XK0Sd38aJTEMCyWEU/xHk1wdOqnOja1T3la7tI4MX5JW3LQMEA9ZJgDAaXj6tdkA2TfDajR7DvQpE+Bg==}
+
+snapshots:
+
+  '@cookiex/deep@0.0.6': {}

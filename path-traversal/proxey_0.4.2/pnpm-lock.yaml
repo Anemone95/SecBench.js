@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      proxey:
+        specifier: 0.4.2
+        version: 0.4.2
+
+packages:
+
+  proxey@0.4.2:
+    resolution: {integrity: sha512-iylRGfnw6WdET6AvxnN7fAJsdYs8VtFsXjzIMS8qAUm+LIsb51fd8MV2GKZLZJm91qv0MHNCiALhF4ww23SWIw==}
+
+snapshots:
+
+  proxey@0.4.2: {}

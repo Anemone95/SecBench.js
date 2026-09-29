@@ -1,0 +1,30 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      wc-cmd:
+        specifier: 1.0.9
+        version: 1.0.9
+
+packages:
+
+  jquery@2.2.4:
+    resolution: {integrity: sha512-lBHj60ezci2u1v2FqnZIraShGgEXq35qCzMv4lITyHGppTnA13rwR0MgwyNJh9TnDs3aXUvd1xjAotfraMHX/Q==}
+    deprecated: This version is deprecated. Please upgrade to the latest version or find support at https://www.herodevs.com/support/jquery-nes or https://tuxcare.com/lp/click-jquery-support/.
+
+  wc-cmd@1.0.9:
+    resolution: {integrity: sha512-45uKAdus84b3kGI4faYGasIhqSjZWxA/6f271EVWJTJ+sCKpNhQ3iDAPuTkbI2sXTQnzXnRmnEjlsdpzseiXUw==}
+
+snapshots:
+
+  jquery@2.2.4: {}
+
+  wc-cmd@1.0.9:
+    dependencies:
+      jquery: 2.2.4

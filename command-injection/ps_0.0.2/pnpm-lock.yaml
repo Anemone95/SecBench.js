@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      ps:
+        specifier: 0.0.2
+        version: 0.0.2
+
+packages:
+
+  ps@0.0.2:
+    resolution: {integrity: sha512-AodrTzAkuAqlNdKKKpvbW0vWjDOEvcBPGhY9sE5z2cPvuK5bOknS5qLBiMaBkdFcnyBn7rB1wcSTWxEPgo3kdQ==}
+    deprecated: fixed potential command injection security issue
+
+snapshots:
+
+  ps@0.0.2: {}

@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      colors-cli:
+        specifier: 1.0.25
+        version: 1.0.25
+
+packages:
+
+  colors-cli@1.0.25:
+    resolution: {integrity: sha512-TervHM0MHlHPhCT0gAtbT1T98Y4u2nTX79Exq6iqUlRhg3+1rHYRbTJuzRVXZOodCvMbkkMT/3BwWIDqoCEdkQ==}
+    hasBin: true
+
+snapshots:
+
+  colors-cli@1.0.25: {}

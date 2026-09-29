@@ -1,0 +1,126 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      simple-mock-server:
+        specifier: 0.2.1
+        version: 0.2.1
+
+packages:
+
+  colors@0.6.2:
+    resolution: {integrity: sha512-OsSVtHK8Ir8r3+Fxw/b4jS1ZLPXkV6ZxDRJQzeD7qo0SqMXWrHDM71DgYzPMHY8SFJ0Ao+nNU2p1MmwdzKqPrw==}
+    engines: {node: '>=0.1.90'}
+
+  ecstatic@0.4.13:
+    resolution: {integrity: sha512-dIKJNQulD/Pi//s8H75KRH6gjK23v7E/ZyeW4ssfTMHgboIZiqGstOZZ4kGpeUomJCgZ9Qg8ub1fB2zYBM6cKw==}
+    deprecated: This package is unmaintained and deprecated. See the GH Issue 259.
+    hasBin: true
+
+  ent@0.0.8:
+    resolution: {integrity: sha512-lH6CgAllw9UO8HdUbsl/gqkvcwV230kPxH1wTwLR3Iu5NrUs4F2Q4hPnIshfW9OQzj/sdDgdQtcrUpTMAKF0cQ==}
+    engines: {node: '>= 0.4'}
+
+  mime@1.2.11:
+    resolution: {integrity: sha512-Ysa2F/nqTNGHhhm9MV8ure4+Hc+Y8AWiqUdHxsO7xu8zc92ND9f3kpALHjaP026Ft17UfxrMt95c50PLUeynBw==}
+
+  mkdirp@0.0.7:
+    resolution: {integrity: sha512-r4Ml2CH2Kl4B0+Lwq1SVru0vjMxdtR+UEb938WTQcsnU+EJz8dUV/HY0LTZh466nUSljia9cvqW3LZLWs3l8LQ==}
+    deprecated: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+
+  opener@1.3.0:
+    resolution: {integrity: sha512-sBqelaOnn8SA+zefIj/VMXgIACr6URhyysMn2DEx2fTcbmyDbPf8wWs5rPgoR2SVRBk1oNYl8YE7LwV84FCJCg==}
+    hasBin: true
+
+  optimist@0.3.7:
+    resolution: {integrity: sha512-TCx0dXQzVtSCg2OgY/bO9hjM9cV4XYx09TVK+s3+FhkjT6LovsLe+pPMzpWf+6yXK/hUizs2gUoTw3jHM0VaTQ==}
+
+  optimist@0.5.2:
+    resolution: {integrity: sha512-r9M8ZpnM9SXV5Wii7TCqienfcaY3tAiJe9Jchof87icbmbruKgK0xKXngmrnowTDnEawmmI1Qbha59JEoBkBGA==}
+
+  pkginfo@0.2.3:
+    resolution: {integrity: sha512-7W7wTrE/NsY8xv/DTGjwNIyNah81EQH0MWcTzrHL6pOpMocOGZc0Mbdz9aXxSrp+U0mSmkU8jrNCDCfUs3sOBg==}
+    engines: {node: '>= 0.4.0'}
+
+  portfinder@0.2.1:
+    resolution: {integrity: sha512-U7dHe7mfMMP5cIwbqBHh/likunxAEiBsQLiThUWjyeRK6/C3um2uk+VGiekUW8q3h+s793gdNfagCM3aaXMeOg==}
+    engines: {node: '>= 0.4.0'}
+
+  punycode@1.4.1:
+    resolution: {integrity: sha512-jmYNElW7yvO7TV33CjSmvSiE2yco3bV2czu/OzDKdMNVZQWfxCblURLhf+47syQRBntjfLdd/H0egrzIG+oaFQ==}
+
+  qs@0.5.6:
+    resolution: {integrity: sha512-KbOrQrP5Ye+0gmq+hwxoJwAFRwExACWqwxj1IDFFgqOw9Poxy3wwSbafd9ZqP6T6ykMfnxM573kt/a4i9ybatQ==}
+
+  simple-mock-server@0.2.1:
+    resolution: {integrity: sha512-gElI/qzJCeVBory1AflKH7SU00C9S+u1BMDi22dTm524kvcG2F/rCyo6I/2fVn0DGtrgfcN/eUgCw4OKbzghZw==}
+    hasBin: true
+
+  union@0.3.8:
+    resolution: {integrity: sha512-0rE7P7EEOPZabwOGltjAFItQKHFx8pYfkamn3Se7KVdufcuwq6HwvVyVRqAVT/bfhwvJdb8Fs8HoXaL+IHCiWw==}
+    engines: {node: '>= 0.4.0'}
+
+  wordwrap@0.0.3:
+    resolution: {integrity: sha512-1tMA907+V4QmxV7dbRvb4/8MaRALK6q9Abid3ndMYnbyo8piisCmeONVqVSXqQA3KaP4SLt5b7ud6E2sqP8TFw==}
+    engines: {node: '>=0.4.0'}
+
+snapshots:
+
+  colors@0.6.2: {}
+
+  ecstatic@0.4.13:
+    dependencies:
+      ent: 0.0.8
+      mime: 1.2.11
+      optimist: 0.3.7
+
+  ent@0.0.8:
+    dependencies:
+      punycode: 1.4.1
+
+  mime@1.2.11: {}
+
+  mkdirp@0.0.7: {}
+
+  opener@1.3.0: {}
+
+  optimist@0.3.7:
+    dependencies:
+      wordwrap: 0.0.3
+
+  optimist@0.5.2:
+    dependencies:
+      wordwrap: 0.0.3
+
+  pkginfo@0.2.3: {}
+
+  portfinder@0.2.1:
+    dependencies:
+      mkdirp: 0.0.7
+
+  punycode@1.4.1: {}
+
+  qs@0.5.6: {}
+
+  simple-mock-server@0.2.1:
+    dependencies:
+      colors: 0.6.2
+      ecstatic: 0.4.13
+      mime: 1.2.11
+      opener: 1.3.0
+      optimist: 0.5.2
+      portfinder: 0.2.1
+      union: 0.3.8
+
+  union@0.3.8:
+    dependencies:
+      pkginfo: 0.2.3
+      qs: 0.5.6
+
+  wordwrap@0.0.3: {}

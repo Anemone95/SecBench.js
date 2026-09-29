@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      cuiaiguang:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  cuiaiguang@1.0.0:
+    resolution: {integrity: sha512-FGGEW6pUBfoBrM96yk4PC/1N90lB1d8E6jULSm80c4tC9XDkRujB5Dr4M9YkXMCWviXqBhubYjNrV0iCmsdmwg==}
+
+snapshots:
+
+  cuiaiguang@1.0.0: {}

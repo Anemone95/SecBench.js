@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      mime:
+        specifier: 1.4.0
+        version: 1.4.0
+
+packages:
+
+  mime@1.4.0:
+    resolution: {integrity: sha512-n9ChLv77+QQEapYz8lV+rIZAW3HhAPW2CXnzb1GN5uMkuczshwvkW7XPsbzU0ZQN3sP47Er2KVkp2p3KyqZKSQ==}
+    hasBin: true
+
+snapshots:
+
+  mime@1.4.0: {}

@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      fresh:
+        specifier: 0.5.0
+        version: 0.5.0
+
+packages:
+
+  fresh@0.5.0:
+    resolution: {integrity: sha512-FveevZlqNSIBombLEB9L3WyWg74r6d0sk+unzqKmt33b5egY0YXDFWIQ/t2Fzr9mgBLL0BlL0/rdg8Oq1C0SVw==}
+    engines: {node: '>= 0.6'}
+
+snapshots:
+
+  fresh@0.5.0: {}

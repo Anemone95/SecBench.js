@@ -1,0 +1,38 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      rollup-plugin-dev-server:
+        specifier: 0.4.3
+        version: 0.4.3
+
+packages:
+
+  mime@1.6.0:
+    resolution: {integrity: sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==}
+    engines: {node: '>=4'}
+    hasBin: true
+
+  opener@1.5.2:
+    resolution: {integrity: sha512-ur5UIdyw5Y7yEj9wLzhqXiy6GZ3Mwx0yGI+5sMn2r0N0v3cKJvUmFH5yPP+WXh9e0xfyzyJX95D8l088DNFj7A==}
+    hasBin: true
+
+  rollup-plugin-dev-server@0.4.3:
+    resolution: {integrity: sha512-1Sq5NOASV0zqRRb84YZ59mFZPpQDcOU5RCmv2c5VQ0nTZwGLbbDQGcLUKyEP1JkuqTqfiG22d6H9XrWCvxfQrA==}
+
+snapshots:
+
+  mime@1.6.0: {}
+
+  opener@1.5.2: {}
+
+  rollup-plugin-dev-server@0.4.3:
+    dependencies:
+      mime: 1.6.0
+      opener: 1.5.2

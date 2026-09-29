@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      der-server:
+        specifier: 0.0.9
+        version: 0.0.9
+
+packages:
+
+  der-server@0.0.9:
+    resolution: {integrity: sha512-7PHCDUV7yS9ukmdsFDjDuttF/cWTYbVOQUiMLOFksxNjV5lF5vUVKfwAnTgl+ILbgMSYuTpPHlQX2Ib/W4Y6OA==}
+
+snapshots:
+
+  der-server@0.0.9: {}

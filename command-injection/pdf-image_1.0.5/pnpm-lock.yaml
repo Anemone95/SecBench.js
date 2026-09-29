@@ -1,0 +1,29 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      pdf-image:
+        specifier: 1.0.5
+        version: 1.0.5
+
+packages:
+
+  es6-promise@2.0.1:
+    resolution: {integrity: sha512-0RBMKyLahxssuXDDS9zjzquXG/HMFRGEuG0K0w+BV/g6Zurm3/VyzuxlefeHLxroW4cmsISDa/7jcmAY5OMTSQ==}
+
+  pdf-image@1.0.5:
+    resolution: {integrity: sha512-t4/jLOcsYDoY3HbLDHffpGStzYljUaYV5fPHjEXmINqtVhRfOw594LijHaORk+VQV/9SuIKkmJnXBmrnaJ52ZA==}
+
+snapshots:
+
+  es6-promise@2.0.1: {}
+
+  pdf-image@1.0.5:
+    dependencies:
+      es6-promise: 2.0.1

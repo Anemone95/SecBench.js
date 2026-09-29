@@ -1,0 +1,78 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      gfm-srv:
+        specifier: 1.1.2
+        version: 1.1.2
+
+packages:
+
+  commander@2.0.0:
+    resolution: {integrity: sha512-qebjpyeaA/nJ4w3EO2cV2++/zEkccPnjWogzA2rff+Lk8ILI75vULeTmyd4wPxWdKwtP3J+G39IXVZadh0UHyw==}
+    engines: {node: '>= 0.6.x'}
+
+  commander@2.20.3:
+    resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
+
+  gfm-srv@1.1.2:
+    resolution: {integrity: sha512-sKeWZx+LctJTsuJSDIT2EOG/ZyCT/14RiW8oxiJh/6AbtT+Up3ybK3sVh+dB1i9n28df5IwACSlO8kHisnsRvQ==}
+    hasBin: true
+
+  highlight.js@8.9.1:
+    resolution: {integrity: sha512-t2PInfxDlvHEk4yROFNv4w53D2DtdRAO8Oz9GUVOHE/Wu9IPSKjZLO6Pjvl3vAX77sBpPuBAupQbqF6TFfErEw==}
+    deprecated: Version no longer supported. Upgrade to @latest
+
+  marked@0.3.19:
+    resolution: {integrity: sha512-ea2eGWOqNxPcXv8dyERdSr/6FmzvWwzjMxpfGB/sbMccXoct+xY+YukPD+QTUZwyvK7BZwcr4m21WBOW41pAkg==}
+    engines: {node: '>=0.10.0'}
+    hasBin: true
+
+  mime@1.2.11:
+    resolution: {integrity: sha512-Ysa2F/nqTNGHhhm9MV8ure4+Hc+Y8AWiqUdHxsO7xu8zc92ND9f3kpALHjaP026Ft17UfxrMt95c50PLUeynBw==}
+
+  node-srv@1.2.6:
+    resolution: {integrity: sha512-fDWqWyTIZ8bv66OGxuoaAQw4AZOztp3LRfNIG48wsAgpiK1SX4Fjnr2TL2+aCI57DZ4RTUifApi8m5bls+jRhg==}
+    hasBin: true
+
+  underscore@1.13.8:
+    resolution: {integrity: sha512-DXtD3ZtEQzc7M8m4cXotyHR+FAS18C64asBYY5vqZexfYryNNnDc02W4hKg3rdQuqOYas1jkseX0+nZXjTXnvQ==}
+
+  underscore@1.5.2:
+    resolution: {integrity: sha512-yejOFsRnTJs0N9CK5Apzf6maDO2djxGoLLrlZlvGs2o9ZQuhIhDL18rtFyy4FBIbOkzA6+4hDgXbgz5EvDQCXQ==}
+
+snapshots:
+
+  commander@2.0.0: {}
+
+  commander@2.20.3: {}
+
+  gfm-srv@1.1.2:
+    dependencies:
+      commander: 2.20.3
+      highlight.js: 8.9.1
+      marked: 0.3.19
+      node-srv: 1.2.6
+      underscore: 1.13.8
+
+  highlight.js@8.9.1: {}
+
+  marked@0.3.19: {}
+
+  mime@1.2.11: {}
+
+  node-srv@1.2.6:
+    dependencies:
+      commander: 2.0.0
+      mime: 1.2.11
+      underscore: 1.5.2
+
+  underscore@1.13.8: {}
+
+  underscore@1.5.2: {}

@@ -1,0 +1,44 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      crud-file-server:
+        specifier: 0.7.0
+        version: 0.7.0
+
+packages:
+
+  crud-file-server@0.7.0:
+    resolution: {integrity: sha512-rjY23ziPYOK0Map8TB8dmt8EzLNlc5AEyNT63i6u4u3mvfcqZOaOj7E9gyVXjWO7tEtn/CLA626p0kL2RnxLsg==}
+    hasBin: true
+
+  mime@1.2.7:
+    resolution: {integrity: sha512-dpy+nvloUnk2kSbmdZ6PFEuGUV+gYLF3YIAxkOuvD3N0pZiUM4UiNBW9516oVHcOLfRVTIgShgQVyXQu7K+XIA==}
+
+  optimist@0.3.4:
+    resolution: {integrity: sha512-CM668OmXLjrLKlVPze/bc0BIOZ0qoM5gWwEVurkjXPv6cgkybJ2TSt86nmaud+niwPfWHLOcgbbcRtA5zJgOIQ==}
+
+  wordwrap@0.0.3:
+    resolution: {integrity: sha512-1tMA907+V4QmxV7dbRvb4/8MaRALK6q9Abid3ndMYnbyo8piisCmeONVqVSXqQA3KaP4SLt5b7ud6E2sqP8TFw==}
+    engines: {node: '>=0.4.0'}
+
+snapshots:
+
+  crud-file-server@0.7.0:
+    dependencies:
+      mime: 1.2.7
+      optimist: 0.3.4
+
+  mime@1.2.7: {}
+
+  optimist@0.3.4:
+    dependencies:
+      wordwrap: 0.0.3
+
+  wordwrap@0.0.3: {}

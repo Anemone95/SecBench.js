@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      gaoxuyan:
+        specifier: 1.1.0
+        version: 1.1.0
+
+packages:
+
+  gaoxuyan@1.1.0:
+    resolution: {integrity: sha512-09/ZZ2Zw58kfCFCAwm8bF7gRqg2pGPeVJ+y/CXVGUIAv6aZyK51UJE7yJGBKqdVgf8G+xOdABJAEHhInW0La4Q==}
+
+snapshots:
+
+  gaoxuyan@1.1.0: {}

@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      extra-asciinema:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  extra-asciinema@1.0.0:
+    resolution: {integrity: sha512-DdPH7D7n1jQ/INWwg61TUibNTtFHtPvh5he7S4IrHDvQ09f3Jt58ZBbc/Se2+rlcnStTkiHNOjdp6DpmtDSRNw==}
+
+snapshots:
+
+  extra-asciinema@1.0.0: {}

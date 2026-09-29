@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      lihuini:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  lihuini@1.0.0:
+    resolution: {integrity: sha512-kP14Kq8bOVFJdBYx4t8J1/eN2vos0/QMUGcJHtyUjnjz1sv2lT62NsGI/6b/0LKNGzft/kGLJc0YNbs8+KWnfw==}
+
+snapshots:
+
+  lihuini@1.0.0: {}

@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      diskstats:
+        specifier: 0.0.2
+        version: 0.0.2
+
+packages:
+
+  diskstats@0.0.2:
+    resolution: {integrity: sha512-9mRe2i6vKVjipbq1LtPF3aHBHVOtfB4w3IvMPY1ogwmTfEICLl1g08yxqwWwkX/XrRSRcqbJPIbVWMZmHwpt3Q==}
+    deprecated: Critical bug fixed in v0.1.0
+
+snapshots:
+
+  diskstats@0.0.2: {}

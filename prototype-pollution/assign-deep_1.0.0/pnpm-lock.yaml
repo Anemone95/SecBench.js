@@ -1,0 +1,32 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      assign-deep:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  assign-deep@1.0.0:
+    resolution: {integrity: sha512-wH7AeUhZk5j8E8B3pDJ/nmN2eOR+zPK47do3a4GKn5L7bMtKTqFTnvtxNoDg4+XgmF08euylwYwgFv4F0l38QQ==}
+    engines: {node: '>=6'}
+    deprecated: Critical bug fixed in v1.0.1, please upgrade to the latest version.
+
+  assign-symbols@2.0.2:
+    resolution: {integrity: sha512-9sBQUQZMKFKcO/C3Bo6Rx4CQany0R0UeVcefNGRRdW2vbmaMOhV1sbmlXcQLcD56juLXbSGTBm0GGuvmrAF8pA==}
+    engines: {node: '>=6'}
+
+snapshots:
+
+  assign-deep@1.0.0:
+    dependencies:
+      assign-symbols: 2.0.2
+
+  assign-symbols@2.0.2: {}

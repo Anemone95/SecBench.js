@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      lutils:
+        specifier: 2.4.0
+        version: 2.4.0
+
+packages:
+
+  lutils@2.4.0:
+    resolution: {integrity: sha512-O2m1g/0DQxpSOkTxIvwUKl3y7NWifPeJm/MUjQ+PnqqPj8+fj4k5F/vOkgdW0qAW8R8Atdrv6UJlN1J5d+q6vQ==}
+
+snapshots:
+
+  lutils@2.4.0: {}

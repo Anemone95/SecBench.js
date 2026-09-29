@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      uekw1511server:
+        specifier: 1.0.1
+        version: 1.0.1
+
+packages:
+
+  uekw1511server@1.0.1:
+    resolution: {integrity: sha512-+bQhhCGg9QqG90OFvmywUNhx0sTQl+1t8jMj8Oot6ldEkJberTsDrfN0siHTFktlXieRdd/RmjCHJqL1TaULHg==}
+
+snapshots:
+
+  uekw1511server@1.0.1: {}

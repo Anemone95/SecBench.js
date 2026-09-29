@@ -1,0 +1,38 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      mongo-parse:
+        specifier: 2.1.0
+        version: 2.1.0
+      sleep:
+        specifier: ^6.3.0
+        version: 6.3.0
+
+packages:
+
+  mongo-parse@2.1.0:
+    resolution: {integrity: sha512-QmPliJQpAjceKZe/K77FonhHzYIRre3qo9mqnALI8i4Df6FRd/ZJNSNGfrakS5mahpqd4KsRhLqLxv3Q/7g6zg==}
+
+  nan@2.29.0:
+    resolution: {integrity: sha512-GlGk3HIvitbvs+LT3g6XUP1kpirKNvmDFwF/bmo6XNWSb/eYEs/O4bfgIEIXCZ+lIOTS5xNwDvSGMw6FJdAhtA==}
+
+  sleep@6.3.0:
+    resolution: {integrity: sha512-+WgYl951qdUlb1iS97UvQ01pkauoBK9ML9I/CMPg41v0Ze4EyMlTgFTDDo32iYj98IYqxIjDMRd+L71lawFfpQ==}
+    engines: {node: '>=0.8.0'}
+
+snapshots:
+
+  mongo-parse@2.1.0: {}
+
+  nan@2.29.0: {}
+
+  sleep@6.3.0:
+    dependencies:
+      nan: 2.29.0

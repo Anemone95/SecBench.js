@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      set-deep-prop:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  set-deep-prop@1.0.0:
+    resolution: {integrity: sha512-UoWQhTnB9OVvQpsRf8/ljYOM2L1JX4tP57j/wSqU4cvs/lfEIzpZPG1PA3n8VNOK/czoJKuqgaqWTdLozILnAA==}
+
+snapshots:
+
+  set-deep-prop@1.0.0: {}

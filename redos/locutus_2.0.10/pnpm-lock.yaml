@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      locutus:
+        specifier: 2.0.10
+        version: 2.0.10
+
+packages:
+
+  locutus@2.0.10:
+    resolution: {integrity: sha512-AZg2kCqrquMJ5FehDsBidV0qHl98NrsYtseUClzjAQ3HFnsDBJTCwGVplSQ82t9/QfgahqvTjaKcZqZkHmS0wQ==}
+    engines: {node: '>= 0.12.0'}
+
+snapshots:
+
+  locutus@2.0.10: {}

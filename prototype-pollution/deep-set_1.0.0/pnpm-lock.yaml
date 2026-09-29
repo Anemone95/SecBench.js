@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      deep-set:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  deep-set@1.0.0:
+    resolution: {integrity: sha512-2NApPyZNaF6N0kHhfc2LBWlUqJd8+CQsnSFQrXN+JJxNDMhYbXZvaUqLTLg00noRH8YR1wRNWL7FUtkOGmRLDA==}
+    deprecated: Package no longer supported. Please use lodash.set (https://lodash.com/docs/4.17.15#set)
+
+snapshots:
+
+  deep-set@1.0.0: {}

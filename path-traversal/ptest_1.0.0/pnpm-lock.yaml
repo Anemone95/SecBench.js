@@ -1,0 +1,79 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      ptest:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  co@4.6.0:
+    resolution: {integrity: sha512-QVb0dM5HvG+uaxitm8wONl7jltx8dqhfU33DcqtOZcLSVIKSDDLDi7+0LbAKiyI8hD9u42m2YxXSkMGWThaecQ==}
+    engines: {iojs: '>= 1.0.0', node: '>= 0.12.0'}
+
+  mithril@0.2.8:
+    resolution: {integrity: sha512-9XuGnVmS2OyFexUuP/CcJFFJjHLM+RGYBxyVRNyQ6khbMfDJIF/xyZ4zq18ZRfPagpFmWUFpjHd5ZqPULGZyNg==}
+
+  options@0.0.6:
+    resolution: {integrity: sha512-bOj3L1ypm++N+n7CEbbe473A414AB7z+amKYshRb//iuL3MpdDCLhPnw6aVTdKB9g5ZRVHIEp8eUln6L2NUStg==}
+    engines: {node: '>=0.4.0'}
+
+  ptest@1.0.0:
+    resolution: {integrity: sha512-44igwAkvh9OvtbjyduovCciGrdbFzCZcEM2yWf4zR050E6kuWKqVzAH9lBpRk7LDH9SnnLN6iTrrbgFdXuLYkg==}
+
+  ultron@1.0.2:
+    resolution: {integrity: sha512-QMpnpVtYaWEeY+MwKDN/UdKlE/LsFZXM5lO1u7GaZzNgmIbGixHEmVMIKT+vqYOALu3m5GYQy9kz4Xu4IVn7Ow==}
+
+  util_debounce_throttle@1.0.0:
+    resolution: {integrity: sha512-X8Z4uVIISk6YQq4PvBhUw4ec9maYK7t/BbpZrfyKqZiBj9lb2kyiaXwF21eczkGOWJUMlxRcEyS+LrU8eknPWQ==}
+
+  util_extend_exclude@1.0.4:
+    resolution: {integrity: sha512-xOT0vsUNqwoESzPJQCVizK0Goo9arHPE6Q73ltIcy+iujN2Z/PQ6xmYY/oSCFhGkzyumCHWhGoIsT6kYcswTWQ==}
+
+  ws@1.1.5:
+    resolution: {integrity: sha512-o3KqipXNUdS7wpQzBHSe180lBGO60SoK0yVo3CYJgb2MkobuWuBX6dhkYP5ORCLd55y+SaflMOV5fqAB53ux4w==}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: ^5.0.2
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+
+snapshots:
+
+  co@4.6.0: {}
+
+  mithril@0.2.8: {}
+
+  options@0.0.6: {}
+
+  ptest@1.0.0:
+    dependencies:
+      co: 4.6.0
+      mithril: 0.2.8
+      util_debounce_throttle: 1.0.0
+      util_extend_exclude: 1.0.4
+      ws: 1.1.5
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+
+  ultron@1.0.2: {}
+
+  util_debounce_throttle@1.0.0: {}
+
+  util_extend_exclude@1.0.4: {}
+
+  ws@1.1.5:
+    dependencies:
+      options: 0.0.6
+      ultron: 1.0.2

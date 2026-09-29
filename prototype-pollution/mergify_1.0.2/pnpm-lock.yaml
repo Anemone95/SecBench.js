@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      mergify:
+        specifier: 1.0.2
+        version: 1.0.2
+
+packages:
+
+  mergify@1.0.2:
+    resolution: {integrity: sha512-D4bhAzwteOdwQaYZTrYora+R6rYaSnMFAa98edEOjT73oS0MmW5cSc6S5aHnqNu0YgQKnxli0wEKDafU1sTaoQ==}
+    deprecated: This package has a known vulnerability, and won't be maintained, use lodash/mergeWith instead
+
+snapshots:
+
+  mergify@1.0.2: {}

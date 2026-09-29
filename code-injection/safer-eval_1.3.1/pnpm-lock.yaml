@@ -1,0 +1,32 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      safer-eval:
+        specifier: 1.3.1
+        version: 1.3.1
+
+packages:
+
+  clones@1.2.0:
+    resolution: {integrity: sha512-FXDYw4TjR8wgPZYui2LeTqWh1BLpfQ8lB6upMtlpDF6WlOOxghmTTxWyngdKTgozqBgKnHbTVwTE+hOHqAykuQ==}
+    engines: {node: '>=4.0.0'}
+
+  safer-eval@1.3.1:
+    resolution: {integrity: sha512-7ipEKwaP7acv9QDJsE4+2G36wcYREn2jB6FV2bpeVGb9P4PRSbBEttJW5gBi+2O8HnqQ1eHBqZJmOZpwbdD1lg==}
+    engines: {node: '>=4.0.0'}
+    deprecated: safer-eval IS HARMFUL - so you are warned!
+
+snapshots:
+
+  clones@1.2.0: {}
+
+  safer-eval@1.3.1:
+    dependencies:
+      clones: 1.2.0

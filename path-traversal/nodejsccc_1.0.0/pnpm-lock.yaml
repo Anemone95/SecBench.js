@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      nodejsccc:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  nodejsccc@1.0.0:
+    resolution: {integrity: sha512-kk7Ne4F9Iws37RXmLzXJRjOIa0PaLt0DMHS+Xb42x3iD6Qfv0972FL05GjEPEK3pXorsc9T11DR/ckf97Ee/GA==}
+
+snapshots:
+
+  nodejsccc@1.0.0: {}

@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      samsung-remote:
+        specifier: 1.2.5
+        version: 1.2.5
+
+packages:
+
+  samsung-remote@1.2.5:
+    resolution: {integrity: sha512-np8FttGaIJ2+ag27aAhfojsiczmRql9xF5mDUSXu2Yr/q3QHVN6VHhkUD0+QdZ86nG3vEoAPy2E9VHyz/aox9g==}
+
+snapshots:
+
+  samsung-remote@1.2.5: {}

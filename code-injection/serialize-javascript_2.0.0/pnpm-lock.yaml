@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      serialize-javascript:
+        specifier: 2.0.0
+        version: 2.0.0
+
+packages:
+
+  serialize-javascript@2.0.0:
+    resolution: {integrity: sha512-aUhAaUBDU9UJLCjIkaY6ojbanMXRhcJ+X/OgOGBj1Ahh/Ybv61PS4QCVF+QdsGcynY5r9lE2lwsckdD0PveqVQ==}
+
+snapshots:
+
+  serialize-javascript@2.0.0: {}

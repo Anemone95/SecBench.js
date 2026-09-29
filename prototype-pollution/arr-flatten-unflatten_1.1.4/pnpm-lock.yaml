@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      arr-flatten-unflatten:
+        specifier: 1.1.4
+        version: 1.1.4
+
+packages:
+
+  arr-flatten-unflatten@1.1.4:
+    resolution: {integrity: sha512-9T9MyDQ5CrIhZ5+lfVb8D9YMZWeFnG3jvcxIJhVOx+iyYXvpyEqY+LZprFn+j/gIRZCPUwsp44tRtrQxz/wSpQ==}
+
+snapshots:
+
+  arr-flatten-unflatten@1.1.4: {}

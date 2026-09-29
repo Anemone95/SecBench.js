@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      serverhuwenhui:
+        specifier: 1.1.0
+        version: 1.1.0
+
+packages:
+
+  serverhuwenhui@1.1.0:
+    resolution: {integrity: sha512-RVriQjlaeS/7f5lLLOOGeI305IyVBeepTea+IpHBDsXVb5YFmDfwwFCaWggehPaIp/pYIxm/Lb7i9ZR1HmUnNQ==}
+
+snapshots:
+
+  serverhuwenhui@1.1.0: {}

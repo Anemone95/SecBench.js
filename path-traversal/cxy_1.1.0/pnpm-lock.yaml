@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      cxy:
+        specifier: 1.1.0
+        version: 1.1.0
+
+packages:
+
+  cxy@1.1.0:
+    resolution: {integrity: sha512-2KeY+CZt1DM1q9syv3pTnAzFTWrgZWODAfz8oxtbd5dYnY0oNw67GliJGnJju9/CiqCpUF9LXKY7NPGUBj/CBA==}
+
+snapshots:
+
+  cxy@1.1.0: {}

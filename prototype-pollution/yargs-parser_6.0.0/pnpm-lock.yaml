@@ -1,0 +1,30 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      yargs-parser:
+        specifier: 6.0.0
+        version: 6.0.0
+
+packages:
+
+  camelcase@4.1.0:
+    resolution: {integrity: sha512-FxAv7HpHrXbh3aPo4o2qxHay2lkLY3x5Mw3KeE4KQE8ysVfziWeRZDwcjauvwBSGEC/nXUPzZy8zeh4HokqOnw==}
+    engines: {node: '>=4'}
+
+  yargs-parser@6.0.0:
+    resolution: {integrity: sha512-jbZceZseIDVUJsxCBfmN5YQOgVwXQx7RYWKlo7Agu8pRCeOZfGHvTOLXSlAi9FsbytEBvDRkqY6ZhaAuv1768g==}
+
+snapshots:
+
+  camelcase@4.1.0: {}
+
+  yargs-parser@6.0.0:
+    dependencies:
+      camelcase: 4.1.0

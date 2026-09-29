@@ -1,0 +1,38 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      killing:
+        specifier: 1.0.6
+        version: 1.0.6
+
+packages:
+
+  commander@2.8.1:
+    resolution: {integrity: sha512-+pJLBFVk+9ZZdlAOB5WuIElVPPth47hILFkmGym57aq8kwxsowvByvB0DHs1vQAhyMZzdcpTtF0VDKGkSDR4ZQ==}
+    engines: {node: '>= 0.6.x'}
+
+  graceful-readlink@1.0.1:
+    resolution: {integrity: sha512-8tLu60LgxF6XpdbK8OW3FA+IfTNBn1ZHGHKF4KQbEeSkajYw5PlYJcKluntgegDPTg8UkHjpet1T82vk6TQ68w==}
+
+  killing@1.0.6:
+    resolution: {integrity: sha512-i8lwGmOyBX0OBxnM0Gt1DAQJwx+9eku19Hb7Y8Mj8+IunmnZW1t+fWlenSx0rW3tCkMbaAAwCCppG8tocufdDQ==}
+    hasBin: true
+
+snapshots:
+
+  commander@2.8.1:
+    dependencies:
+      graceful-readlink: 1.0.1
+
+  graceful-readlink@1.0.1: {}
+
+  killing@1.0.6:
+    dependencies:
+      commander: 2.8.1

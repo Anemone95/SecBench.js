@@ -1,0 +1,24 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      node.extend:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  node.extend@1.0.0:
+    resolution: {integrity: sha512-Jqb2SFiBSqeOUlxHbjpinUo3ZXBkVmCqha8t1REgyo4rYx/cXh+pttzlL2vXIjG63VdklCrwrnqwIXsVBRMrSA==}
+    engines: {'0': node >= 0.4.0}
+    deprecated: 0.0.1
+
+snapshots:
+
+  node.extend@1.0.0: {}

@@ -1,0 +1,36 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      plain-object-merge:
+        specifier: 1.0.1
+        version: 1.0.1
+
+packages:
+
+  is-primitive@3.0.1:
+    resolution: {integrity: sha512-GljRxhWvlCNRfZyORiH77FwdFwGcMO620o37EOYC0ORWdq+WYNVqW0w2Juzew4M+L81l6/QS3t5gkkihyRqv9w==}
+    engines: {node: '>=0.10.0'}
+
+  plain-object-clone@1.1.0:
+    resolution: {integrity: sha512-olscJ1tyukoPom5QOzjwhz0qU+Nwr/8PmdghaPObq9CQR8bNZ+kChpw5HIO/pwIbMR2woroN+W7ZCD1S3BO4sQ==}
+
+  plain-object-merge@1.0.1:
+    resolution: {integrity: sha512-Oway6skPQ2uLG1NkDDnUQbDOPDIeGCNSnDnWuXZ3deviD2FaYQtfXUmET5Oq9tqdToMEYP7WhWO4lqv8bogRFA==}
+
+snapshots:
+
+  is-primitive@3.0.1: {}
+
+  plain-object-clone@1.1.0: {}
+
+  plain-object-merge@1.0.1:
+    dependencies:
+      is-primitive: 3.0.1
+      plain-object-clone: 1.1.0

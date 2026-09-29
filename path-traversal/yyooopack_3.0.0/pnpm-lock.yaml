@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      yyooopack:
+        specifier: 3.0.0
+        version: 3.0.0
+
+packages:
+
+  yyooopack@3.0.0:
+    resolution: {integrity: sha512-vS/KN5ANfLocgjZ/N23wAPOGEZUC0YQ6S1bQbguYhPmYwWfTxedlXl8ffF1emvVXc3KYBtXdel1gW83lv7f+aw==}
+
+snapshots:
+
+  yyooopack@3.0.0: {}

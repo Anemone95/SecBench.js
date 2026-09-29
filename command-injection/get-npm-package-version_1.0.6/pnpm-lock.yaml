@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      get-npm-package-version:
+        specifier: 1.0.6
+        version: 1.0.6
+
+packages:
+
+  get-npm-package-version@1.0.6:
+    resolution: {integrity: sha512-bBc/N6Tg8hbUK9IIdfRfAcRmgsv54ldus3+mVfJSKmYhe+qjOJ+eZj750sjS6g6h5RyUWWgsTmyra8OoW140NQ==}
+    engines: {node: '>=6.9.2'}
+
+snapshots:
+
+  get-npm-package-version@1.0.6: {}

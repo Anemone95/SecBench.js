@@ -1,0 +1,30 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      eslint-fixer:
+        specifier: 0.1.5
+        version: 0.1.5
+
+packages:
+
+  eslint-fixer@0.1.5:
+    resolution: {integrity: sha512-Qp2FZvKfuRXZ32C75OL/8/HqvInhjjm+LowkHzgaJh/6h+aLHKmQWp2TEaIqGXZB9Tx3NHBIt8FdpmZC6nXMMA==}
+
+  p-wait-for@1.0.0:
+    resolution: {integrity: sha512-raZs7eMN7mRqP2UEaXMSxDAkSqwN41J0yXCV1AVU9PbB4t7aBAj/6nDPgFcUikX+4GeBgXWLxITAn9hr+bdhrg==}
+    engines: {node: '>=4'}
+
+snapshots:
+
+  eslint-fixer@0.1.5:
+    dependencies:
+      p-wait-for: 1.0.0
+
+  p-wait-for@1.0.0: {}

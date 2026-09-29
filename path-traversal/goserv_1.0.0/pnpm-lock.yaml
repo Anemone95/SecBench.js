@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      goserv:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  goserv@1.0.0:
+    resolution: {integrity: sha512-otiyGFkEHZfQp5aMde1im8W4Y/GpiRXRq8Y9Xsszx8jLH4nIIWqWBgmRAKq5LXugzExHq4sbf2kw81kr9yxs5A==}
+    hasBin: true
+
+snapshots:
+
+  goserv@1.0.0: {}

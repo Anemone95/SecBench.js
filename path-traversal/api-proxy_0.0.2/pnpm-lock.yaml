@@ -1,0 +1,31 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      api-proxy:
+        specifier: 0.0.2
+        version: 0.0.2
+
+packages:
+
+  api-proxy@0.0.2:
+    resolution: {integrity: sha512-PYZ5vu7jy4lyY1MwnnG5b7PnDL2AFiZKYvOqN0hkyrw2dmjnmesEmuLxBPRwoxQLPDvBvIqpQmcq25My9lF8GA==}
+    engines: {node: '>=0.1.9'}
+
+  xmldom@0.6.0:
+    resolution: {integrity: sha512-iAcin401y58LckRZ0TkI4k0VSM1Qg0KGSc3i8rU+xrxe19A/BN1zHyVSJY7uoutVlaTSzYyk/v5AmkewAP7jtg==}
+    engines: {node: '>=10.0.0'}
+
+snapshots:
+
+  api-proxy@0.0.2:
+    dependencies:
+      xmldom: 0.6.0
+
+  xmldom@0.6.0: {}

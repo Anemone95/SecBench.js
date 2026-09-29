@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      httpea:
+        specifier: 3.0.4
+        version: 3.0.4
+
+packages:
+
+  httpea@3.0.4:
+    resolution: {integrity: sha512-3H+JSf0GzDAZSCHNfbd4O9o+RV2Ks1Lzh8H0GDfADBR5PJmEJ+HhuCsDsA9hi17eXc8aVIpbYNnNNxzEqLGNsg==}
+    hasBin: true
+
+snapshots:
+
+  httpea@3.0.4: {}

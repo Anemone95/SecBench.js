@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      safe-flat:
+        specifier: 2.0.0
+        version: 2.0.0
+
+packages:
+
+  safe-flat@2.0.0:
+    resolution: {integrity: sha512-MSXG9ZY0fqVfnYDt0BlS47sMjQeiDBQfGgI5n8WwApT8pQhpU6/6TJfPXlf1v5dFCe1USastsCp00ECOvNtSPQ==}
+    deprecated: Prototype pollution vulnerability fix in v2.0.2
+
+snapshots:
+
+  safe-flat@2.0.0: {}

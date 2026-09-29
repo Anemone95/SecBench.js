@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      roar-pidusage:
+        specifier: 1.1.6
+        version: 1.1.6
+
+packages:
+
+  roar-pidusage@1.1.6:
+    resolution: {integrity: sha512-lyS9swHPuqUjqlw6pZr4uOr5D8GPP/RiWpfGCE8xnoBcgmLjEKPhSwC/nGdYz2wxHn0G0WSrjGHjRDqf5A6uoQ==}
+
+snapshots:
+
+  roar-pidusage@1.1.6: {}

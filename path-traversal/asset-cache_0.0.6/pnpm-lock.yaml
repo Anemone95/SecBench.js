@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      asset-cache:
+        specifier: 0.0.6
+        version: 0.0.6
+
+packages:
+
+  asset-cache@0.0.6:
+    resolution: {integrity: sha512-mI5ALj+NTgl8ab7mDVWvv1+GP4Whv1UScd0FjOLjogSGjqc3YFIbOHZ3keECMd7kq7EqlO0+ZCcJjsDVrXQFtA==}
+
+snapshots:
+
+  asset-cache@0.0.6: {}

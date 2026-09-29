@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      mithril:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  mithril@1.0.0:
+    resolution: {integrity: sha512-JCNqA2Aykw+JYp7mB6zBOB+uWZoZwPWtw66IdkIFvtLkEbpJhhfNJWHAWGbrHp0YRd8psAbgF5fEr4txUDaqgg==}
+    hasBin: true
+
+snapshots:
+
+  mithril@1.0.0: {}

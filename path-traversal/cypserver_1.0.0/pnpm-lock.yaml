@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      cypserver:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  cypserver@1.0.0:
+    resolution: {integrity: sha512-4FBQfaQg8cVsOYaI74vFYXR4b+V+ERijbjEd2YUI54YhgykyupHQajGwFv0hMfJGESv1tfP2G4RzsznWaRVfrg==}
+
+snapshots:
+
+  cypserver@1.0.0: {}

@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      Templ8:
+        specifier: 0.7.0
+        version: 0.7.0
+
+packages:
+
+  Templ8@0.7.0:
+    resolution: {integrity: sha512-dT4Vs6leMi/bGAX6eNZH3hGePi+xeLCxSRXKY3CzgO+CozDQjITA+Q/bwMy2OvSeHlI2/cXqoTQhSULBoXTd9g==}
+
+snapshots:
+
+  Templ8@0.7.0: {}

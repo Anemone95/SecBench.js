@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      uri-js:
+        specifier: 2.1.1
+        version: 2.1.1
+
+packages:
+
+  uri-js@2.1.1:
+    resolution: {integrity: sha512-Mzott4fGJhw0z8q6P+QrQzijicqmfat55MdxD48gN9yXe8gBOGhcvc2hRVyNXzFa9xzCAep6CqWS6pbyajqE1g==}
+
+snapshots:
+
+  uri-js@2.1.1: {}

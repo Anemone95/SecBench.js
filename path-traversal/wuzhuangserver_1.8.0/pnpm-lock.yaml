@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      wuzhuangserver:
+        specifier: 1.8.0
+        version: 1.8.0
+
+packages:
+
+  wuzhuangserver@1.8.0:
+    resolution: {integrity: sha512-5OFRfC7OURb8a0Ht3iSbrULJbzh2IAm7snppiNrXS9/uv2iiLquBCqx0LLONB8S8ZUl37KEQ85it5xZxOEfexw==}
+
+snapshots:
+
+  wuzhuangserver@1.8.0: {}

@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      mfrserver:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  mfrserver@1.0.0:
+    resolution: {integrity: sha512-0cFJ4AKZHzT6vOBBYGxOrwluf6q0MrBmnYP7xysqJkuneVpL0LiDIwkLQ8EyJ5QmWtBQy04zhDKP3GyE88caMA==}
+
+snapshots:
+
+  mfrserver@1.0.0: {}

@@ -1,0 +1,104 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      sds:
+        specifier: 3.2.0
+        version: 3.2.0
+
+packages:
+
+  argparse@1.0.10:
+    resolution: {integrity: sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==}
+
+  esprima@4.0.1:
+    resolution: {integrity: sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==}
+    engines: {node: '>=4'}
+    hasBin: true
+
+  js-yaml@3.15.2:
+    resolution: {integrity: sha512-6EuL879VkRA+1Cz578mKMiKvjPNEuk6+r1JaFzoSWejZmtf7xWbIyw1e3KkxlkzTIt9Taw6JBhEppG7utc1P+w==}
+    hasBin: true
+
+  karg@1.26.0:
+    resolution: {integrity: sha512-wtO6nJJWaMEEhqeSKLaQpTH8f8nnn6wkNlVXtUJZanZuoosr+FzHP9f/bRR/U0OPZx38dltF03JlfpBSG6bgGQ==}
+
+  klor@1.8.0:
+    resolution: {integrity: sha512-IB2J99i3Ov+vAhdWT85Go+3/qb1GamGViSeD/p72zeUJQP+TgFOa85/xon5rfBxh+D3ObPwvEcRKZ8QJDfklIw==}
+
+  klor@2.17.0:
+    resolution: {integrity: sha512-VTfDvNFsF1gji0QAlrv6AHO5QoU/GRLSH4cyopwrPDQgDvHT9joL6ms7yEum8ZQP67M/c/q/pk7YjkZPRFIRVw==}
+
+  lodash.defaults@4.2.0:
+    resolution: {integrity: sha512-qjxPLHd3r5DnsdGacqOMU6pb/avJzdh9tFX2ymgoZE27BmjXrNy/y4LoaiTeAb+O3gL8AfpJGtqfX/ae2leYYQ==}
+
+  lodash.pad@4.5.1:
+    resolution: {integrity: sha512-mvUHifnLqM+03YNzeTBS1/Gr6JRFjd3rRx88FHWUvamVaT9k2O/kXha3yBSOwB9/DTQrSTLJNHvLBBt2FdX7Mg==}
+
+  noon@2.15.0:
+    resolution: {integrity: sha512-1+ec27obVj5vyNlGPf4dDzYKAKwN2zPlppeufn0zf3LSUf2w3o2+gR2G16yvVQWNVwlZC88/LAvzLXcX9xNJ7w==}
+    hasBin: true
+
+  noon@3.5.0:
+    resolution: {integrity: sha512-/neorD9jlS7FjNuyyPi1W1S4QC/AI5dgVwyIaVHLm5f9CS+5502KseeaNlRfvuKURkow5R3XiWbBUF2vq8nISA==}
+    hasBin: true
+
+  sds@3.2.0:
+    resolution: {integrity: sha512-XJVXXvCPriyVb9NryT4R4amq6/1m8hy1FQFV0HrMPMmJjUl0tw10Qi1dyfdrm73rfhyDyKPNimHqIex72LE+DA==}
+    hasBin: true
+
+  sprintf-js@1.0.3:
+    resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
+
+snapshots:
+
+  argparse@1.0.10:
+    dependencies:
+      sprintf-js: 1.0.3
+
+  esprima@4.0.1: {}
+
+  js-yaml@3.15.2:
+    dependencies:
+      argparse: 1.0.10
+      esprima: 4.0.1
+
+  karg@1.26.0:
+    dependencies:
+      klor: 2.17.0
+      noon: 3.5.0
+
+  klor@1.8.0: {}
+
+  klor@2.17.0: {}
+
+  lodash.defaults@4.2.0: {}
+
+  lodash.pad@4.5.1: {}
+
+  noon@2.15.0:
+    dependencies:
+      js-yaml: 3.15.2
+      karg: 1.26.0
+      klor: 1.8.0
+      lodash.defaults: 4.2.0
+      lodash.pad: 4.5.1
+
+  noon@3.5.0:
+    dependencies:
+      karg: 1.26.0
+      klor: 2.17.0
+
+  sds@3.2.0:
+    dependencies:
+      karg: 1.26.0
+      klor: 1.8.0
+      noon: 2.15.0
+
+  sprintf-js@1.0.3: {}

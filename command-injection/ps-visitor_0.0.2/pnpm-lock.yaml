@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      ps-visitor:
+        specifier: 0.0.2
+        version: 0.0.2
+
+packages:
+
+  ps-visitor@0.0.2:
+    resolution: {integrity: sha512-+YbBYCQYQvtei1SqHgEOiqkef9raH+ppKTwH5KQM8435W+p5cGmU4t53qmEE+v72Rb8kT8bH8zcAmE/kG5gxyA==}
+
+snapshots:
+
+  ps-visitor@0.0.2: {}

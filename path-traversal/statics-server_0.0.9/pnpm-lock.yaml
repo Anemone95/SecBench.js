@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      statics-server:
+        specifier: 0.0.9
+        version: 0.0.9
+
+packages:
+
+  statics-server@0.0.9:
+    resolution: {integrity: sha512-Ph9FVeIrc/i9EF+/QK30fThfPLe/icUXVNOar91WRNGvxMLb4z9BJ32aVR+fQ+kR0aFj5E0a8iIDUKjRk+/bVg==}
+    hasBin: true
+
+snapshots:
+
+  statics-server@0.0.9: {}

@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      wincred:
+        specifier: 1.0.2
+        version: 1.0.2
+
+packages:
+
+  wincred@1.0.2:
+    resolution: {integrity: sha512-cMbiyBKLgvwwOigTP6wv02UaYRxvseu6Zy8/sDXjqcVUFc0V53351V8MaD2CQ6mVNm0NrvKgVvTu5ZjC17YaNg==}
+
+snapshots:
+
+  wincred@1.0.2: {}

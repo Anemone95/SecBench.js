@@ -1,0 +1,24 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      dset:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  dset@1.0.0:
+    resolution: {integrity: sha512-cQt/g7T4luG2lF7VAk5qwyBVv7zN1YplMTF2Ktp6cU2LJU8NlxAS58E8Q00SWoxP+a1dJdJE46Le3Vwrehefug==}
+    engines: {node: '>=4'}
+    deprecated: Please use dset@2.1.0 or later for an important security patch
+
+snapshots:
+
+  dset@1.0.0: {}

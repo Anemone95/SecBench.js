@@ -1,0 +1,93 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      glance:
+        specifier: 3.0.0
+        version: 3.0.0
+
+packages:
+
+  abbrev@1.1.1:
+    resolution: {integrity: sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==}
+
+  bash-color@0.0.3:
+    resolution: {integrity: sha512-y0MC9pb/jBCn/1FzRm8/BZqOYrk0vBnW4pNkmAmLwLSA/rA9Wd3u0CYQnB8y5lW6VDf+Sf2kScntAUUS0KDGxw==}
+
+  filed@0.1.0:
+    resolution: {integrity: sha512-wIUqAsoUlrsf4w30lCCgKxMd5ZvVk+YUktjthJ/2M97M9f+FvQcAv44AD123ShgGXTL2xmcV/559I9XpevIdMQ==}
+
+  glance@3.0.0:
+    resolution: {integrity: sha512-Rrn3U6kxC8sEAC8vPGkHlbDV4+bCeFaVtai22hziN/uMsIu8OOOcIIO0jkJmR9oHwIEWUGv6bcY/PqS9URpUDA==}
+    deprecated: possible vulnerability patched in 3.0.9
+    hasBin: true
+
+  html-ls@1.0.1:
+    resolution: {integrity: sha512-OvLeP9Bjz/ZyTaYsdcZ5YyH6q1eXE9Gc0AizjFCN+JoDy6ER4dqG8X1rXZU12k+SiQP85h0Lp0FVQ2wW9QVNRg==}
+
+  ls-stream@1.0.0:
+    resolution: {integrity: sha512-b1jX4I3q7gB0dU5Z3OCLHhPUkzV4mtX/Je0VI3vQmVaWIx1lBt/lsj+PaNH7yXtAbDY64wJ8MdCPVrC5gF/FBQ==}
+
+  mime@4.1.0:
+    resolution: {integrity: sha512-X5ju04+cAzsojXKes0B/S4tcYtFAJ6tTMuSPBEn9CPGlrWr8Fiw7qYeLT0XyH80HSoAoqWCaz+MWKh22P7G1cw==}
+    engines: {node: '>=16'}
+    hasBin: true
+
+  nopt@2.2.1:
+    resolution: {integrity: sha512-gIOTA/uJuhPwFqp+spY7VQ1satbnGlD+iQVZxI18K6hs8Evq4sX81Ml7BB5byP/LsbR2yBVtmvdEmhi7evJ6Aw==}
+    hasBin: true
+
+  through@2.2.7:
+    resolution: {integrity: sha512-JIR0m0ybkmTcR8URann+HbwKmodP+OE8UCbsifQDYMLD5J3em1Cdn3MYPpbEd5elGDwmP98T+WbqP/tvzA5Mjg==}
+
+  through@2.3.4:
+    resolution: {integrity: sha512-DwbmSAcABsMazNkLOJJSLRC3gfh4cPxUxJCn9npmvbcI6undhgoJ2ShvEOgZrW8BH62Gyr9jKboGbfFcmY5VsQ==}
+
+  xtend@2.2.0:
+    resolution: {integrity: sha512-SLt5uylT+4aoXxXuwtQp5ZnMMzhDb1Xkg4pEqc00WUJCQifPfV9Ub1VrNhp9kXkrjZD2I2Hl8WnjP37jzZLPZw==}
+    engines: {node: '>=0.4'}
+
+snapshots:
+
+  abbrev@1.1.1: {}
+
+  bash-color@0.0.3: {}
+
+  filed@0.1.0:
+    dependencies:
+      mime: 4.1.0
+
+  glance@3.0.0:
+    dependencies:
+      bash-color: 0.0.3
+      filed: 0.1.0
+      html-ls: 1.0.1
+      nopt: 2.2.1
+      xtend: 2.2.0
+
+  html-ls@1.0.1:
+    dependencies:
+      ls-stream: 1.0.0
+      through: 2.3.4
+
+  ls-stream@1.0.0:
+    dependencies:
+      through: 2.2.7
+
+  mime@4.1.0: {}
+
+  nopt@2.2.1:
+    dependencies:
+      abbrev: 1.1.1
+
+  through@2.2.7: {}
+
+  through@2.3.4: {}
+
+  xtend@2.2.0: {}

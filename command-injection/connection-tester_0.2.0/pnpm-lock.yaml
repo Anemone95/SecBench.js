@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      connection-tester:
+        specifier: 0.2.0
+        version: 0.2.0
+
+packages:
+
+  connection-tester@0.2.0:
+    resolution: {integrity: sha512-SdjxQ+wdNrV6Mcp60zDSlR4y9n8IPN7gs5Y7dhH/01G3qw6BvP5fR1VTJf0qvdWmoyGJ19nwfENOOv5IHBNHqQ==}
+
+snapshots:
+
+  connection-tester@0.2.0: {}

@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      eivindfjeldstad-dot:
+        specifier: 0.0.1
+        version: 0.0.1
+
+packages:
+
+  eivindfjeldstad-dot@0.0.1:
+    resolution: {integrity: sha512-fQc4xSFjrQ35pissb3PGf+kew7jX3zsNAPjuswujUl6gjj9rhvZoO++tlRI+KLbT7bIL3KMWYyks49EP3luMNA==}
+    deprecated: Use @eivifj/dot instead
+
+snapshots:
+
+  eivindfjeldstad-dot@0.0.1: {}

@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      rgb2hex:
+        specifier: 0.1.0
+        version: 0.1.0
+
+packages:
+
+  rgb2hex@0.1.0:
+    resolution: {integrity: sha512-JelbSahz+qKCubeNlTBSHk6rks2GEYnS+ky8LCjahCad4dzGc28nXZbL6Fpqs1s4wminzmvZpqxV/8QvnShCIQ==}
+
+snapshots:
+
+  rgb2hex@0.1.0: {}

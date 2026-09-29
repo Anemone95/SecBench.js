@@ -1,0 +1,32 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      webrepl:
+        specifier: 0.4.7
+        version: 0.4.7
+
+packages:
+
+  http-digest@0.1.0:
+    resolution: {integrity: sha512-Z6mYT5E2G8+qwOIR4OvUQHlqamZB5jRsFsz/hkVrD5ln9+3d+dA7d5qCSff5xhYcmTFz392RnyJlfxp2aJWZOg==}
+    engines: {node: '>=0.1.100'}
+    os: [linux, darwin, freebsd]
+
+  webrepl@0.4.7:
+    resolution: {integrity: sha512-/RByif/T+xtNNEov6IIyJ45HqruyZH+d3Z80a0by2Hm6rP9awVuvuO/RyxB9zKfRO7zSgssZo7s3c//ClA6mqg==}
+    engines: {node: '>=0.8.0'}
+
+snapshots:
+
+  http-digest@0.1.0: {}
+
+  webrepl@0.4.7:
+    dependencies:
+      http-digest: 0.1.0

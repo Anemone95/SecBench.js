@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      libnested:
+        specifier: 1.5.0
+        version: 1.5.0
+
+packages:
+
+  libnested@1.5.0:
+    resolution: {integrity: sha512-IR5ASkAU4NHTN1JFeP9bYvhARhaBg8VD8yUcmvNIvFWg6L3dsM2yK1A9EM6MpPvWYKH9SEiljB59ZUa5s2pYnA==}
+
+snapshots:
+
+  libnested@1.5.0: {}

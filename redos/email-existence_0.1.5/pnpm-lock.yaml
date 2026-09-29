@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      email-existence:
+        specifier: 0.1.5
+        version: 0.1.5
+
+packages:
+
+  email-existence@0.1.5:
+    resolution: {integrity: sha512-groe7fGX8MCJJ3lrYGtnxEsbdKMcYPpC/dH7ObYyuHnlTYRpfAwHhgv+Cs0FxxGlebABhogdIHCpOvMCDqTiFA==}
+
+snapshots:
+
+  email-existence@0.1.5: {}

@@ -1,0 +1,30 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      lutils-merge:
+        specifier: 0.2.6
+        version: 0.2.6
+
+packages:
+
+  lutils-merge@0.2.6:
+    resolution: {integrity: sha512-VoWQMlP0CtrJu3+lRM+thGTt/hBwZ1Tn2xMQmNAP+iNgg5aIxSHbY4VTMO7V/Lvxb1VNaEO3oc1lMgRC6LT0Tw==}
+    deprecated: Vulnerability
+
+  lutils-typeof@0.2.5:
+    resolution: {integrity: sha512-Ulgt8iHUlnCnobdMSIoiSKGU0xKj/w5OnyF0MrS0x64wz2eIYcOso+c/9Rf8zJCPuogwXkhv2+BaGynEfjuLNQ==}
+
+snapshots:
+
+  lutils-merge@0.2.6:
+    dependencies:
+      lutils-typeof: 0.2.5
+
+  lutils-typeof@0.2.5: {}

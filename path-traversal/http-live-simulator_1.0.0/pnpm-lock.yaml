@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      http-live-simulator:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  http-live-simulator@1.0.0:
+    resolution: {integrity: sha512-bPPRHhNrY3muWDmk8gywx5Z57qDzcqDrR240FlqCXAkmGEwbTxPQTxVfI018/0tZdHE2UX0OYPO58ej8jMVFWg==}
+    hasBin: true
+
+snapshots:
+
+  http-live-simulator@1.0.0: {}

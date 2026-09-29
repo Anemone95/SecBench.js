@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      deepmergefn:
+        specifier: 1.1.0
+        version: 1.1.0
+
+packages:
+
+  deepmergefn@1.1.0:
+    resolution: {integrity: sha512-BM2aUinbgb2tOFcR5D/7ybqr+ZBLYVzYhU1mcPWIvd5JRPY/m1rqjQW13xtFIK8GqqbAQKy4Hgeg3pib29AjPg==}
+
+snapshots:
+
+  deepmergefn@1.1.0: {}

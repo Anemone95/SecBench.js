@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      linux-cmdline:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  linux-cmdline@1.0.0:
+    resolution: {integrity: sha512-4+sIUV+iuUVWEXJhhDNMtbOwXG8AY3ncrX63Npfv/S1Q6NI0PAgzz+rUnXZE4/VeBdqd31GZ7C7GrrbN/NnSDQ==}
+
+snapshots:
+
+  linux-cmdline@1.0.0: {}

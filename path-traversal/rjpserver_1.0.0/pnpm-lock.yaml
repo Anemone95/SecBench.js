@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      rjpserver:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  rjpserver@1.0.0:
+    resolution: {integrity: sha512-4TMjipPcy06hIsKyEj1w909Jp88eNakdr8Aer/ctpA9XnBI/LCSUCJFLlUHw/uc7528VntqBAz1D4b15r4n3LQ==}
+
+snapshots:
+
+  rjpserver@1.0.0: {}

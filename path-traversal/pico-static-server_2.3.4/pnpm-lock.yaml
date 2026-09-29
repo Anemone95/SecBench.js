@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      pico-static-server:
+        specifier: 2.3.4
+        version: 2.3.4
+
+packages:
+
+  pico-static-server@2.3.4:
+    resolution: {integrity: sha512-jEKmb/RTOwemHLHDsGJbUXpNBwpX7mED1k+RPwrO7cAL6jtR1nr6E+Q1Ij81Kcq6RBjKIASBGgy3ooiTQRSjvg==}
+
+snapshots:
+
+  pico-static-server@2.3.4: {}

@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      pidusage:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  pidusage@1.0.0:
+    resolution: {integrity: sha512-6ZtTi+No7SdopRHsigVlU/2wbVZLIKNF2BAq6XCGbALG0sv24tJqYuY9tjuGTlfTuJctWTmVdkMJ4Rbv5hJ7Rw==}
+
+snapshots:
+
+  pidusage@1.0.0: {}

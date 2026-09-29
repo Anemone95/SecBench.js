@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@ianwalter/merge':
+        specifier: 9.0.1
+        version: 9.0.1
+
+packages:
+
+  '@ianwalter/merge@9.0.1':
+    resolution: {integrity: sha512-Wu7eAZEsfuW0FJsVsdsNaWAtlY/6Viy74HQpZ8A81KutjhNO5cyPRkiBGletuX9kDUTOdSwWJokPnu/o4yE3KA==}
+
+snapshots:
+
+  '@ianwalter/merge@9.0.1': {}

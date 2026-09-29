@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      mol-proto:
+        specifier: ^0.1.3
+        version: 0.1.15
+
+packages:
+
+  mol-proto@0.1.15:
+    resolution: {integrity: sha512-pL7cUEKvllxKR8BuYALximOdcRvwKN+46Da9ed1nSv1fIgM/QC9HNnb6qqrTYhGtmjCi7kjjbbwvQ5/w3oLdlQ==}
+
+snapshots:
+
+  mol-proto@0.1.15: {}

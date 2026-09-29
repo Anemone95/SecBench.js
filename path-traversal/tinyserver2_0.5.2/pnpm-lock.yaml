@@ -1,0 +1,38 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      tinyserver2:
+        specifier: 0.5.2
+        version: 0.5.2
+
+packages:
+
+  commander@2.20.3:
+    resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
+
+  mime@1.6.0:
+    resolution: {integrity: sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==}
+    engines: {node: '>=4'}
+    hasBin: true
+
+  tinyserver2@0.5.2:
+    resolution: {integrity: sha512-iDBnpFusYLOzy2BQHYg1lx7hx8MWxwQ0c/39+UfmUPJmBM31SfGm6IzpF77OqQh4IBZ9RAb9JOVCqI38taHQLg==}
+    hasBin: true
+
+snapshots:
+
+  commander@2.20.3: {}
+
+  mime@1.6.0: {}
+
+  tinyserver2@0.5.2:
+    dependencies:
+      commander: 2.20.3
+      mime: 1.6.0

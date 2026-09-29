@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      intsol-package:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  intsol-package@1.0.0:
+    resolution: {integrity: sha512-UWvHiGy5saIoWh8PJww/H4WohuKocFC3hUYrdqoBpyj9KqwdVJWHLgXxElnvHFli8hf5WgH/DLa0rep4odufKg==}
+
+snapshots:
+
+  intsol-package@1.0.0: {}

@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      madlib-object-utils:
+        specifier: 0.1.6
+        version: 0.1.6
+
+packages:
+
+  madlib-object-utils@0.1.6:
+    resolution: {integrity: sha512-RJ5Xtnofe4ntQNlXNTvPSn5lcOyklzV4Jts3vjlv6+nhdCvGCYyLFRcr4AY+rDOGyJ2ZqKsJm1M7PPnJZNLv2A==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+
+snapshots:
+
+  madlib-object-utils@0.1.6: {}

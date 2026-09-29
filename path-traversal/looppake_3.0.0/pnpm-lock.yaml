@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      looppake:
+        specifier: 3.0.0
+        version: 3.0.0
+
+packages:
+
+  looppake@3.0.0:
+    resolution: {integrity: sha512-eqqb62IcuC/yjtytiqNReZIWYH/X7pGCDGx94ff7UHtyOudEGiQTOcboLco8wq2sJGeuAjSrew4zidmG1AUzKQ==}
+
+snapshots:
+
+  looppake@3.0.0: {}

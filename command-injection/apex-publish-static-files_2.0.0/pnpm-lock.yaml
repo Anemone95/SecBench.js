@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      apex-publish-static-files:
+        specifier: 2.0.0
+        version: 2.0.0
+
+packages:
+
+  apex-publish-static-files@2.0.0:
+    resolution: {integrity: sha512-5eRX4l2kHm0dByhqaxFsBwkgAw1QV2zmyDJghNwvtQ0EsATLZR4pZSrJcr4POPKQosW/kivY3S/bVqJhrASLTA==}
+
+snapshots:
+
+  apex-publish-static-files@2.0.0: {}

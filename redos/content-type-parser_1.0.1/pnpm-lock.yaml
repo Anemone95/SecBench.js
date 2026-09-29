@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      content-type-parser:
+        specifier: 1.0.1
+        version: 1.0.1
+
+packages:
+
+  content-type-parser@1.0.1:
+    resolution: {integrity: sha512-wcQIkUC9peMxKmyzj9LYdHpv14Oav63ffMMXBUcjUiQgcBWJ8z4QI5/R9CWDfy+qEZH8Bvx0d550Aw1to2HU0w==}
+    deprecated: Use whatwg-mimetype instead
+
+snapshots:
+
+  content-type-parser@1.0.1: {}

@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      asciitable.js:
+        specifier: 1.0.2
+        version: 1.0.2
+
+packages:
+
+  asciitable.js@1.0.2:
+    resolution: {integrity: sha512-RfBcQqxXouY4NF1x2TEvYNLnuLuaGmi9+8jHKQYKyo9hH0ki1hV3MxaSy5cyBe5DiDxC9Z/0gf8Yp5rUsmd03w==}
+
+snapshots:
+
+  asciitable.js@1.0.2: {}

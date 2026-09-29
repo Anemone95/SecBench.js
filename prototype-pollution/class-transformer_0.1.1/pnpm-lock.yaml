@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      class-transformer:
+        specifier: 0.1.1
+        version: 0.1.1
+
+packages:
+
+  class-transformer@0.1.1:
+    resolution: {integrity: sha512-6I+ET0EEwdgBe5kvwj9f3UrIG7QcmTG0ZiDLMpv1a+do/p2dBTTnTJLZWQIJKLhf6y48u66r37Wb3pFl/GjciA==}
+
+snapshots:
+
+  class-transformer@0.1.1: {}

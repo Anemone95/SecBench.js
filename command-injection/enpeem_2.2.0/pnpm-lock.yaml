@@ -1,0 +1,36 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      enpeem:
+        specifier: 2.2.0
+        version: 2.2.0
+
+packages:
+
+  enpeem@2.2.0:
+    resolution: {integrity: sha512-zvlmU4pFAFfRGlEAg/qbJ+yoTyWl2ifkQuh3OTx2G6J23mpfnUQg9Z547GnyG5RQesXEKMSZEvrH4YQK2XO6yA==}
+
+  stream-reduce@1.0.3:
+    resolution: {integrity: sha512-2F9zNsWq1UzP4X091Mazl40P0WgnXmk6zRgkzH0HFpEV8ZWNfZP39pF09s6Ecm9Y5JfRhJHooKnxy0zURulxRg==}
+
+  through@2.3.8:
+    resolution: {integrity: sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==}
+
+snapshots:
+
+  enpeem@2.2.0:
+    dependencies:
+      stream-reduce: 1.0.3
+
+  stream-reduce@1.0.3:
+    dependencies:
+      through: 2.3.8
+
+  through@2.3.8: {}

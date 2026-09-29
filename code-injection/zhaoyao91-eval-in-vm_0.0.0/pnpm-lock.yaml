@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@zhaoyao91/eval-in-vm':
+        specifier: 0.0.0
+        version: 0.0.0
+
+packages:
+
+  '@zhaoyao91/eval-in-vm@0.0.0':
+    resolution: {integrity: sha512-g8klkzF9iVmTnKE4jhBP9y1LJP4B7aorP24XndKXVJXRjvzBKLJ/0LsTwHerPdS4HuFHGo7drCo1Xb8U8KmhMQ==}
+
+snapshots:
+
+  '@zhaoyao91/eval-in-vm@0.0.0': {}

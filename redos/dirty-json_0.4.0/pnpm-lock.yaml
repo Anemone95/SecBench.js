@@ -1,0 +1,42 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      dirty-json:
+        specifier: 0.4.0
+        version: 0.4.0
+
+packages:
+
+  dirty-json@0.4.0:
+    resolution: {integrity: sha512-5ApehYTddD1d0dpZnz0LJPHh7OuBycZYVQ85lCEUsosi8v8qU2jAUAQLxt8gsmM07whhQX0eI00E6SvQVcdF5g==}
+    engines: {node: 6.0.0}
+
+  lex@1.7.9:
+    resolution: {integrity: sha512-vzaalVBmFLnMaedq0QAsBAaXsWahzRpvnIBdBjj7y+7EKTS6lnziU2y/PsU2c6rV5qYj2B5IDw0uNJ9peXD0vw==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+
+  q@1.5.1:
+    resolution: {integrity: sha512-kV/CThkXo6xyFEZUugw/+pIOywXcDbFYgSct5cT3gqlbkBE1SJdwy6UQoZvodiWF/ckQLZyDE/Bu1M6gVu5lVw==}
+    engines: {node: '>=0.6.0', teleport: '>=0.2.0'}
+    deprecated: |-
+      You or someone you depend on is using Q, the JavaScript Promise library that gave JavaScript developers strong feelings about promises. They can almost certainly migrate to the native JavaScript promise now. Thank you literally everyone for joining me in this bet against the odds. Be excellent to each other.
+
+      (For a CapTP with native promises, see @endo/eventual-send and @endo/captp)
+
+snapshots:
+
+  dirty-json@0.4.0:
+    dependencies:
+      lex: 1.7.9
+      q: 1.5.1
+
+  lex@1.7.9: {}
+
+  q@1.5.1: {}

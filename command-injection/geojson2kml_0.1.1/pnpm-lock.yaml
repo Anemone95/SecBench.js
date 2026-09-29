@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      geojson2kml:
+        specifier: 0.1.1
+        version: 0.1.1
+
+packages:
+
+  geojson2kml@0.1.1:
+    resolution: {integrity: sha512-uVS++lNGhKB5+mETWCnx5vjeBTGn8pgL1gtT8eh8g0iJ0sctQuBWi5nJ77mD/hr0VkmwPt4hImCDXOy1kBssfA==}
+
+snapshots:
+
+  geojson2kml@0.1.1: {}

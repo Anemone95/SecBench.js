@@ -1,0 +1,31 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      prototyped.js:
+        specifier: 2.0.0
+        version: 2.0.0(@types/node@14.18.63)
+
+packages:
+
+  '@types/node@14.18.63':
+    resolution: {integrity: sha512-fAtCfv4jJg+ExtXhvCkCqUKZ+4ok/JQk01qDKhL5BDDoS3AxKXhV5/MAVUZyQnSEd2GT92fkgZl0pz0Q0AzcIQ==}
+
+  prototyped.js@2.0.0:
+    resolution: {integrity: sha512-mnnmy4WF8b4300ObpUJjZBmEy56M5SmVOafeTqwMZgKaKruFxauuQ31vsUwNF0PlWp3BScfOsFWPeeGuE7AyIw==}
+    peerDependencies:
+      '@types/node': ^14
+
+snapshots:
+
+  '@types/node@14.18.63': {}
+
+  prototyped.js@2.0.0(@types/node@14.18.63):
+    dependencies:
+      '@types/node': 14.18.63

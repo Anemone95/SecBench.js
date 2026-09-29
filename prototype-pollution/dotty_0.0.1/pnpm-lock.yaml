@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      dotty:
+        specifier: 0.0.1
+        version: 0.0.1
+
+packages:
+
+  dotty@0.0.1:
+    resolution: {integrity: sha512-eDT0hfJEnQbGaZcTuCfj2igPkQ7qa/n9K2pGGDxhEqKhARLq+xE1TonvpOPHq+7KeG+D6A/V8BwCcsdPom2TQg==}
+
+snapshots:
+
+  dotty@0.0.1: {}

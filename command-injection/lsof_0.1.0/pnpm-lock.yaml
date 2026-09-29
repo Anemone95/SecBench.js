@@ -1,0 +1,24 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      lsof:
+        specifier: 0.1.0
+        version: 0.1.0
+
+packages:
+
+  lsof@0.1.0:
+    resolution: {integrity: sha512-RlNW3s4gQ0CIlDM3jwfx/Ogdwpa8PHySyd5FnKKXfi2NPXEjqgwONyA0y9ax33ur1G+K+f192zzKNQljupSgNA==}
+    engines: {node: '>= 0.2.0'}
+    deprecated: No longer maintained
+
+snapshots:
+
+  lsof@0.1.0: {}

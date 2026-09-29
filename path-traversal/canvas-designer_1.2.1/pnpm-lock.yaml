@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      canvas-designer:
+        specifier: 1.2.1
+        version: 1.2.1
+
+packages:
+
+  canvas-designer@1.2.1:
+    resolution: {integrity: sha512-SoBlzX6Jcst6mi3Wb8yucdhKwXNn1LDq66HHe3Al8bl24MEQaA5o5okUm8ASbhhQv5BWreDHa9KzbKO8kAG3nQ==}
+
+snapshots:
+
+  canvas-designer@1.2.1: {}

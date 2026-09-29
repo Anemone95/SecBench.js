@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      gammautils:
+        specifier: 0.0.81
+        version: 0.0.81
+
+packages:
+
+  gammautils@0.0.81:
+    resolution: {integrity: sha512-mjTzHHVJCSYC7oPwVmvmaPUvHuxWwnO0JyShX7ZRG1T3c3gg1wxD2pnROlNrVIVAr6dFiEB87A42e1eFu7itlA==}
+
+snapshots:
+
+  gammautils@0.0.81: {}

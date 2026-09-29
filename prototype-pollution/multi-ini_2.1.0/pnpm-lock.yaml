@@ -1,0 +1,29 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      multi-ini:
+        specifier: 2.1.0
+        version: 2.1.0
+
+packages:
+
+  lodash@4.18.1:
+    resolution: {integrity: sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q==}
+
+  multi-ini@2.1.0:
+    resolution: {integrity: sha512-ANOg4WIoTXYfqyT2Y6FGb8YQyItatdJvfAZKAfFMWT1+D3vUstocjkUQ82EduAeK69rCR6a9k0fggxRhsFnAyQ==}
+
+snapshots:
+
+  lodash@4.18.1: {}
+
+  multi-ini@2.1.0:
+    dependencies:
+      lodash: 4.18.1

@@ -1,0 +1,24 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      servey:
+        specifier: 2.2.0
+        version: 2.2.0
+
+packages:
+
+  servey@2.2.0:
+    resolution: {integrity: sha512-EnyPojUO+qFeUlt87SRoFvHWF2q7+MpCm/3Lp9ya0B2Tl0yub+FdZ2O0jT+X81JN4pQewRLDTDMfhgF3IThxAg==}
+    engines: {node: '>=7.6.0'}
+    hasBin: true
+
+snapshots:
+
+  servey@2.2.0: {}

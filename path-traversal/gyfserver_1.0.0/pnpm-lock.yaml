@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      gyfserver:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  gyfserver@1.0.0:
+    resolution: {integrity: sha512-NnhxX+YVaJuVuZP/rOOnJagEfZVwMp7JR8b0Uhnr9kuzqwyzTtFOTUJMtP7cZbHuXKIncVCykbgBHb2c17lqBg==}
+
+snapshots:
+
+  gyfserver@1.0.0: {}

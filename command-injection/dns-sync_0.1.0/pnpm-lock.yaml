@@ -1,0 +1,44 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      dns-sync:
+        specifier: 0.1.0
+        version: 0.1.0
+
+packages:
+
+  debug@0.7.4:
+    resolution: {integrity: sha512-EohAb3+DSHSGx8carOSKJe8G0ayV5/i609OD0J2orCkuyae7SyZSz2aoLmQF2s0Pj5gITDebwPH7GFBlqOUQ1Q==}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+
+  dns-sync@0.1.0:
+    resolution: {integrity: sha512-OMB2MuSBld8kPj8IdlIx5+OvzEtIAbekxsctTxd/U99lpf/s66suJrTN+yt36ABjrJUZx2sO7cuso/Jl3NzNmA==}
+
+  shelljs@0.2.6:
+    resolution: {integrity: sha512-LQiM15qPbSyzHDFfI4v7EVhjBXG5PUAKWVBnVMBXwdlQSHZtzKYeKGzDHBIqpenPrCsPWqBSOF5o7oSvSfX+CA==}
+    engines: {node: '>=0.8.0'}
+    hasBin: true
+
+snapshots:
+
+  debug@0.7.4: {}
+
+  dns-sync@0.1.0:
+    dependencies:
+      debug: 0.7.4
+      shelljs: 0.2.6
+    transitivePeerDependencies:
+      - supports-color
+
+  shelljs@0.2.6: {}

@@ -1,0 +1,31 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      component-flatten:
+        specifier: 1.0.1
+        version: 1.0.1
+
+packages:
+
+  component-flatten@1.0.1:
+    resolution: {integrity: sha512-n0YexLJNbA7uhbBK8j0HBVi8DxzMDDXYQZWdo3Mn2cylllHCw7ZUkL3CMtQ8b2N5VEn6X5veC8bvAmdFCwmGxw==}
+    deprecated: no longer maintained, please use a different package
+
+  semver@2.3.2:
+    resolution: {integrity: sha512-abLdIKCosKfpnmhS52NCTjO4RiLspDfsn37prjzGrp9im5DPJOgh82Os92vtwGh6XdQryKI/7SREZnV+aqiXrA==}
+    hasBin: true
+
+snapshots:
+
+  component-flatten@1.0.1:
+    dependencies:
+      semver: 2.3.2
+
+  semver@2.3.2: {}

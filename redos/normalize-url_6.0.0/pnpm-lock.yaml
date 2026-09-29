@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      normalize-url:
+        specifier: 6.0.0
+        version: 6.0.0
+
+packages:
+
+  normalize-url@6.0.0:
+    resolution: {integrity: sha512-3nv3dKMucKPEXhx/FEtJQR26ksYdyVlLEP9/dYvYwCbLbP6H8ya94IRf+mB93ec+fndv/Ye8SylWfD7jmN6kSA==}
+    engines: {node: '>=10'}
+
+snapshots:
+
+  normalize-url@6.0.0: {}

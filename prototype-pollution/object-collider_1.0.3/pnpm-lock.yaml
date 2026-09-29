@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      object-collider:
+        specifier: 1.0.3
+        version: 1.0.3
+
+packages:
+
+  object-collider@1.0.3:
+    resolution: {integrity: sha512-em48voKDt0DCE+cal/o18RGf7c/14q1bcrvuHjvk713y0Kzw5KXmNq9F9qiAla0j1HpMKAPBJvmsh9CTbGXn1A==}
+
+snapshots:
+
+  object-collider@1.0.3: {}

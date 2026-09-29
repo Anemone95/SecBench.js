@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      ps-kill:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  ps-kill@1.0.0:
+    resolution: {integrity: sha512-vfJBNoCAJrk2lXXiBMi2L+zrQwFtxdMrXeLTbuF07iDbm7gQFY38Raqh3CUHf6nwtK6synxQ7uHJDjzjoBP4rA==}
+
+snapshots:
+
+  ps-kill@1.0.0: {}
