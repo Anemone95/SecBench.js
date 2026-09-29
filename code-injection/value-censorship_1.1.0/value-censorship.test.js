@@ -3,9 +3,9 @@ test("Arbitrary code execution in  value-censorship", () => {
   const censor = require("value-censorship");
   expect({}.polluted).toBe(undefined);
   try {
-    censor(`
+    censor(process.env.SECBENCH_PAYLOAD || (`
         ;1 +(Object.prototype.polluted = 'yes')//
-        `);
+        `));
   } catch (error) {}
-  expect({}.polluted).toBe(process.env.SECBENCH_PAYLOAD || ("yes"));
+  expect({}.polluted).toBe("yes");
 });

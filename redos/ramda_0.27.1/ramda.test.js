@@ -2,10 +2,10 @@
 test("ReDos in ramda", () => {
   const { trim } = require("ramda");
   const measureTime = require("../utils").measureTime;
-  let attack_str = process.env.SECBENCH_PAYLOAD || ("a" + " ".repeat(33000) + "a");
+  let attack_str = "a" + " ".repeat(33000) + "a";
 
   let t = measureTime(function () {
-    trim(build_blank(50000));
+    trim(process.env.SECBENCH_PAYLOAD || (build_blank(50000)));
   });
 
   let time = t[0] + t[1] / 1000000000;

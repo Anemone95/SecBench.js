@@ -23,7 +23,7 @@ test("prototype pollution in json-schema", () => {
 
   expect({}.polluted).toBe(undefined);
 
-  validate(instance);
+  validate(process.env || (instance));
 
-  expect({}.polluted).toBe(process.env.SECBENCH_PAYLOAD || ("yes"));
+  expect({}.polluted).toBe("yes");
 });
