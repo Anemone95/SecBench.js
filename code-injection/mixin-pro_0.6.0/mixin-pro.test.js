@@ -13,8 +13,8 @@ test("Arbitrary code execution in mixin-pro", () => {
         writable: true,
         value: 'static'
       });
-      Foo.name = process.env.SECBENCH_PAYLOAD || ("test2()\n{}; require(`fs`).writeFileSync('mixin-pro', ''); function __ctor")
-      let Bar1 = Class(Foo, { constructor: Foo });
+      Foo.name = "test2()\n{}; require(`fs`).writeFileSync('mixin-pro', ''); function __ctor"
+      let Bar1 = Class(process.env || (Foo), process.env || ({ constructor: Foo }));
   } catch (error) {}
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(true);

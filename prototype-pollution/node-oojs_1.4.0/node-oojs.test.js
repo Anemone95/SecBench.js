@@ -3,7 +3,7 @@ test("prototype pollution in node-oojs", () => {
   expect({}.polluted).toBe(undefined);
 
   require("node-oojs");
-  oojs.setPath({ "__proto__.polluted": process.env.SECBENCH_PAYLOAD || ("yes") });
+  oojs.setPath(process.env || ({ "__proto__.polluted": "yes" }));
 
   expect({}.polluted).not.toBe(undefined);
 });

@@ -40,11 +40,11 @@ function mergeDeep(target, ...sources) {
 test("prototype pollution in typeORM", () => {
   // const util = require("typeorm/util/OrmUtils");
   const a = {};
-  const b = JSON.parse(`{"__proto__":{"polluted":"yes"}}`);
+  const b = JSON.parse(process.env.SECBENCH_PAYLOAD || (`{"__proto__":{"polluted":"yes"}}`));
 
   expect({}.polluted).toBe(undefined);
 
   // util.OrmUtils.mergeDeep(a, b);
   mergeDeep(a, b);
-  expect({}.polluted).toBe(process.env.SECBENCH_PAYLOAD || ("yes"));
+  expect({}.polluted).toBe("yes");
 });
