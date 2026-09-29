@@ -8,7 +8,7 @@ test("Arbitrary code execution in jsen", () => {
   expect(file_exist).toBe(false);
   
   let schema = JSON.parse(
-    JSON.stringify({
+    process.env.SECBENCH_PAYLOAD || JSON.stringify({
       type: "object",
       properties: { username: { type: "string" } },
       required: [
