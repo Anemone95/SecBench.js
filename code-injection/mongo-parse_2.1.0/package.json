@@ -10,5 +10,5 @@
   },
   "fixedVersion": "n/a",
   "fixCommit": "n/a",
-  "sink": ""
+  "sink": "mongoParse.js:93:34"
 }
