@@ -9,5 +9,5 @@
   },
   "fixedVersion": "6.0.0",
   "fixCommit": "n/a",
-  "sink": "lib/index.js:88:20"
+  "sink": "../limit-it/lib/index.js:143:5"
 }

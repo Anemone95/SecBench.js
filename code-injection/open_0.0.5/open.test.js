@@ -1,7 +1,7 @@
 test("Arbitrary code execution in open", (done) => {
   expect.assertions(2);
   const fs = require("fs");
-  const path = process.env.SECBENCH_PAYLOAD || ("./open");
+  const path = "./open";
   try {
     if (fs.existsSync(path)) fs.unlinkSync(path);
     console.log("File removed:", path);
@@ -11,7 +11,7 @@ test("Arbitrary code execution in open", (done) => {
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
   try {
-    require("open")('""`touch open`', () => {
+    require("open")(process.env.SECBENCH_PAYLOAD || ('""`touch open`'), () => {
       file_exist = fs.existsSync(path);
       expect(file_exist).toBe(true);
       if (file_exist) fs.unlinkSync(path);

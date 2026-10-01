@@ -9,11 +9,11 @@ test("Arbitrary code execution in mobile-icon-resizer", (done) => {
   expect(file_exist).toBe(false);
   
   let options = {
-    config: pathM.resolve(__dirname, "./config")
+    config: process.env.SECBENCH_PAYLOAD || (pathM.resolve(__dirname, "./config"))
   };
   
   try {
-    resize(process.env || (options), function (err) {});
+    resize(options, function (err) {});
   } catch (e) {console.log(e)}
   
   file_exist = fs.existsSync(path);

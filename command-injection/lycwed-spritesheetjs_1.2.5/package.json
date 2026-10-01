@@ -9,5 +9,5 @@
   },
   "fixedVersion": "n/a",
   "fixCommit": "n/a",
-  "sink": "lib/generator.js:85:7"
+  "sink": "../platform-command/platforms/childProcess/command.js:5:10"
 }
