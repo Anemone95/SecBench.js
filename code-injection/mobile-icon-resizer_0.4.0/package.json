@@ -9,5 +9,6 @@
   },
   "fixedVersion": "0.4.3",
   "fixCommit": "https://github.com/muzzley/mobile-icon-resizer/commit/a6c50f884bd282d74ab77e1fce6317d5d0dd2f0f",
-  "sink": "lib/resize.js:31:15"
+  "sink": "lib/resize.js:31:15",
+  "source": "lib/resize.js:161:39"
 }

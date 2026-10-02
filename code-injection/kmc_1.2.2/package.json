@@ -9,5 +9,6 @@
   },
   "fixedVersion": "n/a",
   "fixCommit": "n/a",
-  "sink": "lib/index.js:164:43"
+  "sink": "lib/index.js:164:43",
+  "source": "lib/index.js:157:31"
 }
